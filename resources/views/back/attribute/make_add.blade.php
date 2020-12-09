@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="row justify-content-end">
                                         <div class="col-lg-10">
-                                            <button type="button" id="make_click" class="btn btn-primary">Create Make</button>
+                                            <button type="button" class="create-custom" id="make_click" class="btn btn-primary">Create Make</button>
                                         </div>
                                     </div>
                                 </form>
@@ -93,6 +93,21 @@ button.addEventListener('click', function (e){
         }
 
     });
+let req= document.querySelector("#taskname")
+
+if (req!=null) {
+    let elem = document.createElement('div');
+    let body = document.querySelector('body');
+    body.appendChild(elem)
+    body.addClass('custom-toastr')
+body.html("<p>Əlavə olundu</p>")
+setTimeout(() => {
+    $('#push').removeClass('custom-toastr')
+    $('#push').html("")
+},1000);
+}
+
+
 })
 
 

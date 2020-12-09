@@ -45,15 +45,22 @@
     box-sizing: border-box;
 
 }
-
+.custom-toastr::after{
+    content: "x";
+    position: absolute;
+    z-index: 99;
+top: 0;
+left: 0;
+}
 .custom-toastr{
+    background-color:red;
     position: fixed;
     z-index: 77px;
     top: 60px;
 right: 20px;
-    width: 200px;
-    height: 50px;
-    background-color: rgb(48, 134, 48);
+    width: 250px;
+    height: 80px;
+
     border-radius: 10px;
     color:white;
     text-align: center;
@@ -69,14 +76,14 @@ right: 20px;
     }
     50%{
         opacity:0.5;
-        background-color: rgba(98, 168, 98, 0.582);
+
     }
     70%{
         opacity: 0.2;
-        background-color: rgba(101, 204, 101, 0.466);
+
     }
     100%{
-        background-color: rgba(93, 206, 93, 0.308);
+
         opacity: 0.1;
         visibility: hidden;
     }
