@@ -13,6 +13,7 @@
                 <div class="col-12">
                     <div class="canvas_open">
                         <span>MENU</span>
+
                         <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
                     </div>
                     <div class="Offcanvas_menu_wrapper">
@@ -385,6 +386,7 @@
                             </div>
                             <div class="shipping_content">
                                 <h2>TezSat!</h2>
+
                                 <p>Avtomobilinizin qiymətində razılaşacaq, 1 saat ərzində pulunuz hesabınızda.  <br><span>Ətraflı</span></p>
                             </div>
                         </div>
