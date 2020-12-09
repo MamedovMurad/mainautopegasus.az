@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="autopegasus@localhost" uuid="000926ea-eb05-4b43-be9f-9b0a758055b9">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/autopegasus</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="autopegasus@localhost [2]" uuid="018dbdd2-1990-4016-beae-eadeb06d0c9a">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/autopegasus</jdbc-url>
+    </data-source>
+  </component>
+</project>
