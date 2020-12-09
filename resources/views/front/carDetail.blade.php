@@ -268,6 +268,10 @@
         </div>
     </div>
     <!--product details end-->
+<button id="click">create toastr</button>
+    <div id="push" >
+
+</div>
 
 
 
@@ -275,7 +279,21 @@
 
 
 
-@section('script')
+
+    @section('script')
+<script>
+
+$('#click').click(function(e){
+e.preventDefault();
+$('#push').addClass('custom-toastr')
+$('#push').html("<p>Əlavə olundu</p>")
+setTimeout(() => {
+    $('#push').removeClass('custom-toastr')
+    $('#push').html("")
+},1000);
+})
+</script>
+
 <script src="{{asset('/front/autima/')}}/assets/js/slinky.menu.js"></script>
 <script src="{{asset('/front/autima/')}}/assets/js/owl.carousel.min.js"></script>
 <script src="{{asset('/front/autima/')}}/assets/js/vendor/jquery-3.4.1.min.js"></script>
