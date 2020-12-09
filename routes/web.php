@@ -6,6 +6,7 @@ use App\Http\Controllers\Front\HomePage;
 use App\Http\Controllers\Admin\AttributeController;
 use App\Http\Controllers\Admin\ModelController;
 use App\Http\Controllers\Admin\CarsController;
+use App\Http\Controllers\Admin\EditorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +23,7 @@ Route::get('car-detail',[HomePage::class,'carDetail'])->name('carDetail');
 Route::get('search-more',[HomePage::class,'moreSearch'])->name('searchMore');
 
 
-/*
+
 
 
 /* etrafli axtaris */
@@ -43,6 +44,11 @@ Route::prefix('back')->middleware('isPanel')->group(function (){
 Route::prefix('back')->middleware('isLogin')->group(function (){
     Route::get('logout',[AuthController::class,'logout'])->middleware('isLogin')->name('logout');
     /*Route::resource('/attributes', 'Admin\AttributesController');*/
+
+
+
+        /* istifadeci */
+        Route::get('user',[EditorController::class,'read'])->name('editor');
 
 
     //makes route

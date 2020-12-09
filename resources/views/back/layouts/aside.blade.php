@@ -76,9 +76,27 @@
                     <a href="cars" >
                         <i class="bx bx-layout"></i>
                         <span key="t-layouts">Car request</span>
+
                     </a>
 
                 </li>
+
+
+
+
+        @if (Auth::user()->isAdmin==1)
+        <li>
+        <a href="{{route('editor')}}" >
+
+                <i class="bx bx-layout"></i>
+
+                <span key="t-layouts">istifadəçi</span>
+            </a>
+
+        </li>
+        @endif
+
+
 
 
 

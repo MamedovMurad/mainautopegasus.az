@@ -269,7 +269,13 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img class="rounded-circle header-profile-user" src="{{asset('admin')}}/assets/images/users/avatar-1.jpg"
                              alt="Header Avatar">
-                        <span class="d-none d-xl-inline-block ml-1" key="t-henry">Admin</span>
+                <span class="d-none d-xl-inline-block ml-1" key="t-henry">
+                    @if (Auth::user()->isAdmin==0)
+                        Moderator
+                    @else
+                        Admin
+                    @endif
+                </span>
                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">

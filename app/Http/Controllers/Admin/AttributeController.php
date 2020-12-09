@@ -13,6 +13,7 @@ class AttributeController extends Controller
     public function index()
     {
         $make['makes']=DB::table('makes')->get();
+
         return view('back.attribute.make_list',$make);
     }
     public function make_list(){
