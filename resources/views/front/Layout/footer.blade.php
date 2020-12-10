@@ -115,7 +115,21 @@
 
 <!-- Main JS -->
 <script src="{{asset('/front/autima/')}}/assets/js/main.js"></script>
+<script>
 
+    $('#click').click(function(e){
+    e.preventDefault();
+    let toast = document.createElement('div');
+    toast.classList.add('custom-toastr');
+  toast.innerHTML="<p>Əlavə olundu</p>";
+  document.querySelector('body').appendChild(toast)
+
+    setTimeout(() => {
+        toast.removeClass('custom-toastr')
+        toast.html("")
+    },1000);
+    })
+    </script>
 
 @yield('script')
 

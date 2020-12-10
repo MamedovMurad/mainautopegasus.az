@@ -17,4 +17,7 @@ class HomePage extends Controller
     public function carDetail(){
         return view('front.carDetail');
     }
+    public function question(){
+        return view('front.questions');
+    }
 }

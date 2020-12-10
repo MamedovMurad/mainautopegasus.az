@@ -148,7 +148,9 @@
 
 
                 </div>
-<div class="col-lg-12">   <!--product info start-->
+
+<div class="col-lg-12 col-md-12">
+
     <div class="product_d_info sidebar">
         <div class="product_d_inner ">
             <div class="product_info_button">
@@ -263,15 +265,14 @@
             </div>
         </div>
     </div>
-    <!--product info end--></div>
+</div>
+
             </div>
         </div>
     </div>
     <!--product details end-->
 <button id="click">create toastr</button>
-    <div id="push" >
 
-</div>
 
 
 
@@ -281,6 +282,7 @@
 
 
     @section('script')
+
 
 
 <script src="{{asset('/front/autima/')}}/assets/js/slinky.menu.js"></script>

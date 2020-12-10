@@ -26,10 +26,8 @@ Route::get('search-more',[HomePage::class,'moreSearch'])->name('searchMore');
 
 
 
-/* etrafli axtaris */
-
-Route::get('car-detail',[HomePage::class,'carDetail'])->name('carDetail');
-Route::get('search-more',[HomePage::class,'moreSearch'])->name('searchMore');
+/* FAQ */
+Route::get('question',[HomePage::class,'question'])->name('questionPage');
 
 
 /*
@@ -48,7 +46,7 @@ Route::prefix('back')->middleware('isLogin')->group(function (){
 
 
         /* istifadeci */
-        Route::get('user',[EditorController::class,'read'])->name('editor');
+Route::get('user',[EditorController::class,'read'])->name('editor');
 
 
     //makes route

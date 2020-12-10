@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Autima - Car Accessories Shop HTML Template </title>
+    <title>Pegasus  </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @yield('css')
@@ -159,9 +159,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><a href="blog.html">Avtomobİl  sat!<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
+                                    <li><a href="blog.html">Avtomobİl sat<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
                                         <ul class="sub_menu pages">
-                                            <li><a href="blog-details.html">TezSat!</a></li>
+                                        <li><a href="{{route('questionPage')}}">TezSat!</a></li>
                                             <li><a href="blog-fullwidth.html">Maşınım neçəyə gedər?</a></li>
 
                                         </ul>
