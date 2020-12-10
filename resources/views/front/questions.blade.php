@@ -401,127 +401,124 @@
         <div class="row">
             <div class="mb-3 col-lg-6">
                 <label for="ad" class="form-label">Ad:</label>
-                <input type="text" class="form-control" id="ad" placeholder="adınızı daxil edin ...">
+                <input type="text" class="form-control" id="ad" placeholder="Adınız">
             </div>
             <div class="mb-3 col-lg-6">
-                <label for="nomre" class="form-label">nömrə:</label>
-                <input type="number" class="form-control" id="nomre" placeholder="nömrə daxil edin ...">
+                <label for="nomre" class="form-label">Nömrə:</label>
+                <input type="number" class="form-control" id="nomre" placeholder="Əlaqə nömrəniz">
             </div>
         </div>
-
-
-          <div class="mb-3 col-lg-12">
-            <label for="exampleFormControlTextarea1" class="form-label">Sual:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
           <button class="btn btn-block btn-outline-warning">Göndər</button>
     </form>
       </div>
   </div>
     </section>
     <!--slider area end-->
+
    <!--faq area start-->
-   <div class="faq_content_area mt-32">
-       <div class="container">
-           <div class="row">
-               <div class="col-12">
-                   <div class="faq_content_wrapper">
+ <div class="container " style="background-color: rgba(240, 240, 240, 0.747); padding:10px 0px; ">
+    <div class="faq_content_area mt-32">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="faq_content_wrapper">
 
-                       <p>Avtomobil alqı-satqısı və sifariş prosesi istək və ehtiyaclarınızı müəyyənləşdirməklə başlayan,
-                            satış və satışdan sonrakı xidmətlər ilə davam edən əziyyətsiz bir təcrübədir.
-                             "Müştəri məmnuniyyəti" prinsipi ilə hazırlanmış bütün proseslərin hər mərhələsində sizi bir şirkət əməkdaşı qarşılayacaq və
-                              "alverçi" narahatçılığından xilas olacaqsınız;
-                               Auto Pegasus "gözlədiyinizdən də artıq" xidmət prinsipini özünə məqsəd tutmuşdur.
-                                Komfortlu və rahat bir şəraitdə avtomobilini seçmək,
-                            sifariş etmək və əziyyətsiz əldə etmək üçün hazırladığımız şərtlərimizlə sizləri tanış edək:</p>
+                        <p>Avtomobil alqı-satqısı və sifariş prosesi istək və ehtiyaclarınızı müəyyənləşdirməklə başlayan,
+                             satış və satışdan sonrakı xidmətlər ilə davam edən əziyyətsiz bir təcrübədir.
+                              "Müştəri məmnuniyyəti" prinsipi ilə hazırlanmış bütün proseslərin hər mərhələsində sizi bir şirkət əməkdaşı qarşılayacaq və
+                               "alverçi" narahatçılığından xilas olacaqsınız;
+                                Auto Pegasus "gözlədiyinizdən də artıq" xidmət prinsipini özünə məqsəd tutmuşdur.
+                                 Komfortlu və rahat bir şəraitdə avtomobilini seçmək,
+                             sifariş etmək və əziyyətsiz əldə etmək üçün hazırladığımız şərtlərimizlə sizləri tanış edək:</p>
 
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-   <!--Accordion area-->
-   <div class="accordion_area">
-       <div class="container">
-           <div class="row">
-            {{--    <div class="col-lg-12"> --}}
-                   <div id="accordion" class="card__accordion">
-                       <div class=" card_dipult col-lg-12 mb-2" >
-                           <div class="card-header card_accor" id="headingOne">
-                               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Hansı ölkədən avtomobil sifariş verə bilərəm?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Accordion area-->
+    <div class="accordion_area">
+        <div class="container">
+            <div class="row">
+             {{--    <div class="col-lg-12"> --}}
+                    <div id="accordion" class="card__accordion">
+                        <div class=" card_dipult col-lg-12 mb-2" >
+                            <div class="card-header card_accor" id="headingOne">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 <strong>Hansı ölkədən avtomobil sifariş verə bilərəm?</strong>
 
-                                   <i class="fa fa-plus"></i>
-                                   <i class="fa fa-minus"></i>
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
 
-                               </button>
+                                </button>
 
-                           </div>
+                            </div>
 
-                           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                               <div class="card-body">
-                                   <p>Həm ölkədaxili, həm də ölkəxarici, əsasən Amerika, Avropa,
-                                        Yaponiya, Koreya və digər Asiya ölkələrindən arzuladığınız avtomobili sifariş verə bilərsiniz.</p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="  card_dipult col-lg-12 mb-2">
-                           <div class="card-header card_accor" id="headingTwo">
-                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Bəs pulum çatmasa?
-                                   <i class="fa fa-plus"></i>
-                                   <i class="fa fa-minus"></i>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Həm ölkədaxili, həm də ölkəxarici, əsasən Amerika, Avropa,
+                                         Yaponiya, Koreya və digər Asiya ölkələrindən arzuladığınız avtomobili sifariş verə bilərsiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="  card_dipult col-lg-12 mb-2">
+                            <div class="card-header card_accor" id="headingTwo">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                             <strong>    Bəs pulum çatmasa?</strong>
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
 
-                               </button>
-                           </div>
-                           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                               <div class="card-body">
-                                   <p>Siz buna görə narahat olmayın. Siz arzuladığınız avtomobili sifariş verib onun dəyərinin bir
-                                        hissəsini ödəməklə yerdə qalan hissəni 36 aya qədər sərfəli kredit şərtlərilə əldə edə bilərsiniz.</p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="  card_dipult col-lg-12 mb-2">
-                           <div class="card-header card_accor" id="headingThree">
-                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Bəs maşını kim yoxlayacaq?
-                                   <i class="fa fa-plus"></i>
-                                   <i class="fa fa-minus"></i>
-                               </button>
-                           </div>
-                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                               <div class="card-body">
-                                   <p>Avtomobil ölkəyə daxil olduqdan sonra peşəkar ekspert komandamız tərəfindən bütün lazımi işlər görülür,
-                                       avtomobildə "100 Nöqtə" proseduru həyata keçirilir. Əgər avtomobil gəldikdən sonra təmir ehtiyacı yaranarsa,
-                                        müqaviləli servislərdə təmir olunur, yoxlanılır və sizə ən təmiz formada təqdim olunur. Siz servisə getmirsiniz,
-                                         siz usta ilə danışmırsınız, siz əlavə ödəniş ödəmirsiniz,
-                                        siz yorulmursunuz. Bütün prosedur şirkətimizin təcrübəli və dinamik heyəti tərəfindən həyata keçirilir.</p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class=" card_dipult col-lg-12 mb-2">
-                           <div class="card-header card_accor" id="headingfour">
-                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
-                                "100 Nöqtə" yoxlanışı nədir?
-                                   <i class="fa fa-plus"></i>
-                                   <i class="fa fa-minus"></i>
-                               </button>
-                           </div>
-                           <div id="collapseeight" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
-                               <div class="card-body">
-                                   <p>"100 Nöqtə" yoxlanışı avtomobilin dəyərinə təsir edə biləcək; kuzov və boya vəziyyətinin, mühərrik və mexaniki hissələrin Auto
-                                        Pegasus servis heyəti tərəfindən dəqiq yoxlanıldığı özəl bir prosesdir. Beləcə avtomobilin əvvəlki və mövcud vəziyyəti analiz
-                                         edilir, hesabat hazırlanır və müştərilərə təqdim edilir. Yoxlamadan keçibsə,
-                                        deməli yaxşı maşındır, ürək rahatlığı ilə alıb sürə bilərsiniz. Necə deyərlər, 100 yoxlayıb, 1 alırıq.</p>
-                               </div>
-                           </div>
-                       </div>
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Siz buna görə narahat olmayın. Siz arzuladığınız avtomobili sifariş verib onun dəyərinin bir
+                                         hissəsini ödəməklə yerdə qalan hissəni 36 aya qədər sərfəli kredit şərtlərilə əldə edə bilərsiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="  card_dipult col-lg-12 mb-2">
+                            <div class="card-header card_accor" id="headingThree">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <strong>   Bəs maşını kim yoxlayacaq?</strong>
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Avtomobil ölkəyə daxil olduqdan sonra peşəkar ekspert komandamız tərəfindən bütün lazımi işlər görülür,
+                                        avtomobildə "100 Nöqtə" proseduru həyata keçirilir. Əgər avtomobil gəldikdən sonra təmir ehtiyacı yaranarsa,
+                                         müqaviləli servislərdə təmir olunur, yoxlanılır və sizə ən təmiz formada təqdim olunur. Siz servisə getmirsiniz,
+                                          siz usta ilə danışmırsınız, siz əlavə ödəniş ödəmirsiniz,
+                                         siz yorulmursunuz. Bütün prosedur şirkətimizin təcrübəli və dinamik heyəti tərəfindən həyata keçirilir.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" card_dipult col-lg-12 mb-2">
+                            <div class="card-header card_accor" id="headingfour">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                              <strong>   "100 Nöqtə" yoxlanışı nədir?</strong>
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapseeight" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>"100 Nöqtə" yoxlanışı avtomobilin dəyərinə təsir edə biləcək; kuzov və boya vəziyyətinin, mühərrik və mexaniki hissələrin Auto
+                                         Pegasus servis heyəti tərəfindən dəqiq yoxlanıldığı özəl bir prosesdir. Beləcə avtomobilin əvvəlki və mövcud vəziyyəti analiz
+                                          edilir, hesabat hazırlanır və müştərilərə təqdim edilir. Yoxlamadan keçibsə,
+                                         deməli yaxşı maşındır, ürək rahatlığı ilə alıb sürə bilərsiniz. Necə deyərlər, 100 yoxlayıb, 1 alırıq.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                   </div>
-               </div>
-         {{--   </div> --}}
-       </div>
-   </div>
+                    </div>
+                </div>
+          {{--   </div> --}}
+        </div>
+    </div>
+ </div>
    <!--Accordion area end-->
    <!--faq area end-->
 

@@ -161,7 +161,7 @@
                                     </li>
                                     <li><a href="blog.html">Avtomobİl sat<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
                                         <ul class="sub_menu pages">
-                                        <li><a href="{{route('questionPage')}}">TezSat!</a></li>
+                                        <li><a href="#">TezSat!</a></li>
                                             <li><a href="blog-fullwidth.html">Maşınım neçəyə gedər?</a></li>
 
                                         </ul>
@@ -174,8 +174,8 @@
                                             <li><a href="about.html">Barter</a></li>
                                             <li><a href="about.html">Bİzİmlə satın</a></li>
                                             <li><a href="about.html">Köhnə avtomobİl İlkİn ödənİş KİMİ</a></li>
-                                            <li><a href="about.html">TEST DRİVE <i class="far fa-arrow-alt-circle-up"></i></a></li>
-
+                                            <li><a href="about.html">TEST DRİVE </a></li>
+                                            <li><a href="{{route('questionPage')}}">Sifariş ver</a></li>
 
                                         </ul>
                                     </li>

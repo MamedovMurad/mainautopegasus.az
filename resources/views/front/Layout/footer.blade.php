@@ -125,8 +125,8 @@
   document.querySelector('body').appendChild(toast)
 
     setTimeout(() => {
-        toast.removeClass('custom-toastr')
-        toast.html("")
+        toast.classList.remove('custom-toastr')
+        toast.innerHTML=""
     },1000);
     })
     </script>

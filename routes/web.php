@@ -27,7 +27,7 @@ Route::get('search-more',[HomePage::class,'moreSearch'])->name('searchMore');
 
 
 /* FAQ */
-Route::get('question',[HomePage::class,'question'])->name('questionPage');
+Route::get('sifarisver',[HomePage::class,'question'])->name('questionPage');
 
 
 /*
