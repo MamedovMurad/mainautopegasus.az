@@ -3239,6 +3239,23 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   position: relative;
   margin-bottom: 23px;
 }
+.custom-icon{
+    line-height: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #003399;
+    color:#e81d1d;
+    text-align: center;
+}
+.custom-icon>i{
+    transition: 0.4s;
+    color: white;
+    font-size: 25px;
+}
+.custom-icon>i:hover {
+transform: rotate(35deg);
+}
 @media only screen and (max-width: 767px) {
   .section_title {
     flex-direction: column;

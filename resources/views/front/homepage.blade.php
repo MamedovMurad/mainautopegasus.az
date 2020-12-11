@@ -605,20 +605,22 @@
             }
             .card-body>h4{
                 position: absolute;
-                bottom: 140px;
+                bottom: 110px;
                 color: white;
-                background-color: red;
+                background-color: rgba(139, 139, 139, 0.932);
                 right: 0;
+                padding: 5px;
 
             }
             .card-body>span.label{
+
                 text-align: center;
                 width: 120px;
                 z-index: 0;
                 position: absolute;
                 top: 5px;
                 left: -28px;
-                background-color: rgba(167, 22, 22, 0.644);
+                background-color: rgba(139, 139, 139, 0.932);
                 color: white;
                 padding: 5px;
                 border-radius: 2px;
@@ -676,70 +678,100 @@
                       <h4 class="">200 azn</h4>
                     </div>
                   </div>
+
                   <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
                     <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                       <a href="#"> <h4> <span>Bmw</span> | <span>550</span></h4></a>
+                        <span class="label">
+                            Kredit
+                        </span>
+                        <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                       <p class="card-text">avtomobil haqqında məlumat</p>
                       <h4 class="">200 azn</h4>
                     </div>
-                  </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
-                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                     <a href="">   <h4> <span>Bmw</span> | <span>550</span></h4></a>
-                      <p class="card-text">avtomobil haqqında məlumat</p>
-                      <h4 class="text-danger text-right">200 azn</h4>
+                </div>
+
+
+                      <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                        <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="label">
+                                Kredit
+                            </span>
+                            <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                          <p class="card-text">avtomobil haqqında məlumat</p>
+                          <h4 class="">200 azn</h4>
+                        </div>
+                      </div>
+                      <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                        <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="label">
+                                Kredit
+                            </span>
+                            <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                          <p class="card-text">avtomobil haqqında məlumat</p>
+                          <h4 class="">200 azn</h4>
+                        </div>
+                      </div>
+                      <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                        <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg"" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="label">
+                                Kredit
+                            </span>
+                            <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                          <p class="card-text">avtomobil haqqında məlumat</p>
+                          <h4 class="">200 azn</h4>
+                        </div>
+                      </div>
+                      <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                        <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="label">
+                                Kredit
+                            </span>
+                            <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                          <p class="card-text">avtomobil haqqında məlumat</p>
+                          <h4 class="">200 azn</h4>
+                        </div>
                     </div>
-                  </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
-                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                  <a href="">      <h4> <span>Bmw</span> | <span>550</span></h4></a>
-                      <p class="card-text">avtomobil haqqında məlumat</p>
-                      <h4 class="text-danger text-right">200 azn</h4>
-                    </div>
-                  </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
-                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                       a
-                      <p class="card-text">avtomobil haqqında məlumat</p>
-                      <h4 class="text-danger text-right">200 azn</h4>
-                    </div>
-                  </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
-                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4> <span>Bmw</span> | <span>550</span></h4>
-                      <p class="card-text">avtomobil haqqında məlumat</p>
-                      <h4 class="text-danger text-right">200 azn</h4>
-                    </div>
-                  </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
-                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4> <span>Bmw</span> | <span>550</span></h4>
-                      <p class="card-text">avtomobil haqqında məlumat</p>
-                      <h4 class="text-danger text-right">200 azn</h4>
-                    </div>
-                  </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
-                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4> <span>Bmw</span> | <span>550</span></h4>
-                      <p class="card-text">avtomobil haqqında məlumat</p>
-                      <h4 class="text-danger text-right">200 azn</h4>
-                    </div>
-                  </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
-                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4> <span>Bmw</span> | <span>550</span></h4>
-                      <p class="card-text">avtomobil haqqında məlumat</p>
-                      <h4 class="text-danger text-right">200 azn</h4>
-                    </div>
-                  </div>
+
+
+                          <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                            <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="label">
+                                    Kredit
+                                </span>
+                                <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                              <p class="card-text">avtomobil haqqında məlumat</p>
+                              <h4 class="">200 azn</h4>
+                            </div>
+                          </div>
+                          <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                            <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="label">
+                                    Kredit
+                                </span>
+                                <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                              <p class="card-text">avtomobil haqqında məlumat</p>
+                              <h4 class="">200 azn</h4>
+                            </div>
+                          </div>
+                          <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                            <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg"" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="label">
+                                    Kredit
+                                </span>
+                                <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                              <p class="card-text">avtomobil haqqında məlumat</p>
+                              <h4 class="">200 azn</h4>
+                            </div>
+                          </div>
+
 
 
 

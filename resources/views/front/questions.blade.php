@@ -408,7 +408,7 @@
                 <input type="number" class="form-control" id="nomre" placeholder="Əlaqə nömrəniz">
             </div>
         </div>
-          <button class="btn btn-block btn-outline-warning">Göndər</button>
+          <button class="btn btn-block btn-outline-warning">Mənə Zəng Edin</button>
     </form>
       </div>
   </div>

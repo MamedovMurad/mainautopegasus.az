@@ -113,18 +113,18 @@
                         <div class="main_menu header_position">
                             <nav>
                                 <ul>
-                                    <li><a href="javascript:void(0)">TezSat!<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
+                                <li><a href="{{route('fastSell')}}">İndiSat!<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
                                         <ul class="sub_menu" style="width:0px !important; padding:8px 3px !important; ">
                                             <li style="padding: 0 10px"><a href="index.html">Təklİf al</a></li>
 
                                         </ul>
                                     </li>
-                                    <li class="mega_items"><a href="javascript:void(0)">AvtomoBİL al<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
+                                <li class="mega_items"><a href="{{route('product-cars')}}">AvtomoBİL al<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
                                         <div class="mega_menu">
                                             <ul class="mega_menu_inner">
                                                 <li><a href="javascript:void(0)">Kateqorİyalar</a>
                                                     <ul>
-                                                        <li><a href="shop-fullwidth.html">Avtomobil</a></li>
+                                                    <li><a href="{{route('product-cars')}}">Avtomobil</a></li>
                                                         <li><a href="shop-fullwidth-list.html">SUV , Ofroader , Pikap</a></li>
                                                         <li><a href="shop-right-sidebar.html">Minivan & Furqon</a></li>
                                                         <li><a href="shop-right-sidebar-list.html">Klassik Avtomobil</a></li>
@@ -161,7 +161,7 @@
                                     </li>
                                     <li><a href="blog.html">Avtomobİl sat<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
                                         <ul class="sub_menu pages">
-                                        <li><a href="#">TezSat!</a></li>
+                                        <li><a href="#">İndiSat!</a></li>
                                             <li><a href="blog-fullwidth.html">Maşınım neçəyə gedər?</a></li>
 
                                         </ul>

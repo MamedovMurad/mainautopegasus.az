@@ -8,7 +8,7 @@
     <div class="container">
         <div class="footer_top">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="widgets_container contact_us">
                         <div class="footer_logo">
                             <a href="#"><img src="{{asset('/front/autima/')}}/assets/img/auto-logo/Logo_Pegasus.png" alt=""></a>
@@ -24,8 +24,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="widgets_container widget_menu">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="widgets_container widget_menu" style="padding-left: 20px">
 
                         <div class="footer_menu">
                             <ul>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="widgets_container widget_menu">
 
                         <div class="footer_menu">
@@ -53,9 +53,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                 {{--    <div class="widgets_container">
-                        <h3>Newsletter Subscribe</h3>
+                <div class="col-lg-3 col-md-6">
+
+
+
+                 <div class="widgets_container">
+                    <div class="row">
+                <div class="col-lg-3">
+                    <div class="custom-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                </div>
+     <div class="col-lg-3">
+        <div class="custom-icon">
+            <i class="fab fa-linkedin-in"></i> </div>
+     </div>
+               <div class="col-lg-3">
+                <div class="custom-icon">
+                    <i class="fab fa-instagram"></i></div>
+               </div>
+                   <div class="col-lg-3">
+                    <div class="custom-icon">
+                        <i class="fab fa-telegram-plane"></i>  </div>
+                   </div>
+                    </div>
+                     {{--    <h3>Newsletter Subscribe</h3>
                         <p>We’ll never share your email address with a third-party.</p>
                         <div class="subscribe_form">
                             <form id="mc-form" class="mc-form footer-newsletter">
@@ -68,8 +90,8 @@
                                 <div class="mailchimp-success"></div><!-- mailchimp-success end -->
                                 <div class="mailchimp-error"></div><!-- mailchimp-error end -->
                             </div><!-- mailchimp-alerts end -->
-                        </div>
-                    </div> --}}
+                        </div> --}}
+                    </div>
                 </div>
             </div>
         </div>

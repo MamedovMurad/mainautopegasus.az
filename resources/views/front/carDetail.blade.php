@@ -1,9 +1,7 @@
 @extends('front.Layout.master')
 @section('content')
 
-@section('css')
 
-@endsection
 
      <!-- CSS
     ========================= -->
@@ -21,9 +19,9 @@
     <!--modernizr min js here-->
  {{--    <script src="{{asset('/front/autima/')}}/assets/js/vendor/modernizr-3.7.1.min.js"></script> --}}
 
-</head>
 
-<body>
+
+
 
 
     <!--header area end-->
@@ -53,7 +51,7 @@
     <div class="product_details product_sidebar mt-20">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-12">
+                <div class="col-lg-2 col-md-12">
                     <!--sidebar widget start-->
                     <aside class="sidebar_widget">
                         <div class="widget_inner">
@@ -78,10 +76,10 @@
                     </aside>
                     <!--sidebar widget end-->
                 </div>
-                <div class="col-lg-9 col-md-12">
+                <div class="col-lg-10 col-md-12">
                     <div class="product_right_sidebar">
                         <div class="row">
-                            <div class="col-lg-8 col-md-6">
+                            <div class="col-lg-9 col-md-6">
                                 <div class="product-details-tab">
 
                                     <div id="img-1" class="zoomWrapper single-zoom">
@@ -115,7 +113,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="product_d_right">
 
                                         <ul>
@@ -315,9 +313,9 @@
 
 
 
-
-
-
-
-
 @endsection
+
+
+
+
+

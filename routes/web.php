@@ -22,10 +22,12 @@ use App\Http\Controllers\Admin\EditorController;
 Route::get('car-detail',[HomePage::class,'carDetail'])->name('carDetail');
 Route::get('search-more',[HomePage::class,'moreSearch'])->name('searchMore');
 
+/* avtomobil kategoriya */
 
+Route::get('avtomobil',[HomePage::class,'cars'])->name('product-cars');
 
-
-
+/* Indi sat */
+Route::get('indi-sat',[HomePage::class,'fastSell'])->name('fastSell');
 /* FAQ */
 Route::get('sifarisver',[HomePage::class,'question'])->name('questionPage');
 
