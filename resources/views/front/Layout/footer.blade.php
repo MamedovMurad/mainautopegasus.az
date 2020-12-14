@@ -118,7 +118,7 @@ padding: 0px 5px;
         </div>
     </div>
 </footer>
-
+<script src="./path/to/dropzone.js"></script>
 <!--jquery min js-->
 <script src="{{asset('/front/autima/')}}/assets/js/vendor/jquery-3.4.1.min.js"></script>
 <!--popper min js-->

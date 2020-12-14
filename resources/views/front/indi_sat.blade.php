@@ -4,9 +4,65 @@
 
 
 
+@section('css')
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script>
 
 
+@endsection
 
+@section('script')
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script>
+{{-- <script src="{{asset('front/dropzone/dist/')}}/dropzone.js"></script> --}}
+
+
+<script type="text/javascript">
+    Dropzone.options.dropzone =
+        {
+            maxFilesize: 12,
+            renameFile: function(file) {
+                var dt = new Date();
+                var time = dt.getTime();
+                return time+file.name;
+            },
+            acceptedFiles: ".jpeg,.jpg,.png,.gif",
+            timeout: 5000,
+            addRemoveLinks: true,
+            removedfile: function(file)
+            {
+                var name = file.upload.filename;
+                $.ajax({
+                    headers: {'XSRF-TOKEN': $('meta[name="_token"]').attr('content')},
+
+                    type: 'POST',
+
+                    data: {filename: name},
+                    success: function (data){
+                        console.log("File deleted successfully!!");
+                    },
+                    error: function(e) {
+                        console.log(e);
+                    }});
+                var fileRef;
+                return (fileRef = file.previewElement) != null ?
+                    fileRef.parentNode.removeChild(file.previewElement) : void 0;
+            },
+            success: function(file, response)
+            {
+                console.log(response);
+            },
+            error: function(file, response)
+            {
+                return false;
+            }
+        };
+</script>
+
+
+@endsection
 
 
 
@@ -256,7 +312,7 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="info" role="tabpanel">
                                 <div class="product_info_content">
-                                    <form>
+                                    <form >
                                         <div class="row">
                                         <div class="mb-3 col-lg-4">
                                           <label for="make" class="form-label">Make</label>
@@ -284,9 +340,8 @@
                                             <label for="Vin" class="form-label">VIN</label>
                                             <input type="number" class="form-control" id="Vin">
                                           </div>
-                                          <div class="mb-3 col-lg-6">
-                                            <label for="photo" class="form-label">Upload your car Photos</label>
-                                            <input type="file" class="form-control" id="photo">
+                                          <div class=" col-lg-6">
+                                            <input type="file" name="file" />
                                           </div>
                                           <div class="mb-3 col-lg-6">
                                             <label for="prov" class="form-label">Provide a hosted video url of your car</label>
@@ -308,6 +363,13 @@
                                         <button type="submit" class="btn btn-primary">Save and continue</button>
                                     </div>
                                     </form>
+                                    <form method="POST" action="{{route('cars_add')}}" enctype="multipart/form-data"
+                                    class="dropzone" id="dropzone">
+                                  @csrf
+                                  <input type="hidden" id="car_id_drop" value="" name="car_id_drop">
+
+                              </form>
+
                                     </div>
                             </div>
                             <div class="tab-pane fade" id="sheet" role="tabpanel">

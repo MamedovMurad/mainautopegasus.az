@@ -8,7 +8,7 @@
     <title>Pegasus  </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    @yield('css')
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('/front/autima/')}}/assets/img/favicon.ico">
 
@@ -39,7 +39,7 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="{{asset('/front/autima/')}}/assets/css/style.css">
-
+    @yield('css')
     <!--modernizr min js here-->
     <script src="{{asset('/front/autima/')}}/assets/js/vendor/modernizr-3.7.1.min.js"></script>
 
