@@ -53,29 +53,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3">
 
 
 
                  <div class="widgets_container">
-                    <div class="row">
-                <div class="col-lg-3">
-                    <div class="custom-icon">
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                </div>
-     <div class="col-lg-3">
+                    <div class="row" >
+
+     <div class="flex" style="display: flex;
+     justify-content: center">
+        <div class="custom-mobile-icon">
+            <style>
+                .custom-mobile-icon{
+padding: 0px 5px;
+                }
+            </style>
+            <div class="custom-icon" >
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+<div class="custom-mobile-icon">
+<div class="custom-icon">
+    <i class="fab fa-linkedin-in"></i> </div>
+</div>
+       <div class=" custom-mobile-icon">
         <div class="custom-icon">
-            <i class="fab fa-linkedin-in"></i> </div>
+            <i class="fab fa-instagram"></i></div>
+       </div>
+           <div class="custom-mobile-icon">
+            <div class="custom-icon">
+                <i class="fab fa-telegram-plane"></i>  </div>
+           </div>
      </div>
-               <div class="col-lg-3">
-                <div class="custom-icon">
-                    <i class="fab fa-instagram"></i></div>
-               </div>
-                   <div class="col-lg-3">
-                    <div class="custom-icon">
-                        <i class="fab fa-telegram-plane"></i>  </div>
-                   </div>
                     </div>
                      {{--    <h3>Newsletter Subscribe</h3>
                         <p>We’ll never share your email address with a third-party.</p>

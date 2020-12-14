@@ -223,11 +223,15 @@
         </div>
 
     </section>
-<div class="container">
+<div class="container" >
     <div class="row">
         <div class="col-lg-3">
 
-
+    <h2>
+    Elə İNDİSAT!
+        </h2>
+    <p class="desc">Avtomobilinizi sürət, sərfəli qiymətlə və əziyyətsiz satın.
+     "İndiSat!" sizlər üçün hazırladığımız Azərbaycanın ən müasir ikinci əl avtomobil satış sistemidir.</p>
 
 
         </div>
@@ -252,47 +256,63 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="info" role="tabpanel">
                                 <div class="product_info_content">
-                                    <div class="row">
+                                    <form>
+                                        <div class="row">
+                                        <div class="mb-3 col-lg-4">
+                                          <label for="make" class="form-label">Make</label>
+                                          <input type="text" class="form-control" id="make" >
 
-                                        <div class="col-lg-3"><li class="custom-detail"> <span>Yüngül lehimli disklər</span> <i class="fas fa-check"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"><span> ABS</span> <i class="fas fa-check"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"> <span>Oturacaqların isidilməsi</span> <i class="fas fa-minus"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"> <span>Yağış sensoru</span> <i class="fas fa-check"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"> <span>Mərkəzi qapanma</span> <i class="fas fa-check"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"> <span>Yan pərdələr</span> <i class="fas fa-minus"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"> <span>Oturacaqların ventilyasiyası</span> <i class="fas fa-minus"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"><span> Park radarı </span><i class="fas fa-check"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"> <span>Kondisioner </span><i class="fas fa-check"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"> <span>Arxa görüntü kamerası</span> <i class="fas fa-check"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"><span>Lyuk</span> <i class="fas fa-check"></i></li></div>
-                                        <div class="col-lg-3"> <li class="custom-detail"> <span>Dəri salon</span> <i class="fas fa-minus"></i></li></div>
+                                        </div>
+                                        <div class="mb-3 col-lg-4">
+                                          <label for="model" class="form-label">Model</label>
+                                          <input type="text" class="form-control" id="model">
+                                        </div>
+                                        <div class="mb-3 col-lg-4">
+                                            <label for="year" class="form-label">Year</label>
+                                            <input type="date" class="form-control" id="year" >
 
+                                          </div>
+                                          <div class="mb-3 col-lg-4">
+                                            <label for="Transmission" class="form-label">Transmission</label>
+                                            <input type="text" class="form-control" id="Transmission">
+                                          </div>
+                                          <div class="mb-3 col-lg-4">
+                                            <label for="Mileage" class="form-label">Mileage</label>
+                                            <input type="number" class="form-control" id="Mileage">
+                                          </div>
+                                          <div class="mb-3 col-lg-4">
+                                            <label for="Vin" class="form-label">VIN</label>
+                                            <input type="number" class="form-control" id="Vin">
+                                          </div>
+                                          <div class="mb-3 col-lg-6">
+                                            <label for="photo" class="form-label">Upload your car Photos</label>
+                                            <input type="file" class="form-control" id="photo">
+                                          </div>
+                                          <div class="mb-3 col-lg-6">
+                                            <label for="prov" class="form-label">Provide a hosted video url of your car</label>
+                                            <input type="text" class="form-control" id="prov">
+                                          </div>
 
-
-
+                                          <div class="mb-3 col-lg-4">
+                                            <label for="color" class="form-label">Exterior color</label>
+                                            <input type="text" class="form-control" id="color">
+                                          </div>
+                                          <div class="mb-3 col-lg-4">
+                                            <label for="interior" class="form-label">Interior color</label>
+                                            <input type="number" class="form-control" id="interior">
+                                          </div>
+                                          <div class="mb-3 col-lg-4">
+                                            <label for="Owner" class="form-label">Owner</label>
+                                            <input type="number" class="form-control" id="Owner">
+                                          </div>
+                                        <button type="submit" class="btn btn-primary">Save and continue</button>
                                     </div>
+                                    </form>
                                     </div>
                             </div>
                             <div class="tab-pane fade" id="sheet" role="tabpanel">
                                 <div class="product_d_table">
-                                    <form action="#">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="first_child">Compositions</td>
-                                                    <td>Polyester</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="first_child">Styles</td>
-                                                    <td>Girly</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="first_child">Properties</td>
-                                                    <td>Short Dress</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </form>
+
                                 </div>
                                 <div class="product_info_content">
                                     <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
@@ -300,50 +320,36 @@
                             </div>
 
                             <div class="tab-pane fade" id="reviews" role="tabpanel">
-                                <div class="reviews_wrapper">
-                                    <h2>1 review for Donec eu furniture</h2>
-                                    <div class="reviews_comment_box">
-                                        <div class="comment_thmb">
-                                            <img src="{{asset('/front/autima/')}}/assets/img/blog/comment2.jpg" alt="">
-                                        </div>
-                                        <div class="comment_text">
-                                            <div class="reviews_meta">
 
-                                                <p><strong>admin </strong>- September 12, 2018</p>
-                                                <span>roadthemes</span>
-                                            </div>
-                                        </div>
+                            <form>
+                                <div class="row">
+                                <div class="mb-3 col-lg-6">
+                                  <label for="name" class="form-label">First name</label>
+                                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
 
-                                    </div>
-                                    <div class="comment_title">
-                                        <h2>Add a review </h2>
-                                        <p>Your email address will not be published. Required fields are marked </p>
-                                    </div>
-                                    <div class="product_ratting mb-10">
-                                        <h3>.......</h3>
-
-                                    </div>
-                                    <div class="product_review_form">
-                                        <form action="#">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <label for="review_comment">Your review </label>
-                                                    <textarea name="comment" id="review_comment"></textarea>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <label for="author">Name</label>
-                                                    <input id="author" type="text">
-
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <label for="email">Email </label>
-                                                    <input id="email" type="text">
-                                                </div>
-                                            </div>
-                                            <button type="submit">Submit</button>
-                                        </form>
-                                    </div>
                                 </div>
+                                <div class="mb-3 col-lg-6">
+                                  <label for="Last-name" class="form-label">Last name</label>
+                                  <input type="text" class="form-control" id="last-name">
+                                </div>
+                                <div class="mb-3 col-lg-6">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                  </div>
+                                  <div class="mb-3 col-lg-6">
+                                    <label for="number" class="form-label">Phone number</label>
+                                    <input type="number" class="form-control" id="number">
+                                  </div>
+                                  <div class="mb-3 col-lg-12">
+                                    <label for="text" class="form-label">Comments</label>
+                                   <textarea class="form-control" name="" id="text" ></textarea>
+                                  </div>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            </form>
+
                             </div>
                         </div>
                     </div>
@@ -351,6 +357,39 @@
             </div>
     </div>
 </div>
+<section class="indi-sat mt-20 mb-20 " style="background-color: rgba(236, 236, 236, 0.6); padding:29px;">
+<div class="container">
+    <div class="row">
+    <div class="text-custom text-center mb-20">
+        <h3 class="arac_title">
+            Avtomobilini İndiSat!
+        </h3>
+        <p class="arac_desc">
+            Anketimizi doldurun və avtomobilinizə qiymət təklifini ən qısa zamanda və əziyyətsiz alın.
+        </p>
+    </div>
+<style>
+    .custom-arac>h4>i{
+color: red
+    }
+    .custom-arac{
+        padding: 10px 0;
+        list-style: none;
+    }
+</style>
+     <div class="custom_arac_box mt-20">
+         <div class="row">
+        <div class="col-lg-3"><li class="custom-arac"> <h4> <i class="fas fa-check"></i> Ödəniş </h4> <p>Sürətli, etibarlı və əziyyətsiz ödəniş</p> </li></div>
+        <div class="col-lg-3"> <li class="custom-arac"><h4> <i class="fas fa-check"></i> Əziyyətsiz</h4> <p>Vaxtınızı qənaət edin, gəlin, sürətli avtomobil satış təcrübəsini bizimlə yaşayın</p></li></div>
+        <div class="col-lg-3"><li class="custom-arac"> <h4> <i class="fas fa-check"></i> Ödənişsiz </h4> <p>Xidmətimiz tamamilə ödənişsizdir.</p> </li></div>
+        <div class="col-lg-3"> <li class="custom-arac"><h4> <i class="fas fa-check"></i> Qərar Sizindir</h4> <p>Bizdən təklif, sizdən təsdiq. Ortaq məxrəcə gələ bilməsək, imtina edə bilərsiniz.</p></li></div>
+    </div>
+     </div>
 
+
+
+    </div>
+</div>
+</section>
     <!--slider area end-->
     @endsection

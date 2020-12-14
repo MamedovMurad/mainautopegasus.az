@@ -27,7 +27,7 @@ Route::get('search-more',[HomePage::class,'moreSearch'])->name('searchMore');
 Route::get('avtomobil',[HomePage::class,'cars'])->name('product-cars');
 
 /* Indi sat */
-Route::get('indi-sat',[HomePage::class,'fastSell'])->name('fastSell');
+Route::get('/indi-sat',[HomePage::class,'fastSell'])->name('fastSell');
 /* FAQ */
 Route::get('sifarisver',[HomePage::class,'question'])->name('questionPage');
 
