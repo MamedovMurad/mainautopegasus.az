@@ -35,4 +35,8 @@ class HomePage extends Controller
     public function fastSell(){
         return view('front.indi_sat');
     }
+       /* teklif al */
+       public function getoffer(){
+        return view('front.teklif_al');
+    }
 }

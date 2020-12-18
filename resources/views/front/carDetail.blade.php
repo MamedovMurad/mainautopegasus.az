@@ -51,31 +51,7 @@
     <div class="product_details product_sidebar mt-20">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-12">
-                    <!--sidebar widget start-->
-                    <aside class="sidebar_widget">
-                        <div class="widget_inner">
 
-                            <div class="widget_list widget_categories">
-                                <h2>..............</h2>
-                                <ul>
-                                    <li>
-
-                                        <a href="#">.......</a>
-
-                                    </li>
-
-
-                                </ul>
-                            </div>
-
-
-
-                        </div>
-
-                    </aside>
-                    <!--sidebar widget end-->
-                </div>
                 <div class="col-lg-10 col-md-12">
                     <div class="product_right_sidebar">
                         <div class="row">
@@ -145,6 +121,31 @@
 
 
 
+                </div>
+                <div class="col-lg-2 col-md-12">
+                    <!--sidebar widget start-->
+                    <aside class="sidebar_widget">
+                        <div class="widget_inner">
+
+                            <div class="widget_list widget_categories">
+                                <h2>..............</h2>
+                                <ul>
+                                    <li>
+
+                                        <a href="#">.......</a>
+
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+
+                    </aside>
+                    <!--sidebar widget end-->
                 </div>
 
 <div class="col-lg-12 col-md-12">
@@ -264,6 +265,7 @@
         </div>
     </div>
 </div>
+
 
             </div>
         </div>

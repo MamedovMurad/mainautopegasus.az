@@ -6,19 +6,39 @@
 
 @section('css')
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script>
+
 
 
 @endsection
 
 @section('script')
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script>
-{{-- <script src="{{asset('front/dropzone/dist/')}}/dropzone.js"></script> --}}
+<style>
+a{
+    justify-content: space-between
+}
+</style>
 
 
+<script>
+    $(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
+
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div class="input-line-control removeMe mt-2" style="display:flex; justify-content: space-between "><div class="col-md-10"><div class="form-group"><input type="file" class="form-control datepicker" placeholder="Pick the date"></div></div><div class="col-md-2"><button style="padding:10px;margin-left:10px" class="btn btn-danger remove-date " ><i class="fa fa-remove"></i> sil</button></div></div>'); //add input box
+        }
+    });
+
+    $(wrapper).on("click",".remove-date", function(e){ //user click on remove text
+        e.preventDefault(); $(this).closest('div.removeMe').remove(); x--;
+    })
+});
+</script>
 <script type="text/javascript">
     Dropzone.options.dropzone =
         {
@@ -297,15 +317,23 @@
                 <div class="product_d_info sidebar">
                     <div class="product_d_inner ">
                         <div class="product_info_button">
-                            <ul class="nav" role="tablist">
+                            <ul class="nav" role="tablist" style="padding: 0">
+<style>
+    .nav>li{
+        width: 176px;
+    }
+</style>
                                 <li>
-                                    <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Avtomobilin informasiyası</a>
+                                    <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false" >Avtomobilinizin Məlumatı</a>
                                 </li>
                                 <li>
-                                    <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false">Avtomobilin vəziyyəti</a>
+                                    <a  data-toggle="tab" href="#avto" role="tab" aria-controls="avto" aria-selected="false" > Avtomobilin Təchizatı</a>
                                 </li>
                                 <li>
-                                    <a data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Əlaqə</a>
+                                    <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false" >Avtomobilin vəziyyəti</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false" >Təklif al</a>
                                 </li>
                             </ul>
                         </div>
@@ -315,52 +343,89 @@
                                     <form >
                                         <div class="row">
                                         <div class="mb-3 col-lg-4">
-                                          <label for="make" class="form-label">Make</label>
-                                          <input type="text" class="form-control" id="make" >
+                                          <label for="make" class="form-label">Marka</label>
+                                          <select type="text" class="form-select" id="make" >
+                                              <option value="">Audi</option>
+                                              <option value="">chevralet</option>
+                                              <option value="">Volvo</option>
+                                              <select>
 
                                         </div>
                                         <div class="mb-3 col-lg-4">
                                           <label for="model" class="form-label">Model</label>
-                                          <input type="text" class="form-control" id="model">
+                                          <select type="text" class="form-select" id="model">
+                                              <option value="">A5</option>
+                                              <option value="">Cruze</option>
+                                              <option value="">Santafe</option>
+                                            <select>
                                         </div>
                                         <div class="mb-3 col-lg-4">
-                                            <label for="year" class="form-label">Year</label>
+                                            <label for="year" class="form-label">Buraxılış ili</label>
                                             <input type="date" class="form-control" id="year" >
 
                                           </div>
                                           <div class="mb-3 col-lg-4">
-                                            <label for="Transmission" class="form-label">Transmission</label>
-                                            <input type="text" class="form-control" id="Transmission">
+                                            <label for="Transmission" class="form-label">Sürətlər qutusu</label>
+                                            <select type="text" class="form-select" id="Transmission">
+<option value="">Avtomatika</option>
+<option value="">Mexanika</option>
+                                            </select>
                                           </div>
                                           <div class="mb-3 col-lg-4">
-                                            <label for="Mileage" class="form-label">Mileage</label>
+                                            <label for="Mileage" class="form-label">Yürüş, km</label>
                                             <input type="number" class="form-control" id="Mileage">
-                                          </div>
-                                          <div class="mb-3 col-lg-4">
-                                            <label for="Vin" class="form-label">VIN</label>
-                                            <input type="number" class="form-control" id="Vin">
-                                          </div>
-                                          <div class=" col-lg-6">
-                                            <input type="file" name="file" />
-                                          </div>
-                                          <div class="mb-3 col-lg-6">
-                                            <label for="prov" class="form-label">Provide a hosted video url of your car</label>
-                                            <input type="text" class="form-control" id="prov">
                                           </div>
 
                                           <div class="mb-3 col-lg-4">
-                                            <label for="color" class="form-label">Exterior color</label>
-                                            <input type="text" class="form-control" id="color">
+                                            <label for="Owner" class="form-label">Yanacaq Növü</label>
+                                            <select type="number" class="form-select" id="Owner">
+                                                <option value="">Benzin</option>
+                                                <option value="">Dizel</option>
+                                                <option value="">Qaz</option>
+                                            </select>
                                           </div>
+
+
                                           <div class="mb-3 col-lg-4">
-                                            <label for="interior" class="form-label">Interior color</label>
-                                            <input type="number" class="form-control" id="interior">
+                                            <label for="color" class="form-label">Rəng</label>
+                                            <select type="text" class="form-select" id="color">
+                                                <option value="">Ağ</option>
+                                                <option value="">Qara</option>
+                                                <option value="">Qırmızı</option>
+                                            </select>
                                           </div>
+
                                           <div class="mb-3 col-lg-4">
-                                            <label for="Owner" class="form-label">Owner</label>
-                                            <input type="number" class="form-control" id="Owner">
+                                            <label for="Ban" class="form-label">Ban Növü</label>
+                                            <select type="number" class="form-select" id="Ban">
+                                                <option value="">
+                                                    Sedan
+                                                </option>
+                                            </select>
                                           </div>
-                                        <button type="submit" class="btn btn-primary">Save and continue</button>
+                                          <div class="mb-3 .col-lg-12">
+                                            <div class="panel panel-primary" >
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">Avtomobilin fotolarını yükləyin.</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="col-md-8">
+                                                        <div class="form-group">
+                                                            <input type="file" class="form-control datepicker" placeholder="Pick the date">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button class="btn btn-primary add_field_button"><i class="fa fa-plus"></i> daha çox</button>
+                                                    </div>
+                                                    <div class="input_fields_wrap">
+                                                        <!-- Dynamic Fields go here -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+
+
+                                        <button type="submit" class="btn btn-primary">Davam et</button>
                                     </div>
                                     </form>
                                     <form method="POST" action="{{route('cars_add')}}" enctype="multipart/form-data"
@@ -386,29 +451,34 @@
                             <form>
                                 <div class="row">
                                 <div class="mb-3 col-lg-6">
-                                  <label for="name" class="form-label">First name</label>
+                                  <label for="name" class="form-label">Ad, soyad</label>
                                   <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
 
                                 </div>
-                                <div class="mb-3 col-lg-6">
-                                  <label for="Last-name" class="form-label">Last name</label>
-                                  <input type="text" class="form-control" id="last-name">
-                                </div>
-                                <div class="mb-3 col-lg-6">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
+                                <div class="mb-3 col-lg-6">
+                                    <label for="number" class="form-label">Əlaqə nömrəsi</label>
+                              <p class="form-control">     <span>(+994)</span> <input type="number"  id="number"></p>
                                   </div>
-                                  <div class="mb-3 col-lg-6">
-                                    <label for="number" class="form-label">Phone number</label>
-                                    <input type="number" class="form-control" id="number">
+                                <div class="mb-3 col-lg-12">
+                                  <p class="form-control">
+                                    <input type="checkbox">
+                                    <span>Avtomobilim haqqında daxil etmiş olduğum məlumatların Auto Pegasus şirkəti tərəfindən dəyərləndirilib alqı-satqı proseslərindən istifadəsinə icazə verirəm.</span>
+
+                                  </p>
                                   </div>
+
                                   <div class="mb-3 col-lg-12">
-                                    <label for="text" class="form-label">Comments</label>
-                                   <textarea class="form-control" name="" id="text" ></textarea>
+
+                           <p class="form-control">
+                            <input type="checkbox">
+                            <span>
+                                Yeni avtomobil və kampaniyalardan məni xəbərdar et.
+                             </span>
+                           </p>
                                   </div>
 
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Qiymət təklifi al</button>
                             </div>
                             </form>
 

@@ -4551,21 +4551,64 @@ transform: rotate(35deg);
 }
 
 /* 21. shipping css here */
+.filter-car{
+    margin-top: 200px;
+}
 .shipping_inner {
+top: 15px;
+    height: 200px;
   border: 1px solid #f0f0f0;
   padding: 19px 5px;
   border-radius: 4px;
-  overflow: hidden;
+
+position: relative;
+  z-index: 4;
+}
+.single-1{
+
+    z-index: 4;
+    left: 10px;
+
+}
+.single-2{
+
+    z-index: 4;
+    left: 260px;
+
+}
+.single-3{
+
+    z-index: 4;
+    left: 520px;
+
+}
+.single-4{
+
+    z-index: 4;
+    left: 780px;
+
+}
+
+.single_shipping:hover{
+    box-sizing: initial;
+
+    background-color: rgb(95, 55, 55);
+padding: 20px 0;
 }
 
 .single_shipping {
+position: absolute;
+top: 20px 0;
   display: flex;
   justify-content: center;
   padding: 15px 0;
   border-left: 1px solid #f0f0f0;
   width: 25%;
   float: left;
+  transition: 0.4s;
 }
+
+
 .single_shipping:first-child {
   border: 0;
 }
@@ -6375,7 +6418,7 @@ transform: rotate(35deg);
   margin-bottom: 40px;
 }
 .product_info_button ul {
-  justify-content: center;
+  justify-content: start;
 }
 .product_info_button ul li a {
   display: block;

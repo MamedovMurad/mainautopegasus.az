@@ -28,6 +28,8 @@ Route::get('avtomobil',[HomePage::class,'cars'])->name('product-cars');
 
 /* Indi sat */
 Route::get('/indi-sat',[HomePage::class,'fastSell'])->name('fastSell');
+/* Teklif al */
+Route::get('/teklif-al',[HomePage::class,'getoffer'])->name('getoffer');
 /* FAQ */
 Route::get('sifarisver',[HomePage::class,'question'])->name('questionPage');
 

@@ -115,7 +115,7 @@
                                 <ul>
                                 <li><a href="{{route('fastSell')}}">İndiSat!<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
                                         <ul class="sub_menu" style="width:0px !important; padding:8px 3px !important; ">
-                                            <li style="padding: 0 10px"><a href="index.html">Təklİf al</a></li>
+                                            <li style="padding: 0 10px"><a href="{{route('getoffer')}}">Təklİf al</a></li>
 
                                         </ul>
                                     </li>

@@ -380,7 +380,7 @@
                 <div class="col-12">
                     <div class="shipping_inner">
                        <a href="">
-                        <div class="single_shipping">
+                        <div class="single_shipping single-1">
                             <div class="shipping_icone">
                                 <img src="{{asset('/front/autima/')}}/assets/img/about/shipping1.png" alt="">
                             </div>
@@ -393,7 +393,7 @@
 
                        </a>
                     <a href="">
-                        <div class="single_shipping">
+                        <div class="single_shipping single-2">
                             <div class="shipping_icone">
                                 <img src="{{asset('/front/autima/')}}/assets/img/about/shipping2.png" alt="">
                             </div>
@@ -417,7 +417,7 @@
                     </div>
                    </a> --}}
                    <a href="">
-                    <div class="single_shipping">
+                    <div class="single_shipping single-3">
                         <div class="shipping_icone">
                             <img src="{{asset('/front/autima/')}}/assets/img/about/shipping4.png" alt="">
                         </div>
@@ -429,7 +429,7 @@
                     </div>
                    </a>
                    <a href="">
-                    <div class="single_shipping">
+                    <div class="single_shipping single-4">
                         <div class="shipping_icone">
                             <img src="{{asset('/front/autima/')}}/assets/img/about/shipping4.png" alt="">
                         </div>
@@ -446,7 +446,7 @@
         </div>
     </section>
     <!--shipping area end-->
-    <section class="filter-car mb-20" style="background: rgb(175, 174, 174); padding:20px 0">
+    <section class="filter-car mb-20 " style="background: rgb(175, 174, 174); padding:20px 0">
     <div class="car-filter-section">
        <div class="container">
 
