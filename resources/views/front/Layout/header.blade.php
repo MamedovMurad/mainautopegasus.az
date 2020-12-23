@@ -106,13 +106,18 @@
         <!--header top start-->
 
         <!--header bottom satrt-->
-        <div class="header_bottom sticky-header">
+        <div class="header_bottom sticky-header" style="background: #CD0000; ">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="main_menu header_position">
                             <nav>
-                                <ul>
+                                <style>
+                                   .main_menu>nav>ul>li>a{
+                                        color: white;
+                                    }
+                                </style>
+                                <ul >
                                 <li><a href="{{route('fastSell')}}">İndiSat!<img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
                                         <ul class="sub_menu" style="width:0px !important; padding:8px 3px !important; ">
                                             <li style="padding: 0 10px"><a href="{{route('getoffer')}}">Təklİf al</a></li>

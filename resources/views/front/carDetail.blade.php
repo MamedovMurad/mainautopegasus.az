@@ -60,21 +60,63 @@
 
                                     <div id="img-1" class="zoomWrapper single-zoom">
                                         <a href="#">
-                                            <img id="zoom1" src="{{asset('/front/autima/')}}/assets/img/auto-logo/car1.jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-logo/car1.jpg" alt="big-1">
+                                            <img id="zoom1" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" alt="big-1">
                                         </a>
                                     </div>
 
                                     <div class="single-zoom-thumb">
                                         <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
                                             <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-logo/car1.jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-logo/car1.jpg">
-                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-logo/car1.jpg" alt="zo-th-1" />
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (1).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (1).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (1).jpg" alt="zo-th-1" />
                                                 </a>
 
                                             </li>
                                             <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/product/product9.jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/product/product9.jpg">
-                                                    <img src="{{asset('/front/autima/')}}/assets/img/product/product9.jpg" alt="zo-th-1" />
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (2).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (2).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (2).jpg" alt="zo-th-1" />
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (3).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (3).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (3).jpg" alt="zo-th-1" />
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (4).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (4).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (4).jpg" alt="zo-th-1" />
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (5).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (5).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (5).jpg" alt="zo-th-1" />
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (9).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (9).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (9).jpg" alt="zo-th-1" />
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (10).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (10).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (10).jpg" alt="zo-th-1" />
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (11).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (11).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (11).jpg" alt="zo-th-1" />
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg">
+                                                    <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" alt="zo-th-1" />
                                                 </a>
 
                                             </li>
@@ -94,19 +136,19 @@
 
                                         <ul>
                                             <li><strong>Şəhər:</strong>  &nbsp; <span>Bakı</span> </li>
-                                            <li><strong>Elan tarixi:</strong> &nbsp; <span>05/2020/12</span> </li>
-                                            <li><strong>Marka:</strong>&nbsp; <span>Toyota</span> </li>
-                                            <li><strong>Model:</strong> &nbsp; <span>Land Cruiser</span> </li>
-                                            <li><strong>Buraxılış ili:</strong> &nbsp; <span>2012</span> </li>
+                                            <li><strong>Elan tarixi:</strong> &nbsp; <span>08 Dekabr 2020</span> </li>
+                                            <li><strong>Marka:</strong>&nbsp; <span>Chevrolet</span> </li>
+                                            <li><strong>Model:</strong> &nbsp; <span>Cruze</span> </li>
+                                            <li><strong>Buraxılış ili:</strong> &nbsp; <span>2016</span> </li>
                                             <li><strong>Yanacaq tipi:</strong> &nbsp; <span>Benzin</span> </li>
                                             <li><strong>Sürətlər qutusu:</strong>  &nbsp; <span>Avtomat</span></li>
-                                            <li><strong>Motorun həcimi:</strong> &nbsp; <span>4.0 L</span> </li>
-                                            <li><strong>At gücü:</strong>  &nbsp; <span>282 a.g.</span></li>
-                                            <li><strong>Ban növü:</strong>  &nbsp; <span>Offroader / SUV</span></li>
-                                            <li><strong>Rəng:</strong>  &nbsp; <span>Qara</span></li>
-                                            <li><strong>Yürüş:</strong> &nbsp; <span>124 000 km </span></li>
-                                            <li><strong>Ötürücü:</strong> &nbsp; <span>Tam </span></li>
-                                            <li><strong>Qiymət</strong> &nbsp; <span>38 900 $</span> </li>
+                                            <li><strong>Motorun həcimi:</strong> &nbsp; <span>1.4 L</span> </li>
+                                            <li><strong>At gücü:</strong>  &nbsp; <span>153 a.g.</span></li>
+                                            <li><strong>Ban növü:</strong>  &nbsp; <span>Sedan</span></li>
+                                            <li><strong>Rəng:</strong>  &nbsp; <span>Gümüşü</span></li>
+                                            <li><strong>Yürüş:</strong> &nbsp; <span>180 000 km</span></li>
+                                            <li><strong>Ötürücü:</strong> &nbsp; <span>Ön </span></li>
+                                            <li><strong>Qiymət</strong> &nbsp; <span> 17 700 AZN</span> </li>
                                             <li><strong>Barter:</strong>&nbsp; <span>bəli</span> </li>
                                         </ul>
 
@@ -158,7 +200,7 @@
                         <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Xüsusiyyətlər</a>
                     </li>
                     <li>
-                        <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false">Detail</a>
+                        <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false">Açıqlama</a>
                     </li>
                     <li>
                         <a data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews (1)</a>
@@ -177,10 +219,10 @@
                             <div class="col-lg-3"> <li class="custom-detail"> <span>Mərkəzi qapanma</span> <i class="fas fa-check"></i></li></div>
                             <div class="col-lg-3"> <li class="custom-detail"> <span>Yan pərdələr</span> <i class="fas fa-minus"></i></li></div>
                             <div class="col-lg-3"> <li class="custom-detail"> <span>Oturacaqların ventilyasiyası</span> <i class="fas fa-minus"></i></li></div>
-                            <div class="col-lg-3"> <li class="custom-detail"><span> Park radarı </span><i class="fas fa-check"></i></li></div>
+                            <div class="col-lg-3"> <li class="custom-detail"><span> Park radarı </span><i class="fas fa-minus"></i></li></div>
                             <div class="col-lg-3"> <li class="custom-detail"> <span>Kondisioner </span><i class="fas fa-check"></i></li></div>
                             <div class="col-lg-3"> <li class="custom-detail"> <span>Arxa görüntü kamerası</span> <i class="fas fa-check"></i></li></div>
-                            <div class="col-lg-3"> <li class="custom-detail"><span>Lyuk</span> <i class="fas fa-check"></i></li></div>
+                            <div class="col-lg-3"> <li class="custom-detail"><span>Lyuk</span> <i class="fas fa-minus"></i></li></div>
                             <div class="col-lg-3"> <li class="custom-detail"> <span>Dəri salon</span> <i class="fas fa-minus"></i></li></div>
 
 
@@ -190,7 +232,7 @@
                         </div>
                 </div>
                 <div class="tab-pane fade" id="sheet" role="tabpanel">
-                    <div class="product_d_table">
+            {{--         <div class="product_d_table">
                         <form action="#">
                             <table>
                                 <tbody>
@@ -209,9 +251,15 @@
                                 </tbody>
                             </table>
                         </form>
-                    </div>
+                    </div> --}}
                     <div class="product_info_content">
-                        <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
+                        <p>Qabaqcadan cəmi 5800 azn ödəməklə avtomobili əldə edə bilərsiniz (3illik kasko sığorta və DYP xərcləri daxil).</p>
+                   <p>-KREDİT TƏK ŞƏXSİYYƏT VƏSİQƏSİ İLƏ
+                    -İLKİN ÖDƏNİŞ 20%
+                    -36 AYA QƏDƏR.
+                    -KREDİT MANAT İLƏ RƏSMİLƏŞDİRİLİR.
+                    -Sürətli rəsmiləşdirmə</p>
+                    <p>Model 2017.Avtomobil çox ideal vəziyyətdədir. Avtomobilə nömrə alınıb sığorta olunub. BU AVTOMOBİLİ ÇOX SƏRFƏLİ KREDİT VƏ LİZİNQ ŞƏRTLƏRİ İLƏ ƏLDƏ EDƏ BİLƏRSİZ.</p>
                     </div>
                 </div>
 

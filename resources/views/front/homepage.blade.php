@@ -377,66 +377,59 @@
     <section class="shipping_area mb-20">
         <div class="container">
             <div class=" row">
-                <div class="col-12">
+                <div class="col-lg-12">
                     <div class="shipping_inner">
-                       <a href="">
+                       <a href="" class="a">
+                           <div class="qutu"></div>
                         <div class="single_shipping single-1">
                             <div class="shipping_icone">
                                 <img src="{{asset('/front/autima/')}}/assets/img/about/shipping1.png" alt="">
                             </div>
-                            <div class="shipping_content">
+                            <div class="shipping_content f1">
                                 <h2>TezSat!</h2>
 
-                                <p>Avtomobilinizin qiymətində razılaşacaq, 1 saat ərzində pulunuz hesabınızda.  <br><span>Ətraflı</span></p>
+                                <p>Avtomobilinizin qiymətində razılaşacaq, 1 saat ərzində pulunuz hesabınızda.  <br><span class="read-more">Ətraflı</span></p>
                             </div>
                         </div>
 
                        </a>
                     <a href="">
+                        <div class="qutu"></div>
                         <div class="single_shipping single-2">
                             <div class="shipping_icone">
                                 <img src="{{asset('/front/autima/')}}/assets/img/about/shipping2.png" alt="">
                             </div>
-                            <div class="shipping_content">
+                            <div class="shipping_content f2">
                                 <h2>Sərfəli Kredit</h2>
-                                <p>36 aya qədər sərfəli kredit və lizinq şərtlərimiz işinizi rahatlaşdıracaq. <br> <br><span>Ətraflı</span></p>
+                                <p>36 aya qədər sərfəli kredit və lizinq şərtlərimiz işinizi rahatlaşdıracaq.  <br><span class="read-more">Ətraflı</span></p>
 
                             </div>
                         </div>
                     </a>
 
-           {{--      <a href="">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="{{asset('/front/autima/')}}/assets/img/about/shipping4.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>100 Nöqtə Yoxlanışı</h2>
-                            <p>100 yoxlayıb, 1 alırıq, inamınızı doğrulduruq. <br> <br>  <span>Ətraflı</span></p>
-                        </div>
-                    </div>
-                   </a> --}}
                    <a href="">
+                    <div class="qutu"></div>
                     <div class="single_shipping single-3">
                         <div class="shipping_icone">
-                            <img src="{{asset('/front/autima/')}}/assets/img/about/shipping4.png" alt="">
+                            <img src="{{asset('/front/autima/')}}/assets/img/about/shipping3.png" alt="">
                         </div>
-                        <div class="shipping_content">
+                        <div class="shipping_content f3">
                             <h2>100 Nöqtə Yoxlanışı</h2>
-                            <p>100 yoxlayıb, 1 alırıq, inamınızı doğrulduruq.    &nbsp; &nbsp;</p>
-                            <span>Ətraflı</span>
+                            <p>100 yoxlayıb, 1 alırıq, inamınızı doğrulduruq.<br><span class="read-more">Ətraflı</span></p>
+
                         </div>
                     </div>
                    </a>
                    <a href="">
+                    <div class="qutu"></div>
                     <div class="single_shipping single-4">
                         <div class="shipping_icone">
                             <img src="{{asset('/front/autima/')}}/assets/img/about/shipping4.png" alt="">
                         </div>
-                        <div class="shipping_content">
+                        <div class="shipping_content f4">
                             <h2>Barter</h2>
-                            <p>Barter xidmətinizdədir. Sizə zəhmətsiz alış təcrübəsini yaşadacağıq.</p>
-                            <span>Ətraflı</span>
+                            <p>Barter xidmətinizdədir. Sizə zəhmətsiz alış təcrübəsini yaşadacağıq.<br> <span class="read-more">Ətraflı</span></p>
+
                         </div>
                     </div>
                    </a>
@@ -446,157 +439,134 @@
         </div>
     </section>
     <!--shipping area end-->
-    <section class="filter-car mb-20 " style="background: rgb(175, 174, 174); padding:20px 0">
+<section class="filter-car mb-20 " style="background: #090B4D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); padding:20px 0">
     <div class="car-filter-section">
        <div class="container">
 
 
         <form>
-            <style>
-                form>.form>.row>.col-lg-10>.row>.col-lg-2{
-                    padding: 10px
-                }
-                form>.form>.row>.col-lg-10>.row>.col-lg-6{
-                    padding: 10px
-                }
-                form>.form>.row>.col-lg-2>.row>.col-lg-12{
-                    padding: 10px
-                }
-            </style>
+
 
             <div class="form">
-                <div class="row">
-             <div class="col-lg-10">
+
+
 
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
 
-                        <select class="form-control " style="padding:0 2px">
-                            <option value="" >Bütün Şəhərlər</option>
-                            <option value="">Bakı</option>
-                            <option value="">Sumqayıt</option>
+                        <select class="form-select " style="margin-bottom: 12px">
+                            <option value="" >Bütün markalar</option>
+                            <option value="">Bmw</option>
+                            <option value="">Mercedes</option>
+                        </select>
+                        <select class="form-select " style="margin-bottom: 12px" >
+                            <option value="" >Bütün modellər</option>
+                            <option value="">A5</option>
+                            <option value="">A6</option>
                         </select>
                       </div>
-                    <div class="col-lg-6">
 
-                     <div class="row" style="padding:0">
-                         <div class="col-3" style="padding: 0">
+             <div class="col-lg-5">
+
+                     <div class="row" >
+                         <div class="col-3" >
                             <div class="price_filter_area">
-                                <p class="form-control"  style="font-size: 15px; padding:5px 1px">Qiymət</p>
+                                <p class="form-control" style="padding-left:4px "  >Qiymət</p>
 
                                </div>
                          </div>
-                         <div class="col-3"  style="padding: 0">
+                         <div class="col-3"  >
                             <div class="price_filter_area">
 
-                                <select class="form-control" style="padding: 5px 0" placeholder="First name">
-                                    <option value="">| Azn</option>
+                                <select class="form-select"  placeholder="First name">
+                                    <option value="">Azn</option>
                                     <option value="">Usd</option>
 
                                 </select>
                                </div>
                          </div>
-                         <div class="col-3"  style="padding: 0">
+                         <div class="col-3"  >
                             <div class="price_filter_area">
-                                <input type="number" class="form-control" placeholder="min.">
+                                <input style="padding-left:4px " type="number" class="form-control" placeholder="min.">
                                </div>
                          </div>
-                         <div class="col-3"  style="padding: 0">
-                            <input type="number" class="form-control" placeholder="max.">
+                         <div class="col-3" >
+                            <input style="padding-left:4px " type="number" class="form-control" placeholder="max.">
+                         </div>
+                         <div class="col-4"  >
+                            <div class="price_filter_area" >
+                                <p class="form-control" style="padding-left:4px "  >Buraxılış ili</p>
+
+                               </div>
+                         </div>
+                         <div class="col-4" >
+                            <div class="price_filter_area" >
+
+                                <input type="number" class="form-control" style="padding-left:4px " placeholder="min.">
+                               </div>
+                         </div>
+                         <div class="col-4"  >
+                            <div class="price_filter_area" >
+
+                                <input type="number" class="form-control" style="padding-left:4px " placeholder="max.">
+                               </div>
                          </div>
                      </div>
-                      </div>
+             </div>
                     <div class="col-lg-2" >
-                       <p class="form-control" >Kredit &nbsp; &nbsp;<input type="checkbox" style="width: 17px;height:17px; margin-top:0px" aria-label="Checkbox for following text input"></p>
-                      </div>
-
-                    <div class="col-lg-2">
-                        <select class="form-control"  style="font-size: 15px ; padding:6px 0px ;">
-                            <option value="">Bütün markalar</option>
-                            <option value="">Bmw</option>
-                            <option value="">Mercedes</option>
-                            <option value="">Porche</option>
-                            <option value="">Audi</option>
-                        </select>
-                      </div>
-                    <div class="col-lg-2">
-                        <select class="form-control" placeholder="First name"  style="font-size: 15px ; padding:6px 0px ;">
-                            <option value="">Bütün modellər</option>
-
-                        </select>
-                      </div>
-
-                      <div class="col-lg-6 col-sm-9">
-
-                        <div class="row" style="padding:0">
-                            <div class="col-3" style="padding: 0">
-                               <div class="price_filter_area" style="overflow: hidden">
-                                   <p class="form-control"  style=" padding:9% 0px; height:28px">Buraxılış ili</p>
-
-                                  </div>
-                            </div>
-                            <div class="col-3"  style="padding: 0">
-                               <div class="price_filter_area">
-
-                                   <select class="form-control" style="padding: 5px 0; overflow:y; height:10px !important">
-                                       <option value="">2000</option>
-                                       <option value="">1999</option>
-                                       <option value="">1998</option>
-                                       <option value="">1997</option>
-                                       <option value="">1996</option>
-                                       <option value="">1995</option>
-                                       <option value="">1994</option>
-                                       <option value="">1993</option>
-                                       <option value="">1992</option>
-
-                                   </select>
-                                  </div>
-                            </div>
-                            <div class="col-3"  style="padding: 0">
-                               <div class="price_filter_area">
-                                   <input type="number" class="form-control" placeholder="min.">
-                                  </div>
-                            </div>
-                            <div class="col-3"  style="padding: 0">
-                               <input type="number" class="form-control" placeholder="max.">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="price_filter_area" >
+                                <p  class="form-control kredit" >Kredit &nbsp; &nbsp;<input style="zoom: 1.5;" type="checkbox"></p>
                             </div>
                         </div>
-                         </div>
-
-                     <div class="col-lg-2">
-                        <p class="form-control" >Barter &nbsp; &nbsp;<input type="checkbox" style="width: 17px;height:17px; margin-top:0px" aria-label="Checkbox for following text input"></p>
+                            <div class="col-lg-8">
+                                <div  class="price_filter_area" >
+                                <p  class="form-control kredit"  >Barter &nbsp; &nbsp;<input style="zoom: 1.5"  type="checkbox"  ></p>
+                            </div>
+                        </div>
+                        </div>
 
                       </div>
-                     <div class="col-lg-2">
-                        <p class="form-control text-danger" ><strong>Elan sayı</strong></p>
+
+                    <div class="col-lg-2">
+                        <div class="row">
+                            <div class="col-lg-12 ">
+                                <div  class="price_filter_area" >
+                                <button class="btn btn-block btn-danger" style="background: #CD0000;">Axtarış et</button>
+                            </div>
+                        </div>
+                            <div class="col-lg-12">
+                                <div  class="price_filter_area" >
+                            <a href="{{route('searchMore')}}"class="btn btn-block btn-secondary" style="background: #AAAAAA"> Ətraflı Axtarış et</a>
+                            </div>
+                        </div>
+                        </div>
                       </div>
+
+
+
+
+
 
                 </div>
 
              </div>
-             <div class="col-lg-2">
-                 <div class="row">
-                <div class="col-lg-12 ">
-                    <button class="btn btn-block btn-danger">Axtarış et</button>
-                  </div>
-                  <div class="col-lg-12">
-                  <a href="{{route('searchMore')}}"class="btn btn-block btn-secondary"> Ətraflı Axtarış et</a>
-                  </div>
-                </div>
-             </div>
-            </div>
-            </div>
+
+
+
           </form>
         </div>
     </div>
-    </section>
+</section>
 
     <!--product area start-->
     <section class="product_area mb-50 ">
 
         <style>
             .custom-flex>.custom_card{
-
+    padding: 0;
                 overflow:hidden;
                 position: relative;
             }
@@ -605,9 +575,9 @@
             }
             .card-body>h4{
                 position: absolute;
-                bottom: 110px;
+                bottom: 34%;
                 color: white;
-                background-color: rgba(139, 139, 139, 0.932);
+                background-color: #DC1616;
                 right: 0;
                 padding: 5px;
 
@@ -632,59 +602,50 @@
             <div class="row custom-flex">
 
 
-            <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
-                <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+            <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
+                <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" class="card-img-top" alt="..." style="width: 100%">
                 <div class="card-body">
-                    <span class="label">
-                        Kredit
-                    </span>
-                    <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
-                  <p class="card-text">avtomobil haqqında məlumat</p>
-                  <h4 class="">200 azn</h4>
+
+                    <a href="{{route('carDetail')}}"> <h4> <span>Chevrolet</span>  <span>Cruze</span></h4> </a>
+                  <p class="card-text">1.4 L/ 2016 il/ 180 000 km <br>
+                    <span class="lab" style="color: rgba(196, 196, 196, 1); font-size:13.2px;display:inline-block; width:169px">Kreditdədir. <br> "100 Nöqtə Yoxlanışı"ndan keçib.</span></p>
+                  <h4 class="">17 700 AZN ver, Apar</h4>
                 </div>
             </div>
 
 
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                  <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
                     <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <span class="label">
-                            Kredit
-                        </span>
+
                         <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                       <p class="card-text">avtomobil haqqında məlumat</p>
                       <h4 class="">200 azn</h4>
                     </div>
                   </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                  <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
                     <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <span class="label">
-                            Kredit
-                        </span>
+
                         <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                       <p class="card-text">avtomobil haqqında məlumat</p>
                       <h4 class="">200 azn</h4>
                     </div>
                   </div>
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                  <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
                     <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg"" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <span class="label">
-                            Kredit
-                        </span>
+
                         <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                       <p class="card-text">avtomobil haqqında məlumat</p>
                       <h4 class="">200 azn</h4>
                     </div>
                   </div>
 
-                  <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                  <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
                     <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <span class="label">
-                            Kredit
-                        </span>
+
                         <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                       <p class="card-text">avtomobil haqqında məlumat</p>
                       <h4 class="">200 azn</h4>
@@ -692,45 +653,37 @@
                 </div>
 
 
-                      <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                      <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
                         <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <span class="label">
-                                Kredit
-                            </span>
+
                             <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                           <p class="card-text">avtomobil haqqında məlumat</p>
                           <h4 class="">200 azn</h4>
                         </div>
                       </div>
-                      <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                      <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
                         <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <span class="label">
-                                Kredit
-                            </span>
+
                             <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                           <p class="card-text">avtomobil haqqında məlumat</p>
                           <h4 class="">200 azn</h4>
                         </div>
                       </div>
-                      <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                      <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
                         <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg"" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <span class="label">
-                                Kredit
-                            </span>
+
                             <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                           <p class="card-text">avtomobil haqqında məlumat</p>
                           <h4 class="">200 azn</h4>
                         </div>
                       </div>
-                      <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                      <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
                         <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <span class="label">
-                                Kredit
-                            </span>
+
                             <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                           <p class="card-text">avtomobil haqqında məlumat</p>
                           <h4 class="">200 azn</h4>
@@ -738,34 +691,28 @@
                     </div>
 
 
-                          <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                          <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
                             <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <span class="label">
-                                    Kredit
-                                </span>
+
                                 <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                               <p class="card-text">avtomobil haqqında məlumat</p>
                               <h4 class="">200 azn</h4>
                             </div>
                           </div>
-                          <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                          <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
                             <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <span class="label">
-                                    Kredit
-                                </span>
+
                                 <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                               <p class="card-text">avtomobil haqqında məlumat</p>
                               <h4 class="">200 azn</h4>
                             </div>
                           </div>
-                          <div class="card custom_card" style="width: 12.9rem; margin: 10px; height:287px;">
+                          <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
                             <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg"" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <span class="label">
-                                    Kredit
-                                </span>
+
                                 <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
                               <p class="card-text">avtomobil haqqında məlumat</p>
                               <h4 class="">200 azn</h4>
