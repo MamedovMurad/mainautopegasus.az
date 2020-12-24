@@ -171,9 +171,9 @@
 
                                         </ul>
                                     </li>
-                                    <li><a href="#">XİDMƏTLƏRİMİZ <img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
+                                    <li><a href="{{route('servicePage')}}">XİDMƏTLƏRİMİZ <img style="width: 11px; margin-left:2px" src="{{asset('/front/autima/')}}/assets/img/auto-logo/icon.png" alt=""></a>
                                         <ul class="sub_menu pages">
-                                            <li><a href="about.html">100 Nöqtə yoxlanışı</a></li>
+                                            <li><a href="{{route('servicePage')}}">100 Nöqtə yoxlanışı</a></li>
                                             <li><a href="about.html">Kredİt</a></li>
                                             <li><a href="about.html">Qİymətləndİrmə</a></li>
                                             <li><a href="about.html">Barter</a></li>

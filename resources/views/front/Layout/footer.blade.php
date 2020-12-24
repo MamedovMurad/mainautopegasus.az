@@ -4,7 +4,7 @@
 
 
 
-  <footer class="footer_widgets" style="background: #090B4D; color:white">
+  <footer class="footer_widgets" style="background: #090B4D; color:white; ">
     <div class="container">
         <div class="footer_top">
             <div class="row">
@@ -26,10 +26,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="widgets_container widget_menu" style="padding-left: 20px">
+                    <div class="widgets_container widget_menu" style="padding-left: 20px ; margin-top:18px; ">
                         <div class="footer_menu">
                             <ul>
-                                <li><a href="#">Haqqımızda</a></li>
+                                <li><a href="#" >Haqqımızda</a></li>
                                 <li><a href="#">TezSat!</a></li>
                                 <li><a href="wishlist.html">100 Nöqtə Yoxlanışı</a></li>
                                 <li><a href="#">Kredit Şərtlərimiz</a></li>

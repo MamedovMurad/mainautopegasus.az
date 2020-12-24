@@ -342,6 +342,7 @@
                 </div> --}}
                 <div class="col-lg-12 col-md-12">
                     <div class="slider_area owl-carousel">
+                       <a href="{{route('servicePage')}}">
                         <div class="single_slider d-flex align-items-center" data-bgimg="{{asset('/front/autima/')}}/assets/img/auto-logo/banner4.png">
                             <div class="slider_content">
                                {{--  <h2>Top Quality</h2>
@@ -350,6 +351,7 @@
                             </div>
 
                         </div>
+                       </a>
                         <div class="single_slider d-flex align-items-center" data-bgimg="{{asset('/front/autima/')}}/assets/img/auto-logo/banner3.png">
                             <div class="slider_content">
                             {{--     <h2>Height - Quality</h2>
@@ -479,7 +481,7 @@
                          <div class="col-3"  >
                             <div class="price_filter_area">
 
-                                <select class="form-select"  placeholder="First name">
+                                <select class="form-select"  placeholder="First name" style="padding-left: 3.4px">
                                     <option value="">Azn</option>
                                     <option value="">Usd</option>
 
@@ -496,7 +498,7 @@
                          </div>
                          <div class="col-4"  >
                             <div class="price_filter_area" >
-                                <p class="form-control" style="padding-left:4px "  >Buraxılış ili</p>
+                                <p class="form-control buraxilis" style="padding-left:4px "  >Buraxılış ili</p>
 
                                </div>
                          </div>

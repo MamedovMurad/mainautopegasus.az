@@ -27,12 +27,17 @@ Route::get('search-more',[HomePage::class,'moreSearch'])->name('searchMore');
 Route::get('avtomobil',[HomePage::class,'cars'])->name('product-cars');
 
 /* Indi sat */
-Route::get('/indi-sat',[HomePage::class,'fastSell'])->name('fastSell');
+Route::get('/ele-indi-sat',[HomePage::class,'fastSell'])->name('fastSell');
 /* Teklif al */
 Route::get('/teklif-al',[HomePage::class,'getoffer'])->name('getoffer');
 /* FAQ */
 Route::get('sifarisver',[HomePage::class,'question'])->name('questionPage');
 
+/* xidmetlerimiz */
+
+Route::get('xidmetlerimiz',[HomePage::class,'servicePage'])->name('servicePage');
+/* sellNow */
+Route::get('indi-sat',[HomePage::class,'nowsell'])->name('nowsell');
 
 /*
 

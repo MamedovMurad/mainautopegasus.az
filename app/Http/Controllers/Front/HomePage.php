@@ -39,4 +39,11 @@ class HomePage extends Controller
        public function getoffer(){
         return view('front.teklif_al');
     }
+    /* xidmetlerimiz */
+    public function servicePage(){
+        return view('front.service');
+    }
+    public function nowSell(){
+        return view('front.sellNow');
+    }
 }
