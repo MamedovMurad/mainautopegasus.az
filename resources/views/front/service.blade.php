@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="service-title" style="display: flex; justify-content:flex-end">
-                    <h2>100 Yoxlayıb, 1 Alırıq</h2>
+                    <h2 class="banner-title">100 Yoxlayıb, 1 Alırıq</h2>
                 </div>
             </div>
         </div>
@@ -24,9 +24,9 @@
 
                 <div class="tab-links">
                     <ul class="tab">
-                        <li class="tablinks active-link" onclick="openCity(event, 'yuz_noqte')">100 NÖQTƏ YOXLANIŞI</li>
-                        <li class="tablinks" onclick="openCity(event, 'kredit')">KREDİT</li>
-                        <li class="tablinks" onclick="openCity(event, 'qiymetlendirme')">QİYMƏTLƏNDİRMƏ</li>
+                        <li class="tablinks active-link" onclick="openCity(event, 'yuz_noqte','100 NÖQTƏ YOXLANIŞI')">100 NÖQTƏ YOXLANIŞI</li>
+                        <li class="tablinks" onclick="openCity(event, 'kredit','KREDİT')">KREDİT</li>
+                        <li class="tablinks" onclick="openCity(event, 'qiymetlendirme','QİYMƏTLƏNDİRMƏ')">QİYMƏTLƏNDİRMƏ</li>
                         <li class="tablinks" onclick="openCity(event, 'barter')">BARTER</li>
                         <li class="tablinks" onclick="openCity(event, 'satin')">BİZİMLƏ SATIN</li>
                         <li class="tablinks" onclick="openCity(event, 'odeniskimi')">KÖHNƏ AVTOMOBİL İLKİN ÖDƏNİŞ KİMİ</li>
@@ -66,7 +66,8 @@
 
 @section('script')
 <script>
-    function openCity(evt, cityName) {
+    function openCity(evt, cityName,banTitle) {
+        var ban_title=document.querySelector(".banner-title")
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -76,8 +77,10 @@
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active-link", "");
       }
+
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active-link";
+      ban_title.innerText=banTitle;
     }
     </script>
 @endsection

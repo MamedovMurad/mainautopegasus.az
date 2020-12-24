@@ -19,17 +19,17 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="tab-link-title">
-                    <span>Xidmətlərimiz</span>
+                    <span >Xidmətlərimiz</span>
                     <span> <img  src="{{asset('/front/autima/')}}/assets/img/service/service-icon.png" alt=""></span>
                 </div>
 
                 <div class="tab-links">
                     <ul class="tab">
                         <li class="tablinks active-link" onclick="openCity(event, 'yuz_noqte')">100 NÖQTƏ YOXLANIŞI</li>
-                        <li class="tablinks" onclick="openCity(event, 'kredit')">KREDİT</li>
-                        <li class="tablinks" onclick="openCity(event, 'qiymetlendirme')">QİYMƏTLƏNDİRMƏ</li>
-                        <li class="tablinks" onclick="openCity(event, 'barter')">BARTER</li>
-                        <li class="tablinks" onclick="openCity(event, 'satin')">BİZİMLƏ SATIN</li>
+                        <li class="tablinks" onclick="openCity(event, 'kredit','KREDİT')">KREDİT</li>
+                        <li class="tablinks" onclick="openCity(event, 'qiymetlendirme','QİYMƏTLƏNDİRMƏ')">QİYMƏTLƏNDİRMƏ</li>
+                        <li class="tablinks" onclick="openCity(event, 'barter','BARTER')">BARTER</li>
+                        <li class="tablinks" onclick="openCity(event, 'satin','')">BİZİMLƏ SATIN</li>
                         <li class="tablinks" onclick="openCity(event, 'odeniskimi')">KÖHNƏ AVTOMOBİL İLKİN ÖDƏNİŞ KİMİ</li>
                         <li class="tablinks" onclick="openCity(event, 'Tokyo')">TEST DRİVE</li>
                         <li class="tablinks" onclick="openCity(event, 'Tokyo')">SİFARİŞ VER</li>
@@ -67,7 +67,8 @@
 
 @section('script')
 <script>
-    function openCity(evt, cityName) {
+    function openCity(evt, cityName,banTitle) {
+        var ban_title=document.querySelector(".banner-title");
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -79,6 +80,7 @@
       }
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active-link";
+
     }
     </script>
 @endsection

@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="service-title" style="display: flex; justify-content:flex-end">
-                    <h2>100 Yoxlayıb, 1 Alırıq</h2>
+                    <h2 class="banner-title">100 Yoxlayıb, 1 Alırıq</h2>
                 </div>
             </div>
         </div>
