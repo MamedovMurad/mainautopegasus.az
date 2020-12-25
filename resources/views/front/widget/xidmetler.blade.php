@@ -49,7 +49,7 @@
                             </p>
                         </div>
                         <div class="img-100-noqte mt-5">
-                            <img src="{{asset('/front/autima/')}}/assets/img/service/yuz-noqte.png"
+                            <img src="{{asset('/front/autima/')}}/assets/img/service/yuz-noqte.png">
                         </div>
                       </div>
                 </div>

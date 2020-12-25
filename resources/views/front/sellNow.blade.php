@@ -68,7 +68,7 @@
 @section('script')
 <script>
     function openCity(evt, cityName,banTitle) {
-        var ban_title=document.querySelector(".banner-title");
+     ;
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {

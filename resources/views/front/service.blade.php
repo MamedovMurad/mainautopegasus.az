@@ -36,8 +36,8 @@
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="tab-component">
-                    <div id="yuz_noqte" class="tabcontent">
+                <div class="tab-component" style="overflow: hidden">
+                    <div id="yuz_noqte" class="tabcontent"  >
                         <div class="o100-noqte-title">
                             <p>100 Nöqtə Yoxlanışı</p>
                         </div>
@@ -48,20 +48,38 @@
 
                                 "100 Nöqtə" yoxlanışı avtomobilin dəyərinə təsir edə biləcək; kuzov və boya vəziyyətinin, mühərrik və mexaniki hissələrin Auto Pegasus servis heyəti tərəfindən dəqiq yoxlanıldığı özəl bir prosesdir. Beləcə avtomobilin əvvəlki və mövcud vəziyyəti analiz edilir, hesabat hazırlanır və müştərilərə təqdim edilir.  Necə deyərlər, 100 yoxlayıb, 1 alırıq.
                             </p>
+
                         </div>
                         <div class="img-100-noqte mt-5">
-                            <img src="{{asset('/front/autima/')}}/assets/img/service/yuz-noqte.png"
+                            <img src="{{asset('/front/autima/')}}/assets/img/service/yuz-noqte.png">
                         </div>
                       </div>
-                </div>
-            <div id="kredit">
+                      <div id="kredit" class="tabcontnet">
+                          <div class="title-img d-flex" style="justify-content: flex-end">
+                            <img src="{{asset('/front/autima/')}}/assets/img/service/cityFinance.png">
+                          </div>
+                        <div class="o100-noqte-title">
+                            <p>KREDİT</p>
+                        </div>
+                        <div class="content-100-noqte mt-20">
+                            <p>
+                                Partnyorumuz City Finance BOKT-un cəlbedici kredit və ödəniş şərtləri Auto Pegesusun dəqiq xidmətilə sizlərə təqdim edilir. Siz Auto Pegasusun satış mərkəzinə yaxınlaşaraq qısa zaman ərzində kredit əldə edə bilərsiniz. <br> <br>
 
-            </div>
+                                Peşəkar satış və kredit mütəxəssislərimiz bəyəndiyiniz avtomobili ən qısa yol və qısa müddət ərzində əldə etmənizi təmin edəcəklər. <br> <br>
+
+                                Bütün kredit əməliyyatlarınız bir ofisdə baş tutur və etibarlı şəkildə tez və zəhmətsiz formada avtomobilinə sahib olursunuz. </p>
+                        </div>
+                        <div class="img-100-noqte mt-5 d-flex" style="justify-content:center">
+                            <img src="{{asset('/front/autima/')}}/assets/img/service/kredit.png">
+                        </div>
+                        </div>
+                </div>
+
             </div>
         </div>
     </div>
 </section>
-
+@include('front.widget.indi_sat_footer')
 
 
 @section('script')
