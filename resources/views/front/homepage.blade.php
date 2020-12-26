@@ -726,8 +726,9 @@
 
 
             </div>
-
+            <hr>
         </div>
+
     </section>
     <!--product area end-->
 
@@ -1489,4 +1490,26 @@
    --}}
 
   <!--footer area start-->
+  <section class="home-tab">
+      <div class="container" style="background: #F4F4F4;height: 371px;padding:30px 60px">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h3>AUTO PEGASUS Necə İşləyir? </h3>
+              </div>
+              <div class="col-lg-12">
+                  <div class="alanda">
+                  <div class="content">
+                      <span><h5>Avtomobil Alanda</h5></span>
+                      <span><img src="" alt=""></span>
+                  </div>
+                  <div class="content">
+                    <span><h5>Avtomobil Satanda</h5></span>
+                    <span><img src="" alt=""></span>
+                </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
   @endsection

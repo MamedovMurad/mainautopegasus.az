@@ -5599,6 +5599,11 @@ margin-top: 5px;
   cursor: pointer;
   z-index: 999;
 }
+.col-lg-12>.alanda{
+
+    display: flex;
+    justify-content: center;
+}
 .widget_list > ul > li input:checked ~ .checkmark {
   background-color: #ffd54c;
   border: 1px solid #ffd54c;
@@ -5737,10 +5742,65 @@ line-height: 27px;
 color: #6C6C6C;
 }
 /* service end */
+/* indisat */
+.tab-link-indisat{
+margin-top: 70px;
+
+}
+.indisat-component{
+    padding: 30px;
+}
+.tab-link-indisat>li{
+    cursor:not-allowed;
+    position: relative;
+    color: #FFFFFF;
+    width: 80%;
+    margin-top: 19px;
+padding: 10px 0 10px 15px;
+background-color: rgba(196, 196, 196, 1);
+}
+.tab-link-indisat>li.active-indiSat{
+cursor: pointer;
+    background-color:rgba(9, 11, 77, 1);
+}
+.tab-link-indisat>li.active-indiSat::after{
+content: "";
+display: inline-block;
+position: absolute;
+border-width:12px;
+border-style: solid;
+border-color: transparent transparent  transparent  rgba(205, 0, 0, 1);
+right: -27px;
+}
+.tab-link-indisat>li.active-indiSat>span.active{
+    background-color: rgba(205, 0, 0, 1);
+}
+.tab-link-indisat>li>span{
+    background-color: rgba(108, 108, 108, 1);
+    position: absolute;
+    left: -10px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+}
+.indisat-component>.row>form>.row>div>label{
+    color: rgba(108, 108, 108, 1);
+    font-weight: bold;
+}
+.indisat-component{
+    margin-bottom: 20px;
+    height: 100%;
+    border: 1px solid
+    rgba(196, 196, 196, 1);
+}
+
 .ui-slider-horizontal .ui-slider-range {
   background: #ffd54c;
   height: 5px;
 }
+
 
 .ui-slider-horizontal {
   height: 3px;

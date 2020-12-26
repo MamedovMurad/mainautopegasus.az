@@ -14,74 +14,154 @@
     </div>
 </section>
 
-<section class="service-tab mt-2 mb-20" >
+<section class="mt-3">
     <div class="container">
         <div class="row">
+            <div class="col-lg-12">
+             <h4>Avtomobilini İndiSat!</h4>
+             <p> Anketimizi doldurun və avtomobilinizə qiymət təklifini ən qısa zamanda və əziyyətsiz alın.</p>
+            </div>
             <div class="col-lg-3">
-                <div class="tab-link-title">
-                    <span >Xidmətlərimiz</span>
-                    <span> <img  src="{{asset('/front/autima/')}}/assets/img/service/service-icon.png" alt=""></span>
-                </div>
-
-                <div class="tab-links">
-                    <ul class="tab">
-                        <li class="tablinks active-link" onclick="openCity(event, 'yuz_noqte')">100 NÖQTƏ YOXLANIŞI</li>
-                        <li class="tablinks" onclick="openCity(event, 'kredit','KREDİT')">KREDİT</li>
-                        <li class="tablinks" onclick="openCity(event, 'qiymetlendirme','QİYMƏTLƏNDİRMƏ')">QİYMƏTLƏNDİRMƏ</li>
-                        <li class="tablinks" onclick="openCity(event, 'barter','BARTER')">BARTER</li>
-                        <li class="tablinks" onclick="openCity(event, 'satin','')">BİZİMLƏ SATIN</li>
-                        <li class="tablinks" onclick="openCity(event, 'odeniskimi')">KÖHNƏ AVTOMOBİL İLKİN ÖDƏNİŞ KİMİ</li>
-                        <li class="tablinks" onclick="openCity(event, 'Tokyo')">TEST DRİVE</li>
-                        <li class="tablinks" onclick="openCity(event, 'Tokyo')">SİFARİŞ VER</li>
-                    </ul>
-                </div>
+                <hr>
+                <ul class=" tab-link-indisat">
+                    <li class="active-indiSat"> <span class="active">1</span> Avtomobilinizin Məlumatı </li>
+                    <li> <span >2</span>Avtomobilin Təchizatı   </li>
+                    <li><span>3</span>Avtomobilin Vəziyyəti  </li>
+                    <li><span>4</span>Təklif Al</li>
+                </ul>
             </div>
+
+
             <div class="col-lg-9">
-                <div class="tab-component">
-                    <div id="yuz_noqte" class="tabcontent">
-                        <div class="o100-noqte-title">
-                            <p>100 Nöqtə Yoxlanışı</p>
-                        </div>
-                        <div class="content-100-noqte mt-20">
-                            <p>
-                                Avtomobil almaq ciddi işdir, amma çətin deyil. Təmiz və ürəyinizcə olan avtomobil almaq üçün günlərinizi ayırıb tanış usta axtararaq avtomobilinizi yoxlatmağınıza artıq ehtiyac yoxdur. Biz sizin əvəzinizə avtomobilin 100 nöqtə yoxlanışını həyata keçiririk.
-                                <br> <br>
+                <div class="indisat-component mt-3">
+                   <div class="row">
+                    <form >
+                        <div class="row">
+                        <div class="mb-4 col-lg-4">
+                          <label for="make" class="form-label">Marka</label>
+                          <select type="text" class="form-select" id="make" >
+                              <option value="">Audi</option>
+                              <option value="">chevralet</option>
+                              <option value="">Volvo</option>
+                              <select>
 
-                                "100 Nöqtə" yoxlanışı avtomobilin dəyərinə təsir edə biləcək; kuzov və boya vəziyyətinin, mühərrik və mexaniki hissələrin Auto Pegasus servis heyəti tərəfindən dəqiq yoxlanıldığı özəl bir prosesdir. Beləcə avtomobilin əvvəlki və mövcud vəziyyəti analiz edilir, hesabat hazırlanır və müştərilərə təqdim edilir.  Necə deyərlər, 100 yoxlayıb, 1 alırıq.
-                            </p>
                         </div>
-                        <div class="img-100-noqte mt-5">
-                            <img src="{{asset('/front/autima/')}}/assets/img/service/yuz-noqte.png"
+                        <div class="mb-4 col-lg-4">
+                          <label for="model" class="form-label">Model</label>
+                          <select type="text" class="form-select" id="model">
+                              <option value="">A5</option>
+                              <option value="">Cruze</option>
+                              <option value="">Santafe</option>
+                            <select>
                         </div>
-                      </div>
+                        <div class="mb-4 col-lg-4">
+                            <label for="year" class="form-label">Buraxılış ili</label>
+                            <input type="date" class="form-control" id="year" >
+
+                          </div>
+                          <div class="mb-4 col-lg-4">
+                            <label for="Transmission" class="form-label">Sürətlər qutusu</label>
+                            <select type="text" class="form-select" id="Transmission">
+                        <option value="">Avtomatika</option>
+                    <option value="">Mexanika</option>
+                                                </select>
+                          </div>
+                          <div class="mb-4 col-lg-4">
+                            <label for="Mileage" class="form-label">Yürüş, km</label>
+                            <input type="number" class="form-control" id="Mileage">
+                          </div>
+
+                          <div class="mb-4 col-lg-4">
+                            <label for="Owner" class="form-label">Yanacaq Növü</label>
+                            <select type="number" class="form-select" id="Owner">
+                                <option value="">Benzin</option>
+                                <option value="">Dizel</option>
+                                <option value="">Qaz</option>
+                            </select>
+                          </div>
+
+
+                          <div class="mb-4 col-lg-4">
+                            <label for="color" class="form-label">Rəng</label>
+                            <select type="text" class="form-select" id="color">
+                                <option value="">Ağ</option>
+                                <option value="">Qara</option>
+                                <option value="">Qırmızı</option>
+                            </select>
+                          </div>
+
+                          <div class="mb-3 col-lg-4">
+                            <label for="Ban" class="form-label">Ban Növü</label>
+                            <select type="number" class="form-select" id="Ban">
+                                <option value="">
+                                    Sedan
+                                </option>
+                            </select>
+                          </div>
+                          <div class="mb-4 .col-lg-12">
+                            <div class="panel panel-primary" >
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Avtomobilin fotolarını yükləyin.</h3>
+                                </div>
+                                <div class="panel-body">
+                                 <div class="row ">
+                                    <div class="col-md-8">
+                                        <div class="form-group  ">
+                                            <input type="file" class="form-control datepicker" placeholder="Pick the date">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn  add_field_button" style="background: rgba(87, 167, 179, 1);color:white">+ daha çox</button>
+                                    </div>
+                                    <div class="input_fields_wrap">
+
+                                    </div>
+                                 </div>
+
+                                </div>
+                            </div>
+                          </div>
+
+
+                        <button type="submit" class="btn" style="  background-color: rgba(205, 0, 0, 1); color:white ">Davam et</button>
+                    </div>
+                    </form>
                 </div>
-            <div id="kredit">
-
-            </div>
             </div>
         </div>
     </div>
 </section>
 
-
+@include('front.widget.indi_sat_footer')
 
 @section('script')
 <script>
-    function openCity(evt, cityName,banTitle) {
-     ;
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active-link", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active-link";
+    $(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
 
-    }
-    </script>
+    var x = 1; //initlal text box count
+    $('.add_field_button').click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){
+            //max input box allowed
+            x++; //text box increment
+            $(wrapper).append(' <div class="removeMe row"> <div class="col-md-8 ">'+
+                                        '<div class="form-group  ">'+
+                                          '  <input type="file" class="form-control datepicker " placeholder="Pick the date">'+
+                                        '</div>'+' </div>'+
+                                    '<div class="col-md-4">'+
+                                       ' <button class="btn remove-date add_field_button" style="width:48%;background-color: rgba(205, 0, 0, 1);color:white"> Sil</button>'+
+                                    '</div></div>'); //add input box
+        }
+    });
+
+    $(wrapper).on("click",".remove-date", function(e){ //user click on remove text
+        e.preventDefault(); $(this).closest('div.removeMe').remove(); x--;
+    })
+});
+</script>
+
 @endsection
 @endsection
