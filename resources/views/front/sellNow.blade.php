@@ -23,20 +23,20 @@
             </div>
             <div class="col-lg-3">
                 <hr>
-                <ul class=" tab-link-indisat">
-                    <li class="active-indiSat"> <span class="active">1</span> Avtomobilinizin Məlumatı </li>
-                    <li> <span >2</span>Avtomobilin Təchizatı   </li>
-                    <li><span>3</span>Avtomobilin Vəziyyəti  </li>
-                    <li><span>4</span>Təklif Al</li>
+                <ul class=" tab-link-indisat ">
+                    <li onclick="openCity(event, 'melumat','image')" class=" indi-sat-default active-indiSat "> <span>1</span> Avtomobilinizin Məlumatı </li>
+                    <li class="indi-sat-default "  onclick="openCity(event, 'techizat','image')"> <span >2</span>Avtomobilin Təchizatı   </li>
+                    <li class="indi-sat-default " onclick="openCity(event, 'veziyyet','image')"> <span>3</span>Avtomobilin Vəziyyəti  </li>
+                    <li class="indi-sat-default " onclick="openCity(event, 'teklifal','image')"><span>4</span>Təklif Al</li>
                 </ul>
             </div>
 
 
             <div class="col-lg-9">
-                <div class="indisat-component mt-3">
+                <div class="indisat-component mt-3 tabcontent" id="melumat">
                    <div class="row">
                     <form >
-                        <div class="row">
+                     <div class="row">
                         <div class="mb-4 col-lg-4">
                           <label for="make" class="form-label">Marka</label>
                           <select type="text" class="form-select" id="make" >
@@ -128,6 +128,31 @@
                     </form>
                 </div>
             </div>
+
+
+            <div class="indisat-component mt-3 tabcontent" id="techizat">
+
+                 <form >
+
+                 </form>
+
+         </div>
+
+         <div class="indisat-component mt-3 tabcontent" id="veziyyet">
+            <div class="row">
+             <form >
+
+             </form>
+         </div>
+     </div>
+
+     <div class="indisat-component mt-3 tabcontent" id="teklifal">
+        <div class="row">
+         <form >
+
+         </form>
+     </div>
+ </div>
         </div>
     </div>
 </section>
@@ -162,6 +187,32 @@
     })
 });
 </script>
+<script>
 
+    function openCity(evt, cityName) {
+
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("indi-sat-default");
+
+
+
+      for (i = 0; i < tablinks.length; i++) {
+
+        tablinks[i].className = tablinks[i].className.replace("active-indiSat", "");
+
+         }
+
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += "active-indiSat";
+
+
+
+
+    }
+    </script>
 @endsection
 @endsection

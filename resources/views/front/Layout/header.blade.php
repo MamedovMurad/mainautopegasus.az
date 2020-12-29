@@ -177,8 +177,7 @@
                                             <li><a href="about.html">Kredİt</a></li>
                                             <li><a href="about.html">Qİymətləndİrmə</a></li>
                                             <li><a href="about.html">Barter</a></li>
-                                            <li><a href="about.html">Bİzİmlə satın</a></li>
-                                            <li><a href="about.html">Köhnə avtomobİl İlkİn ödənİş KİMİ</a></li>
+
                                             <li><a href="about.html">TEST DRİVE </a></li>
                                             <li><a href="{{route('questionPage')}}">Sifariş ver</a></li>
 

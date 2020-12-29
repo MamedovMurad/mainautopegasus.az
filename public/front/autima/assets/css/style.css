@@ -344,22 +344,28 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .product_d_right>ul>li{
-    padding: 5px;
-    border: solid  1px rgb(34, 37, 238);
+    padding: 7px 5px;
+    border: solid  1px #C4C4C4;
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
     display: flex;
     justify-content: space-between;
 }
-.col-lg-3>li.custom-detail{
+.product_d_right>ul>li>strong{
+    color: rgb(99, 99, 99);
+}
+.product_d_right>ul>li>span{
+    font-weight: bold;
+}
+.col-lg-4>li.custom-detail{
     display: flex;
     justify-content: space-between;
 }
-.col-lg-3>li.custom-detail>i.fa-check{
+.col-lg-4>li.custom-detail>i.fa-check{
     color: green;
 }
-.col-lg-3>li.custom-detail>i.fa-minus{
+.col-lg-4>li.custom-detail>i.fa-minus{
     color: red;
 }
 /*--
@@ -3236,14 +3242,18 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 /* 03. product section css here */
-.tab-content > .tab-pane.active {
+.tab-content {
+    background: #F4F4F4;
+    padding: 40px;
+}
+.tab-content >.tab-pane.active {
   display: block;
   height: auto;
   opacity: 1;
   overflow: visible;
 }
 
-.tab-content > .tab-pane {
+.tab-content>.tab-pane {
   display: block;
   height: 0;
   opacity: 0;
@@ -5620,7 +5630,7 @@ margin-top: 5px;
     fill:  #CD0000;;
 }
 .alanda{
-
+    cursor: pointer;
     padding: 0 0 0 21%  ;
     display: flex;
     justify-content: flex-start;
@@ -5666,6 +5676,28 @@ line-height: 15px;
 text-align: center;
     width: 154px;
     font-family: Mark Pro;
+}
+/* car-detail */
+.car-name{
+    position: relative;
+    padding: 40px;
+    background: #090B4D;
+    color: #FFFFFF;
+    height: 156px;
+}
+.car-name>.content>p{
+    color: rgba(255, 255, 255, 0.623);
+}
+.car-name>.price-label{
+    letter-spacing: 1px;
+    font-size: 25px;
+    right: 0;
+    bottom: -25px;
+    position: absolute;
+    padding: 15px 5px 15px 100px;
+    background: #CD0000;
+    width: 275px;
+
 }
 
 .widget_list > ul > li input:checked ~ .checkmark {
@@ -5784,8 +5816,15 @@ margin-left: 5px;
 }
 .tab-component{
     padding: 20px 40px;
-    height: 709px;
+
     border: 1px solid rgba(196, 196, 196, 1);
+}
+.tab-component>.tabcontent{
+    display: none;
+}
+.sirket_logo{
+    display: flex;
+    justify-content: flex-end;
 }
 .o100-noqte-title{
     font-style: normal;
@@ -5815,7 +5854,7 @@ margin-top: 70px;
     padding: 30px;
 }
 .tab-link-indisat>li{
-    cursor:not-allowed;
+
     position: relative;
     color: #FFFFFF;
     width: 80%;
@@ -5827,6 +5866,7 @@ background-color: rgba(196, 196, 196, 1);
 cursor: pointer;
     background-color:rgba(9, 11, 77, 1);
 }
+
 .tab-link-indisat>li.active-indiSat::after{
 content: "";
 display: inline-block;
@@ -5836,7 +5876,7 @@ border-style: solid;
 border-color: transparent transparent  transparent  rgba(205, 0, 0, 1);
 right: -27px;
 }
-.tab-link-indisat>li.active-indiSat>span.active{
+.tab-link-indisat>li.active-indiSat>span{
     background-color: rgba(205, 0, 0, 1);
 }
 .tab-link-indisat>li>span{
@@ -6561,7 +6601,7 @@ right: -27px;
   color: #fff;
   font-size: 12px;
   line-height: 24px;
-  padding: 0 8px;
+  padding: 5px 18px;
   border-radius: 3px;
   text-transform: capitalize;
   display: block;
@@ -6951,10 +6991,10 @@ right: -27px;
 .product_d_info {
   margin-bottom: 50px;
   background: #f6f6f6;
-  padding: 50px 0;
+ /*  padding: 50px 0; */
 }
 .product_d_info.sidebar {
-  padding: 50px 30px;
+/*   padding: 50px 30px; */
 }
 @media only screen and (max-width: 767px) {
   .product_d_info.sidebar {
@@ -7044,7 +7084,7 @@ right: -27px;
 
 .single-zoom-thumb {
   margin-top: 20px !important;
-  width: 80%;
+  width: 99%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
