@@ -5841,8 +5841,15 @@ font-size: 18px;
 line-height: 27px;
 /* or 150% */
 
-
 color: #6C6C6C;
+}
+
+.test-label{
+font-weight: bold;
+font-size: 18px;
+}
+svg.barter-photo{
+    margin-left: 57px;
 }
 /* service end */
 /* indisat */

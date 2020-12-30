@@ -36,6 +36,12 @@ Route::get('sifarisver',[HomePage::class,'question'])->name('questionPage');
 /* xidmetlerimiz */
 
 Route::get('xidmetlerimiz',[HomePage::class,'servicePage'])->name('servicePage');
+Route::get('xidmetlerimiz-sifaris-et',[HomePage::class,'servicePage'])->name('servicePage')->name('xidmet-sifaris');
+Route::get('xidmetlerimiz-barter',[HomePage::class,'servicePage'])->name('servicePage')->name('xidmet-barter');
+Route::get('xidmetlerimiz-test-drive',[HomePage::class,'servicePage'])->name('servicePage')->name('xidmet-test');
+Route::get('xidmetlerimiz-qiymetlendirme',[HomePage::class,'servicePage'])->name('servicePage')->name('xidmet-qiymet');
+Route::get('xidmetlerimiz-kredit',[HomePage::class,'servicePage'])->name('servicePage')->name('xidmet-kredit');
+
 /* sellNow */
 Route::get('indi-sat',[HomePage::class,'nowsell'])->name('nowsell');
 
