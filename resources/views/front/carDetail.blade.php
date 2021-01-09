@@ -1,5 +1,9 @@
 @extends('front.Layout.master')
 @section('content')
+@section('css')
+<link rel="stylesheet" href="{{asset('/front/autima/')}}/assets/css/product_page.css">
+
+@endsection
 
 
 
@@ -34,15 +38,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="breadcrumb_content">
+                    <div class="breadcrumb_content" style="display: flex; justify-content:space-between">
                         <ul>
-                            <li><a href="index.html">home</a></li>
+                            <li><a href="{{route('front.index')}}">home</a></li>
 
                             <li>Toyota</li>
                         </ul>
-                    </div>
+                        <ul>
+
+
+                            <li class="elan-date">Elan tarixi:<strong style="font-size:17px"> 01.01.2021</strong></li>
+                        </ul>
+
                 </div>
             </div>
+            <hr>
         </div>
     </div>
     <!--breadcrumbs area end-->
@@ -56,80 +66,47 @@
                     <div class="product_right_sidebar">
                         <div class="row">
                             <div class="col-lg-7 col-md-6">
-                                <div class="product-details-tab">
 
-                                    <div id="img-1" class="zoomWrapper single-zoom">
-                                        <a href="#">
-                                            <img id="zoom1" style="height: 470px; width:100%" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" alt="big-1">
-                                        </a>
+                                <div class="all">
+                                    <div class="slider">
+                                        <div class="owl-carousel owl-theme main">
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch2.jpg" class="item-box"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch3.jpg" class="item-box"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch4.jpg" class="item-box"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch5.jpg" class="item-box"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch6.jpg" class="item-box"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch7.jpg" class="item-box"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch8.jpg" class="item-box"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch9.jpg" class="item-box"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch10.jpg" class="item-box"></div>
+                                        </div>
+                                        <div class="left nonl"><i class="fas fa-angle-left"></i></div>
+                                        <div class="right"><i class="fas fa-angle-right"></i></i></div>
                                     </div>
 
-                                    <div class="single-zoom-thumb">
-                                        <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
-                                            <li>
-                                                <a  href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (1).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (1).jpg">
-                                                    <img style="height: 90px;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (1).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (2).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (2).jpg">
-                                                    <img style="height: 90px;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (2).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (3).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (3).jpg">
-                                                    <img style="height: 90px;;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (3).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (4).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (4).jpg">
-                                                    <img style="height: 90px;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (4).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (5).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (5).jpg">
-                                                    <img style="height: 90px;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (5).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (9).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (9).jpg">
-                                                    <img style="height: 90px;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (9).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (10).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (10).jpg">
-                                                    <img style="height: 90px;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (10).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (11).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (11).jpg">
-                                                    <img style="height: 90px;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (11).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" data-zoom-image="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg">
-                                                    <img style="height: 90px;" src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li>
-
-                                          {{--   <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="assets/img/product/product13.jpg" data-zoom-image="assets/img/product/product13.jpg">
-                                                    <img src="assets/img/product/product13.jpg" alt="zo-th-1" />
-                                                </a>
-
-                                            </li> --}}
-                                        </ul>
+                                    <div class="slider-two" style="margin: 0" > <hr style="margin: 10px 0 0">
+                                        <div class="owl-carousel owl-theme thumbs" style="margin: 0; padding:0">
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch2.jpg" class="item active"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch3.jpg" class="item"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch4.jpg" class="item"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch5.jpg" class="item"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch6.jpg" class="item"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch7.jpg" class="item"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch8.jpg" class="item"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch9.jpg" class="item"></div>
+                                            <div style="background-image: url({{asset('/front/autima/')}}/assets/img/auto-car/ch10.jpg" class="item"></div>
+                                        </div>
+                                        <div class="left-t custom-angel-icon">
+                                            <i class="fas fa-angle-left" style="font-size: 18px"></i>
+                                        </div>
+                                        <div class=" right-t custom-angel-icon">
+                                            <i class="fas fa-angle-right" style="font-size: 18px"></i>
+                                        </div>
+                                        <hr style="padding: 0; margin:0">
                                     </div>
                                 </div>
+
+
                             </div>
                             <div class="col-lg-5 col-md-6">
                                 <div class="car-name">
@@ -141,21 +118,21 @@
                                         17 000 AZN
                                     </div>
                                 </div>
-                                <div class="product_d_right mt-4">
+                                <div class="product_d_right mt-4 mb-4" >
 
-                                        <ul>
+                                        <ul >
 
                                             <li></li>
-                                            <li><strong>Model:</strong> &nbsp; <span>Cruze</span> </li>
-                                            <li><strong>Buraxılış ili:</strong> &nbsp; <span>2016</span> </li>
-                                            <li><strong>Yanacaq tipi:</strong> &nbsp; <span>Benzin</span> </li>
-                                            <li><strong>Sürətlər qutusu:</strong>  &nbsp; <span>Avtomat</span></li>
-                                            <li><strong>Motorun həcimi:</strong> &nbsp; <span>1.4 L</span> </li>
-                                            <li><strong>At gücü:</strong>  &nbsp; <span>153 a.g.</span></li>
-                                            <li><strong>Ban növü:</strong>  &nbsp; <span>Sedan</span></li>
-                                            <li><strong>Rəng:</strong>  &nbsp; <span>Gümüşü</span></li>
-                                            <li><strong>Yürüş:</strong> &nbsp; <span>180 000 km</span></li>
-                                            <li><strong>Ötürücü:</strong> &nbsp; <span>Ön </span></li>
+                                            <li><span>Model:</span> &nbsp; <span>Cruze</span> </li>
+                                            <li><span>Buraxılış ili:</span> &nbsp; <span>2016</span> </li>
+                                            <li><span>Yanacaq tipi:</span> &nbsp; <span>Benzin</span> </li>
+                                            <li><span>Sürətlər qutusu:</span>  &nbsp; <span>Avtomat</span></li>
+                                            <li><span>Motorun həcimi:</span> &nbsp; <span>1.4 L</span> </li>
+                                            <li><span>At gücü:</span>  &nbsp; <span>153 a.g.</span></li>
+                                            <li><span>Ban növü:</span>  &nbsp; <span>Sedan</span></li>
+                                            <li><span>Rəng:</span>  &nbsp; <span>Gümüşü</span></li>
+                                            <li><span>Yürüş:</span> &nbsp; <span>180 000 km</span></li>
+                                            <li><span>Ötürücü:</span> &nbsp; <span>Ön </span></li>
 
 
                                         </ul>
@@ -165,6 +142,7 @@
 
 
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -172,203 +150,465 @@
 
 
 
-          {{--       <div class="col-lg-2 col-md-12">
-                    <!--sidebar widget start-->
-                    <aside class="sidebar_widget">
-                        <div class="widget_inner">
 
-                            <div class="widget_list widget_categories">
-                                <h2>..............</h2>
+
+            <div class=" detail-all col-lg-12 col-md-12">
+                            <div class="detail-link">
                                 <ul>
-                                    <li>
-
-                                        <a href="#">.......</a>
-
-                                    </li>
-
-
+                                    <li><a href="#haqqinda">Haqqında </a> </li>
+                                    <li><a href="#detail">Xüsusiyyətlər</a> </li>
+                                    <li><a href="#veziyyet">Vəziyyəti</a> </li>
+                                    <li><a href="#Kredit">Kredit</a> </li>
                                 </ul>
                             </div>
+                            <div class="panel-detail">
+                                <div id="haqqinda" style="text-align: center">
+                                    <h4 class="panel-title"  style="padding:22px 0">Haqqında</h4>
+                                    <div class="detail">
+                                        Qabaqcadan cəmi 5800 azn ödəməklə avtomobili əldə edə bilərsiniz (3illik kasko sığorta və DYP xərcləri daxil). <br> <br>
+
+                                        -KREDİT TƏK ŞƏXSİYYƏT VƏSİQƏSİ İLƏ -İLKİN ÖDƏNİŞ 20% -36 AYA QƏDƏR. -KREDİT MANAT İLƏ RƏSMİLƏŞDİRİLİR. <br> -Sürətli rəsmiləşdirmə <br>
+
+                                        Model 2017.Avtomobil çox ideal vəziyyətdədir. Avtomobilə nömrə alınıb sığorta olunub. BU AVTOMOBİLİ ÇOX SƏRFƏLİ <br>  KREDİT VƏ LİZİNQ ŞƏRTLƏRİ İLƏ ƏLDƏ EDƏ BİLƏRSİZ.
+                                    </div>
+                                </div>
+                                <div id="detail">
+                                    <h4 class="panel-title">Xüsusiyyətlər</h4>
+                                    <div class="detail-single" >
+                                        <div class="row">
+
+                                            <div class="col-lg-4"><li class="custom-detail"> <i class="fas fa-check"></i> <span>Yüngül lehimli disklər</span> </li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i><span>Mərkəzi qapanma haqqında </span> </li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i> <span>Oturacaqların isidilməsi</span> </li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i> <span> ABS</span> </li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i> <span>Yağış sensoru</span> </li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i> <span>Yan pərdələr</span> </li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i> <span>Oturacaqların ventilyasiyası</span> </li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i><span> Park radarı </span></li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i> <span>Kondisioner </span></li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i> <span>Arxa görüntü kamerası</span> </li></div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i><span>Lyuk</span> </div>
+                                            <div class="col-lg-4"> <li class="custom-detail"><i class="fas fa-check"></i> <span>Dəri salon</span> </li></div>
 
 
 
-                        </div>
 
-                    </aside>
-                    <!--sidebar widget end-->
-                </div> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="veziyyet">
+                                    <h4 class="panel-title panel-veziyyet"  style="padding:22px 0">Vəziyyəti</h4>
+                                    <div class="row">
+                                    <div class="col-lg-6" style="padding: 0 90px">
+                                        <div class="sol-on-qanad">
+                                            <p>   &nbsp;</p>
+                                          <div class="titles">
+                                              <span>Orijinal </span>    <span>Rəngli  </span>    <span>Dəyişdirilib </span>
+                                          </div>
+                                         </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Sol ön qanad    </p>
+                                        <div class="values">
+                                            <span class="check-i"> <i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
 
-<div class="col-lg-12 col-md-12">
+                                     <div class="sol-on-qanad">
+                                        <p class="text change-text">Sol ön qapı  </p>
+                                        <div class="values">
 
-    <div class="product_d_info sidebar">
-        <div class="product_d_inner ">
-            <div class="product_info_button">
-                <ul class="nav" role="tablist">
-                    <li>
-                        <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Xüsusiyyətlər</a>
-                    </li>
-                    <li>
-                        <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false">Açıqlama</a>
-                    </li>
-                    <li>
-                        <a data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews (1)</a>
-                    </li>
-                </ul>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Sol arxa qapı </p>
+                                        <div class="values">
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Sol arxa qanad </p>
+                                        <div class="values">
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Ön kapot      </p>
+                                        <div class="values">
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Ön bufer  </p>
+                                        <div class="values">
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text change-text">Dam   </p>
+                                        <div class="values">
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text change-text">Sağ arxa qanad  </p>
+                                        <div class="values">
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Sağ ön qanad    </p>
+                                        <div class="values">
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Sağ ön qapı   </p>
+                                        <div class="values">
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Sağ arxa qapı   </p>
+                                        <div class="values">
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text">Sağ arxa qapı  </p>
+                                        <div class="values">
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+                                     <div class="sol-on-qanad">
+                                        <p class="text change-text">Arxa bufer    </p>
+                                        <div class="values">
+                                            <span> <i class="far fa-square"></i></span>
+                                            <span class="check-i"><i class="fas fa-check"></i> </span>
+                                            <span> <i class="far fa-square"></i></span>
+                                        </div>
+                                     </div>
+
+                                     <div class="sol-on-qanad">
+                                        <span><i class="far fa-square" style="background: #C4C4C4; "></i> Orijinal  </span>
+                                        <span><i class="far fa-square" style="background: #7DCA82;"></i> Rəngli   </span>
+                                        <span><i class="far fa-square" style="background: #FFB629;"></i> Dəyişdirilib  </span>
+                                     </div>
+                                </div>
+                                        <div class="col-lg-6">
+                                            <div class="detail-svg-vector mt-5">
+                                                <svg width="420" height="488" viewBox="0 0 420 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M262.37 219.68C263.634 210.153 265.703 201.796 268.211 194.082C270.714 186.383 273.661 179.309 276.685 172.344L277.739 169.918V326.919L276.716 325.187C273.042 318.971 269.539 312.848 266.917 307.217C264.275 301.541 262.519 296.342 262.366 292.011L262.37 219.679V219.68ZM261.173 407.605V412.829C261.173 414.104 260.652 415.304 259.813 416.211C258.975 417.116 257.818 417.731 256.543 417.834L254.769 417.979C254.64 417.989 254.512 417.995 254.389 417.995C253.246 417.995 252.212 417.57 251.44 416.86C250.668 416.151 250.159 415.156 250.067 414.017C250.057 413.89 250.052 413.766 250.052 413.644V410.887C243.541 412.198 236.383 412.714 228.644 412.518L214.298 412.519H190.41C174.651 412.918 161.296 410.363 150.917 404.156C140.503 397.93 133.1 388.047 129.281 373.813C127.652 367.74 127.657 364.257 127.665 358.466C127.688 335.992 127.664 313.515 127.664 291.041C127.664 288.31 127.882 286.026 128.255 283.855C128.627 281.69 129.15 279.649 129.763 277.385C131.146 272.276 131.067 267.489 130.984 262.399C130.963 261.089 130.941 259.758 130.941 258.597V171.525L130.932 171.531C126.865 174.457 121.5 178.319 117.641 178.665C116.43 178.774 115.539 178.592 114.891 178.238C114.046 177.777 113.624 177.043 113.453 176.268C112.803 173.324 113.912 170.588 115.806 168.101C117.644 165.687 120.228 163.508 122.631 161.609L130.941 155.359V84.1178C130.941 76.335 131.894 70.5089 134.604 65.479C137.311 60.4539 141.756 56.2621 148.739 51.7478C158.641 45.3471 168.231 41.6485 178.159 39.5515C188.074 37.4576 198.312 36.9601 209.527 36.9601C220.743 36.9601 230.98 37.4571 240.895 39.5515C250.823 41.6485 260.414 45.3471 270.315 51.7478C277.298 56.2621 281.743 60.4539 284.45 65.479C287.16 70.5089 288.113 76.335 288.113 84.1178V155.359L296.423 161.609C298.826 163.508 301.41 165.687 303.248 168.101C305.143 170.588 306.251 173.324 305.601 176.268C305.429 177.043 305.007 177.776 304.162 178.238C303.515 178.591 302.624 178.774 301.413 178.665C297.554 178.319 292.188 174.457 288.122 171.531L288.113 171.525V259.18C288.113 262.722 288.234 265.754 288.467 268.773C288.702 271.811 289.047 274.818 289.494 278.296C290.267 281.245 290.741 283.212 291.021 285.216C291.304 287.238 291.39 289.273 291.39 292.352V353.377L291.398 356.357C291.437 363.582 291.463 368.496 289.064 376.269C284.951 389.597 277.49 398.86 267.213 404.696C265.296 405.785 263.281 406.753 261.172 407.606L261.173 407.605ZM251.153 410.656V413.643L251.164 413.93C251.233 414.781 251.611 415.523 252.184 416.051C252.757 416.577 253.531 416.893 254.389 416.893L254.678 416.881L256.457 416.737C257.449 416.657 258.353 416.175 259.009 415.466C259.664 414.757 260.071 413.821 260.071 412.828V408.036C257.257 409.104 254.281 409.974 251.152 410.656L251.153 410.656ZM269.256 194.422C266.769 202.073 264.719 210.352 263.465 219.772V291.992C263.615 296.15 265.331 301.205 267.915 306.753C270.278 311.83 273.362 317.308 276.638 322.89V175.22C274.004 181.362 271.46 187.641 269.256 194.422V194.422ZM155.743 219.772C154.489 210.352 152.438 202.073 149.951 194.422C147.747 187.641 145.203 181.362 142.569 175.219V322.89C145.846 317.307 148.929 311.83 151.293 306.753C153.876 301.204 155.593 296.15 155.744 291.991L155.743 219.772V219.772ZM150.997 194.082C153.504 201.796 155.573 210.153 156.837 219.68L156.841 292.011C156.689 296.343 154.933 301.541 152.291 307.217C149.668 312.849 146.165 318.972 142.492 325.187L141.468 326.919V169.918L142.522 172.345C145.546 179.309 148.494 186.383 150.997 194.082V194.082ZM153.573 157.913C172.72 151.551 191.612 148.5 210.26 148.564C228.912 148.629 247.319 151.811 265.493 157.913C267.287 158.516 269.287 159.336 270.719 160.472C272.261 161.694 273.157 163.264 272.545 165.291L260.893 203.887C260.27 205.954 259.316 208.165 257.91 209.571C256.763 210.718 255.33 211.34 253.555 210.968C238.579 207.832 223.772 206.105 209.166 206.026C194.563 205.948 180.152 207.514 165.963 210.963C163.925 211.458 162.347 210.573 161.129 209.071C159.986 207.662 159.176 205.705 158.61 203.893L146.52 165.297C145.885 163.271 146.781 161.697 148.328 160.471C149.763 159.333 151.775 158.51 153.572 157.913L153.573 157.913ZM210.26 149.661C191.728 149.597 172.951 152.63 153.917 158.954C152.218 159.519 150.327 160.289 149.012 161.331C147.809 162.285 147.103 163.48 147.569 164.971L159.659 203.567C160.192 205.271 160.944 207.1 161.982 208.379C162.943 209.565 164.165 210.272 165.706 209.897C179.981 206.426 194.48 204.85 209.172 204.929C223.86 205.009 238.74 206.743 253.779 209.892C255.131 210.175 256.238 209.687 257.133 208.792C258.389 207.535 259.261 205.494 259.841 203.573L271.493 164.977C271.945 163.479 271.238 162.284 270.037 161.332C268.727 160.293 266.844 159.525 265.145 158.954C247.079 152.888 228.788 149.725 210.261 149.66L210.26 149.661ZM153.534 338.939C156.164 333.634 159.359 326.116 162.299 321.27C163.142 319.904 164.087 318.398 165.347 317.303C166.666 316.158 168.298 315.473 170.448 315.858C180.984 317.744 196.057 318.955 211.331 318.995C224.723 319.029 238.268 318.163 249.035 316.062C251.323 315.616 253.108 315.932 254.466 316.673C256.169 317.602 257.179 319.189 257.669 320.783L264.208 335.169C265.525 337.904 266.077 339.961 266.066 341.518C266.056 343.197 265.415 344.319 264.378 345.084C260.268 348.116 234.493 349.585 208.924 349.489C183.805 349.395 158.802 347.789 154.642 344.672C153.736 343.993 153.217 343.151 153.047 342.164C152.884 341.217 153.053 340.15 153.517 338.98L153.534 338.939L153.534 338.939ZM163.249 321.819L154.524 339.414C154.144 340.382 154.003 341.241 154.13 341.979C154.252 342.684 154.632 343.294 155.3 343.795C159.265 346.765 183.996 348.299 208.923 348.392C234.305 348.487 259.809 347.09 263.727 344.2C264.49 343.636 264.962 342.793 264.969 341.514C264.978 340.115 264.457 338.216 263.212 335.633C261.735 332.777 257.451 323.875 256.625 321.134C256.212 319.768 255.364 318.413 253.941 317.636C252.794 317.01 251.256 316.75 249.246 317.141C238.417 319.254 224.796 320.125 211.331 320.09C195.992 320.051 180.847 318.833 170.254 316.937C168.496 316.622 167.154 317.187 166.068 318.131C164.933 319.119 164.043 320.532 163.249 321.818L163.249 321.819ZM190.41 411.418C199.002 411.418 221.355 410.161 228.657 411.42C243.762 411.806 256.608 409.454 266.672 403.74C276.704 398.044 283.991 388.987 288.016 375.946C290.365 368.33 290.34 363.484 290.302 356.361L290.289 353.377V292.351C290.289 289.311 290.206 287.316 289.933 285.367C289.659 283.407 289.191 281.465 288.425 278.543L288.412 278.473C287.955 274.924 287.604 271.879 287.37 268.854C287.134 265.798 287.012 262.739 287.012 259.179V169.382L288.763 170.64C292.725 173.491 297.953 177.254 301.507 177.572C302.482 177.66 303.167 177.531 303.637 177.275C304.158 176.991 304.421 176.525 304.53 176.031C305.098 173.46 304.089 171.017 302.375 168.768C300.608 166.447 298.095 164.33 295.754 162.479L287.012 155.904V84.1182C287.012 76.5159 286.094 70.8474 283.482 66.0001C280.868 61.1477 276.539 57.0761 269.721 52.6686C259.947 46.3502 250.476 42.6989 240.671 40.6273C230.854 38.5536 220.682 38.0618 209.527 38.0618C198.372 38.0618 188.2 38.5536 178.382 40.6273C168.577 42.6989 159.106 46.3502 149.332 52.6686C142.514 57.0761 138.185 61.1477 135.571 66.0001C132.959 70.8474 132.041 76.5155 132.041 84.1182V155.904L123.299 162.479C120.958 164.329 118.445 166.447 116.678 168.768C114.965 171.017 113.955 173.46 114.523 176.031C114.632 176.526 114.895 176.991 115.416 177.275C115.886 177.531 116.571 177.66 117.545 177.572C121.1 177.254 126.328 173.491 130.29 170.64L132.041 169.382V258.596C132.041 260.012 132.061 261.205 132.08 262.381C132.164 267.555 132.245 272.421 130.825 277.668C130.219 279.909 129.701 281.924 129.338 284.039C128.976 286.146 128.764 288.369 128.764 291.041C128.764 313.514 128.822 335.994 128.761 358.465C128.753 364.16 128.748 367.585 130.343 373.529C134.082 387.469 141.315 397.136 151.48 403.214C161.674 409.31 174.836 411.818 190.397 411.42L190.41 411.418Z" fill="#B3B3B3"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M146.311 154.938H146.312C167.384 148.267 188.455 144.806 209.527 144.743C230.598 144.806 251.67 148.267 272.742 154.938H272.743V87.067L272.74 86.9503C272.739 86.6243 272.733 86.2996 272.723 85.9761C272.364 73.1976 265.724 64.6969 256.633 59.1433C236.072 45.7765 182.983 45.7761 162.421 59.1433C153.332 64.6969 146.69 73.1976 146.332 85.9761C146.321 86.2996 146.315 86.6247 146.315 86.9503L146.312 87.067V154.938H146.311Z" fill="#C4C4C4"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M163 217.078C193.88 211.572 224.759 211.709 255.638 217.078C255.638 247.179 255.638 277.279 255.638 307.379C224.759 316.584 193.88 316.818 163 307.379C163 277.279 163 247.179 163 217.078Z" fill="#7DCA82"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M146.19 349.23C188.021 357.87 230.254 357.68 272.863 349.23V384.253C272.863 393.199 265.544 400.517 256.598 400.517H161.629C153.137 400.517 146.19 393.569 146.19 385.078C146.19 373.129 146.19 361.18 146.19 349.231V349.23Z" fill="#C4C4C4"/>
+                                                    <path d="M129.348 431.553H288.989C292.426 431.553 295.549 432.958 297.814 435.223C300.077 437.486 301.483 440.61 301.483 444.047V475.506C301.483 478.942 300.077 482.066 297.814 484.33C295.549 486.593 292.425 487.999 288.989 487.999H129.348C125.911 487.999 122.788 486.594 120.523 484.33C118.26 482.066 116.854 478.942 116.854 475.506V444.047C116.854 440.61 118.26 437.486 120.523 435.223C122.788 432.958 125.912 431.553 129.348 431.553ZM288.989 432.654H129.348C126.216 432.654 123.367 433.936 121.302 436.001C119.237 438.065 117.955 440.914 117.955 444.047V475.506C117.955 478.638 119.237 481.486 121.302 483.552C123.367 485.617 126.216 486.899 129.348 486.899H288.989C292.121 486.899 294.97 485.617 297.035 483.552C299.1 481.486 300.382 478.638 300.382 475.506V444.047C300.382 440.914 299.1 438.066 297.035 436.001C294.97 433.936 292.121 432.654 288.989 432.654Z" fill="#B3B3B3"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M130.589 435.705H287.748C291.956 435.705 295.398 439.147 295.398 443.354V476.197C295.398 480.405 291.956 483.847 287.748 483.847H130.589C126.382 483.847 122.94 480.405 122.94 476.197V443.354C122.94 439.147 126.382 435.705 130.589 435.705ZM136.267 441.861H191.326C194.851 441.861 197.734 444.745 197.734 448.27V453.222C197.734 456.747 194.851 459.63 191.326 459.63H136.267C132.742 459.63 129.858 456.747 129.858 453.222V448.27C129.858 444.745 132.742 441.861 136.267 441.861ZM227.011 441.861H282.07C285.595 441.861 288.479 444.745 288.479 448.27V453.222C288.479 456.747 285.595 459.63 282.07 459.63H227.011C223.486 459.63 220.602 456.747 220.602 453.222V448.27C220.602 444.745 223.486 441.861 227.011 441.861Z" fill="#7DCA82"/>
+                                                    <path d="M2.2315 51.4184L2.04069 68.0222L2.01873 69.0455C1.94637 71.8586 1.83008 76.3101 3.80185 77.224C4.84761 77.7085 5.97434 77.6172 8.01503 77.4514L8.09859 77.4458C12.8704 77.2149 17.348 77.4143 21.4712 78.0414C25.5853 78.6685 29.3523 79.7219 32.7135 81.2017C38.308 83.6656 42.5845 87.5313 45.565 92.0474C48.8801 97.0686 50.5909 102.897 50.7335 108.494C50.8756 114.102 49.4443 119.506 46.4785 124.367C43.607 129.073 39.2977 133.266 33.5891 136.635C30.0126 138.746 25.9781 140.447 21.5974 141.628C17.4036 142.758 12.8833 143.414 8.13348 143.5L1.10089 143.503V308.439H9.58152C23.2125 308.268 32.443 311.88 38.6551 316.964C48.1363 324.725 50.5689 335.902 50.8993 342.332C50.9484 343.292 50.9617 344.237 50.9406 345.166C50.7214 354.712 46.7989 362.07 40.3982 367.173C34.0319 372.249 25.2153 375.078 15.1635 375.594C13.7154 375.668 12.2364 375.694 10.7319 375.672C10.7965 377.486 10.8792 379.299 11.0364 381.11C11.2066 383.078 11.4641 385.001 11.8832 386.836C14.0208 396.204 18.3141 398.115 23.2233 400.298C26.3339 401.681 29.6831 403.171 32.9349 406.602C34.575 408.333 35.6079 409.629 36.3806 410.598C37.3453 411.809 37.8816 412.481 38.6491 412.796C39.6574 413.209 41.2592 413.146 44.8487 413.002C45.8088 412.964 46.9109 412.919 48.2181 412.876C52.5106 412.736 55.8649 412.321 58.3802 411.664C60.8211 411.026 62.4457 410.171 63.3515 409.126L63.5035 408.951L67.3777 408.715C85.8314 407.623 85.8865 407.62 86.0472 382.827C86.1049 373.691 86.7608 372.86 89.927 368.852C90.98 367.518 92.3243 365.816 94.0531 363.256C98.2375 357.06 102.169 350.314 105.669 342.643C109.17 334.969 112.246 326.358 114.719 316.431C118.112 302.809 118.272 294.132 118.513 280.913L118.557 278.542C118.738 269.059 118.883 259.306 118.54 249.788C118.198 240.289 117.369 231.023 115.606 222.496C115.048 219.799 114.452 217.249 113.823 214.827C113.198 212.423 112.534 210.126 111.839 207.923C107.689 194.777 100.817 181.842 93.9989 169.007C86.9262 155.693 79.9079 142.482 76 129.181C73.7414 121.49 72.2563 113.447 70.7902 105.501C70.3776 103.264 69.9658 101.036 69.514 98.6983C67.4634 88.0959 64.9326 75.7153 62.0886 65.0953C59.2597 54.5343 56.1324 45.7334 52.8861 42.2243C51.2038 40.4051 49.3095 39.0649 47.2012 38.2199C45.0977 37.3771 42.7705 37.0252 40.2169 37.1772L14.3421 40.6661L6.69492 42.2756C2.26897 43.2062 2.25691 45.935 2.23925 50.2336L2.2315 51.4179V51.4184ZM0.944541 68.0135L1.13534 51.4097L1.1431 50.2293C1.16205 45.3872 1.17626 42.3143 6.47095 41.2006C17.5823 38.862 28.844 37.2965 40.1372 36.082C42.8601 35.9175 45.3496 36.2956 47.6091 37.2013C49.8686 38.1066 51.8942 39.539 53.6903 41.481C57.0786 45.1443 60.2827 54.1036 63.1507 64.8123C66.0033 75.4629 68.5393 87.8694 70.5942 98.4928C71.0133 100.662 71.4414 102.98 71.8704 105.303C73.331 113.22 74.8104 121.233 77.0536 128.871C80.9256 142.053 87.9212 155.221 94.9714 168.492C101.812 181.369 108.706 194.346 112.888 207.593C113.579 209.782 114.247 212.095 114.885 214.552C115.52 216.993 116.12 219.562 116.682 222.277C118.457 230.868 119.293 240.194 119.637 249.749C119.98 259.285 119.835 269.058 119.654 278.559L119.61 280.931C119.367 294.231 119.206 302.962 115.785 316.693C113.295 326.688 110.196 335.363 106.666 343.1C103.135 350.84 99.1747 357.635 94.9645 363.871C93.2374 366.429 91.863 368.168 90.7871 369.531C87.8148 373.294 87.1984 374.074 87.1429 382.831C86.9758 408.655 86.9176 408.659 67.4415 409.812L64.0216 410.019C62.9505 411.151 61.1915 412.064 58.655 412.726C56.0635 413.402 52.629 413.829 48.2517 413.973C46.9953 414.014 45.8708 414.06 44.8913 414.098C41.1373 414.248 39.4623 414.315 38.2313 413.81C37.1972 413.386 36.5989 412.635 35.5196 411.281C34.7568 410.323 33.7369 409.044 32.1394 407.358C29.0366 404.084 25.7908 402.64 22.7758 401.3C17.5996 398.998 13.0728 396.984 10.812 387.076C10.3779 385.173 10.1126 383.205 9.93987 381.203C9.76931 379.234 9.68575 377.188 9.61554 375.129L9.59616 374.55L10.1746 374.564C11.8427 374.602 13.4906 374.58 15.1084 374.497C24.9332 373.993 33.5314 371.242 39.7155 366.312C45.8643 361.41 49.6334 354.332 49.8445 345.145C49.8652 344.251 49.8514 343.331 49.8031 342.387C49.4835 336.154 47.1297 325.322 37.9591 317.815C31.9227 312.876 22.9227 309.367 9.58841 309.536C9.21326 309.662 1.28868 309.539 0 309.539V142.401H8.12486C12.7705 142.318 17.199 141.674 21.3144 140.565C25.5982 139.41 29.5396 137.749 33.0305 135.688C38.5815 132.412 42.7636 128.348 45.5417 123.795C48.3969 119.116 49.7738 113.915 49.6373 108.519C49.4999 103.12 47.8486 97.498 44.6493 92.652C41.7799 88.3048 37.6611 84.5816 32.2712 82.2077C28.9995 80.7667 25.3252 79.74 21.308 79.128C17.2537 78.5113 12.8536 78.3144 8.16837 78.5401L8.10161 78.5461C5.87786 78.727 4.65078 78.8269 3.34229 78.2201C0.714544 77.0026 0.842033 72.1101 0.922575 69.0183L0.944541 68.0123V68.0135Z" fill="#B3B3B3"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M73.1491 155.004C52.2102 147.725 33.6209 151.196 14.2425 155.622C14.1456 152.757 14.0483 149.893 13.9509 147.029C63.7058 143.483 67.0451 89.6907 31.9657 76.8096C25.9276 74.5925 18.3097 73.2264 8.7075 73.1855C8.46501 65.1745 8.36767 55.7082 8.12475 47.6977C12.0399 48.4001 15.6001 48.5944 18.9032 48.4225C30.5939 47.8118 41.7311 43.1838 49.8775 50.653C52.8584 53.386 55.1347 57.3939 56.5595 61.9022C64.3002 86.3904 69.2219 128.082 73.1482 155.003L73.1491 155.004Z" fill="#C4C4C4"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M66.7602 160.93C50.1728 155.632 32.7093 155.972 14.5365 160.866C14.5365 188.927 14.5365 216.988 14.5365 245.05C47.0639 242.764 79.019 244.755 109.214 253.352C108.609 227.473 103.433 201.546 90.1954 179.963C82.7209 167.776 80.5506 165.334 66.7602 160.93V160.93ZM65.7683 167.381C66.5112 167.547 66.7791 167.23 66.7615 168.01C66.4979 179.31 65.5968 186.433 72.2426 187.85C74.4474 188.32 80.5842 188.161 79.7929 172.664C96.373 192.43 103.901 218.389 105.719 248.254C98.0485 246.604 90.3767 244.953 82.7058 243.303C77.5696 241.941 75.656 238.596 75.5686 234.127C74.9858 219.368 74.4039 204.609 73.8208 189.85C64.2311 188.59 64.834 179.86 65.7687 167.381H65.7683Z" fill="#7DCA82"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.423 249.702C46.8867 246.819 78.7732 248.41 109.683 257.567C111.497 298.5 103.116 319.855 90.165 332.43C86.0892 335.393 81.811 334.71 77.3467 330.682C69.855 325.882 62.3641 321.081 54.8729 316.282C47.0499 311.269 48.3028 310.76 42.6089 305.189C38.3393 301.013 33.1751 298.774 28.1147 296.31C20.6984 293.472 16.5369 288.726 15.259 282.291C13.786 274.873 14.6189 258.058 14.4225 249.702H14.423ZM90.0927 323.69C99.0755 313.517 106.731 299.442 105.969 260.625C97.1955 257.297 86.9778 256.175 76.5465 255.381C76.5465 272.446 76.5465 289.511 76.5465 306.575C76.5465 314.307 77.9794 336.157 90.0927 323.69Z" fill="#C4C4C4"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9181 378.087C45.6692 375.398 58.5586 359.221 53.3522 328.568C64.0337 335.218 74.7157 341.87 85.3973 348.521C93.4941 352.699 94.7346 359.245 81.4641 370.805C81.4641 379.155 81.4641 387.506 81.4641 395.856C81.6583 402.877 78.2174 403.992 73.744 403.43C64.5807 402.798 65.9302 403.526 57.7217 405.35C52.3293 406.549 48.2841 406.1 44.0304 405.906C42.9773 405.679 39.6113 404.659 35.9658 401.92C30.734 397.99 23.5205 394.658 22.3775 393.613C17.9308 389.552 15.7876 384.366 15.9186 378.087H15.9181Z" fill="#C4C4C4"/>
+                                                    <path d="M417.769 51.4184L417.959 68.0222L417.982 69.0455C418.054 71.8586 418.17 76.3101 416.199 77.224C415.153 77.7085 414.026 77.6172 411.985 77.4514L411.902 77.4458C407.13 77.2149 402.652 77.4143 398.529 78.0414C394.415 78.6685 390.648 79.7219 387.287 81.2017C381.692 83.6656 377.416 87.5313 374.435 92.0474C371.12 97.0686 369.409 102.897 369.267 108.494C369.125 114.102 370.556 119.506 373.522 124.367C376.393 129.073 380.703 133.266 386.411 136.635C389.988 138.746 394.022 140.447 398.403 141.628C402.597 142.758 407.117 143.414 411.867 143.5L418.9 143.503V308.439H410.419C396.788 308.268 387.557 311.88 381.345 316.964C371.864 324.725 369.431 335.902 369.101 342.332C369.052 343.292 369.039 344.237 369.06 345.166C369.279 354.712 373.201 362.07 379.602 367.173C385.968 372.249 394.785 375.078 404.837 375.594C406.285 375.668 407.764 375.694 409.269 375.672C409.204 377.486 409.121 379.299 408.964 381.11C408.794 383.078 408.536 385.001 408.117 386.836C405.98 396.204 401.686 398.115 396.777 400.298C393.666 401.681 390.317 403.171 387.065 406.602C385.425 408.333 384.393 409.629 383.62 410.598C382.655 411.809 382.119 412.481 381.351 412.796C380.343 413.209 378.741 413.146 375.152 413.002C374.192 412.964 373.089 412.919 371.782 412.876C367.49 412.736 364.136 412.321 361.62 411.664C359.179 411.026 357.555 410.171 356.649 409.126L356.497 408.951L352.623 408.715C334.169 407.623 334.114 407.62 333.953 382.827C333.896 373.691 333.24 372.86 330.073 368.852C329.02 367.518 327.676 365.816 325.947 363.256C321.763 357.06 317.831 350.314 314.332 342.643C310.83 334.969 307.754 326.358 305.282 316.431C301.888 302.809 301.729 294.132 301.487 280.913L301.443 278.542C301.262 269.059 301.117 259.306 301.46 249.788C301.802 240.289 302.631 231.023 304.394 222.496C304.952 219.799 305.548 217.249 306.177 214.827C306.802 212.423 307.466 210.126 308.161 207.923C312.312 194.777 319.183 181.842 326.002 169.007C333.074 155.693 340.093 142.482 344 129.181C346.259 121.49 347.744 113.447 349.21 105.501C349.623 103.264 350.035 101.036 350.486 98.6983C352.537 88.0959 355.067 75.7153 357.912 65.0953C360.741 54.5343 363.868 45.7334 367.114 42.2243C368.797 40.4051 370.691 39.0649 372.8 38.2199C374.903 37.3771 377.23 37.0252 379.784 37.1772L405.659 40.6661L413.306 42.2756C417.732 43.2062 417.744 45.935 417.761 50.2336L417.769 51.4179L417.769 51.4184ZM419.056 68.0135L418.865 51.4097L418.857 50.2293C418.838 45.3872 418.824 42.3143 413.529 41.2006C402.418 38.862 391.156 37.2965 379.863 36.082C377.14 35.9175 374.651 36.2956 372.391 37.2013C370.131 38.1066 368.106 39.539 366.31 41.481C362.921 45.1443 359.718 54.1036 356.85 64.8123C353.997 75.4629 351.461 87.8694 349.406 98.4928C348.987 100.662 348.559 102.98 348.13 105.303C346.669 113.22 345.19 121.233 342.947 128.871C339.075 142.053 332.079 155.221 325.029 168.492C318.188 181.369 311.295 194.346 307.112 207.593C306.421 209.782 305.754 212.095 305.115 214.552C304.481 216.993 303.88 219.562 303.319 222.277C301.543 230.868 300.708 240.194 300.364 249.749C300.02 259.285 300.165 269.058 300.346 278.559L300.39 280.931C300.634 294.231 300.794 302.962 304.215 316.693C306.705 326.688 309.805 335.363 313.334 343.1C316.865 350.84 320.826 357.635 325.036 363.871C326.763 366.429 328.137 368.168 329.213 369.531C332.186 373.294 332.802 374.074 332.858 382.831C333.025 408.655 333.083 408.659 352.559 409.812L355.979 410.019C357.05 411.151 358.809 412.064 361.345 412.726C363.937 413.402 367.371 413.829 371.749 413.973C373.005 414.014 374.13 414.06 375.109 414.098C378.863 414.248 380.538 414.315 381.769 413.81C382.803 413.386 383.401 412.635 384.48 411.281C385.244 410.323 386.264 409.044 387.861 407.358C390.964 404.084 394.21 402.64 397.225 401.3C402.401 398.998 406.928 396.984 409.188 387.076C409.623 385.173 409.888 383.205 410.061 381.203C410.231 379.234 410.315 377.188 410.385 375.129L410.404 374.55L409.826 374.564C408.158 374.602 406.51 374.58 404.892 374.497C395.067 373.993 386.469 371.242 380.285 366.312C374.136 361.41 370.367 354.332 370.156 345.145C370.135 344.251 370.149 343.331 370.197 342.387C370.517 336.154 372.871 325.322 382.041 317.815C388.078 312.876 397.078 309.367 410.412 309.536C410.787 309.662 418.712 309.539 420 309.539V142.401H411.876C407.23 142.318 402.802 141.674 398.686 140.565C394.403 139.41 390.461 137.749 386.97 135.688C381.419 132.412 377.237 128.348 374.459 123.795C371.604 119.116 370.227 113.915 370.364 108.519C370.501 103.12 372.152 97.498 375.351 92.652C378.221 88.3048 382.34 84.5816 387.73 82.2077C391.001 80.7667 394.676 79.74 398.693 79.128C402.747 78.5113 407.147 78.3144 411.832 78.5401L411.899 78.5461C414.123 78.727 415.35 78.8269 416.659 78.2201C419.286 77.0026 419.159 72.1101 419.078 69.0183L419.056 68.0123L419.056 68.0135Z" fill="#B3B3B3"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M346.85 155.004C367.789 147.725 386.378 151.196 405.757 155.622C405.854 152.757 405.951 149.893 406.048 147.029C356.294 143.483 352.954 89.6907 388.034 76.8096C394.072 74.5925 401.69 73.2264 411.292 73.1855C411.534 65.1745 411.632 55.7082 411.875 47.6977C407.959 48.4001 404.399 48.5944 401.096 48.4225C389.405 47.8118 378.268 43.1838 370.122 50.653C367.141 53.386 364.865 57.3939 363.44 61.9022C355.699 86.3904 350.777 128.082 346.851 155.003L346.85 155.004Z" fill="#C4C4C4"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M353.24 160.93C369.828 155.632 387.291 155.972 405.464 160.866C405.464 188.927 405.464 216.988 405.464 245.05C372.937 242.764 340.982 244.755 310.786 253.352C311.392 227.473 316.567 201.546 329.805 179.963C337.28 167.776 339.45 165.334 353.24 160.93V160.93ZM354.232 167.381C353.489 167.547 353.221 167.23 353.239 168.01C353.503 179.31 354.404 186.433 347.758 187.85C345.553 188.32 339.416 188.161 340.208 172.664C323.628 192.43 316.1 218.389 314.281 248.254C321.952 246.604 329.624 244.953 337.295 243.303C342.431 241.941 344.345 238.596 344.432 234.127C345.015 219.368 345.597 204.609 346.18 189.85C355.77 188.59 355.166 179.86 354.232 167.381H354.232Z" fill="#C4C4C4"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M405.578 249.702C373.114 246.819 341.228 248.41 310.318 257.567C308.504 298.5 316.885 319.855 329.836 332.43C333.912 335.393 338.19 334.71 342.654 330.682C350.146 325.882 357.637 321.081 365.128 316.282C372.951 311.269 371.698 310.76 377.392 305.189C381.661 301.013 386.826 298.774 391.886 296.31C399.303 293.472 403.464 288.726 404.742 282.291C406.215 274.873 405.382 258.058 405.579 249.702H405.578ZM329.908 323.69C320.926 313.517 313.27 299.442 314.032 260.625C322.806 257.297 333.023 256.175 343.455 255.381C343.455 272.446 343.455 289.511 343.455 306.575C343.455 314.307 342.022 336.157 329.908 323.69Z" fill="#C4C4C4"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M404.083 378.087C374.331 375.398 361.443 359.221 366.649 328.568C355.967 335.218 345.285 341.87 334.604 348.521C326.507 352.699 325.267 359.245 338.537 370.805C338.537 379.155 338.537 387.506 338.537 395.856C338.343 402.877 341.784 403.992 346.257 403.43C355.42 402.798 354.071 403.526 362.279 405.35C367.672 406.549 371.717 406.1 375.971 405.906C377.024 405.679 380.39 404.659 384.035 401.92C389.267 397.99 396.481 394.658 397.624 393.613C402.07 389.552 404.214 384.366 404.083 378.087H404.083Z" fill="#FFB629"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M279.994 33.2977C279.732 32.6538 279.436 32.0203 279.101 31.3992C277.023 27.5425 273.556 24.4503 269.941 21.8645C267.258 23.0364 261.824 23.2117 255.748 22.129C247.405 20.6431 241.015 17.348 241.474 14.7696C241.827 12.7893 246.117 11.8083 251.867 12.1321C247.949 10.6274 243.892 9.43224 239.643 8.53471C229.776 6.45024 219.582 6.07642 209.527 6.07642C199.471 6.07642 189.277 6.45024 179.41 8.53471C175.161 9.43224 171.105 10.6278 167.186 12.1326C172.936 11.8083 177.226 12.7893 177.579 14.7696C178.039 17.3485 171.648 20.6431 163.306 22.129C157.229 23.2117 151.794 23.0355 149.112 21.8641C145.496 24.449 142.029 27.5421 139.951 31.3992C139.617 32.0198 139.321 32.6525 139.059 33.2964C184.336 18.8989 234.718 18.9002 279.994 33.2977Z" fill="#C4C4C4"/>
+                                                    <path d="M287.481 37.8645H287.477C288.006 41.8943 284.459 41.0016 281.949 40.1299C237.251 24.5803 181.798 24.5803 137.099 40.1299C134.589 41.0016 131.041 41.8943 131.571 37.8645C132.13 34.3692 133.093 31.3204 134.602 28.5189C137.31 23.4938 141.755 19.302 148.737 14.7877C158.639 8.38697 168.23 4.68833 178.158 2.59137C188.073 0.49743 198.311 0 209.526 0C220.742 0 230.979 0.496999 240.894 2.59137C250.821 4.68833 260.412 8.38697 270.314 14.7877C277.297 19.302 281.742 23.4938 284.449 28.5189C285.958 31.3204 286.922 34.3687 287.48 37.8645H287.481ZM286.386 37.8645H286.366C285.823 34.5599 284.903 31.6783 283.481 29.04C280.867 24.1876 276.539 20.116 269.721 15.7084C259.947 9.39001 250.476 5.73874 240.671 3.6672C230.853 1.5935 220.682 1.10167 209.526 1.10167C198.371 1.10167 188.199 1.5935 178.382 3.6672C168.577 5.73874 159.106 9.39001 149.331 15.7084C142.513 20.116 138.185 24.1876 135.571 29.04C134.149 31.6783 133.23 34.5599 132.687 37.8645H132.663C132.892 40.3155 135.931 39.5553 138.147 38.8228C183.861 23.691 235.189 23.6923 280.901 38.8228C283.118 39.5553 286.157 40.3159 286.386 37.8645Z" fill="#B3B3B3"/>
+                                                    </svg>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div id="Kredit"  style="padding:32px 0">
+                                    <h4 class="panel-title panel-veziyyet">Kredit</h4>
+                                     <div class="kredit-icon-kredit">
+                                         <div class="first-icon-kredit">
+                                            <svg style="transform: translateX(15px)" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M52.7501 56.6129L50.3231 49.3308C49.475 46.7885 47.3111 44.9119 44.6734 44.4317L37.667 43.1569V42.6138C38.8863 41.9061 39.9472 40.9594 40.7922 39.8387H42.9089C44.643 39.8387 46.0541 38.4276 46.0541 36.6936V24.1129C46.0541 16.5981 39.9399 10.4839 32.425 10.4839C24.9102 10.4839 18.796 16.5981 18.796 24.1129V31.4516C18.796 33.4729 20.2334 35.164 22.1393 35.5582C22.7275 38.5712 24.6104 41.1209 27.1831 42.6138V43.1569L20.1757 44.4317C17.539 44.9119 15.3741 46.7885 14.527 49.3308L14.1076 50.5899L10.5368 47.0191C10.1279 46.6103 10.1279 45.9445 10.5368 45.5357L14.6779 41.3956L6.9052 33.6228L2.2252 38.3028C0.839234 39.6888 0.0760078 41.5319 0.0760078 43.4924C0.0760078 45.4528 0.839234 47.2948 2.2252 48.6808L16.3942 62.8498C17.7801 64.2357 19.6232 65 21.5837 65C23.5442 65 25.3862 64.2357 26.7396 62.8812L31.8463 58.2023L30.2538 56.6129H52.7501ZM43.9573 36.6936C43.9573 37.2723 43.4866 37.742 42.9089 37.742H42.0272C42.3313 37.049 42.5619 36.3182 42.7108 35.5582C43.1595 35.4649 43.5726 35.2866 43.9573 35.0623V36.6936ZM42.9089 33.257V29.6463C43.5327 30.0101 43.9573 30.679 43.9573 31.4516C43.9573 32.2243 43.5327 32.8932 42.9089 33.257ZM21.9412 33.257C21.3174 32.8932 20.8928 32.2243 20.8928 31.4516C20.8928 30.679 21.3174 30.0101 21.9412 29.6463V33.257ZM21.9412 26.2097V27.4069C21.5679 27.5044 21.2178 27.6512 20.8928 27.841V24.1129C20.8928 17.7545 26.0666 12.5807 32.425 12.5807C38.7835 12.5807 43.9573 17.7545 43.9573 24.1129V27.841C43.6323 27.6512 43.2822 27.5034 42.9089 27.4069V26.2097H41.8605C38.7605 26.2097 35.8459 25.002 33.6527 22.8098L32.425 21.5821L31.1974 22.8098C29.0042 25.002 26.0896 26.2097 22.9896 26.2097H21.9412ZM24.0379 33.5484V28.2666C27.1863 28.0297 30.1217 26.7307 32.425 24.5407C34.7284 26.7307 37.6638 28.0307 40.8122 28.2666V33.5484C40.8122 35.077 40.3949 36.507 39.6778 37.742H32.425V39.8387H37.9542C36.476 41.1398 34.5438 41.9355 32.425 41.9355C27.8006 41.9355 24.0379 38.1728 24.0379 33.5484ZM35.5702 43.549V43.5982L32.425 46.7434L29.2799 43.5982V43.549C30.2738 43.8614 31.3295 44.0323 32.425 44.0323C33.5206 44.0323 34.5763 43.8614 35.5702 43.549ZM16.5147 49.9934C17.1196 48.1776 18.666 46.8367 20.55 46.4928L27.8782 45.1614L32.425 49.7082L36.9709 45.1624L44.298 46.4939C46.182 46.8378 47.7284 48.1776 48.3333 49.9944L49.8419 54.5161H28.1571L24.0736 50.4327L19.5362 54.5371C19.1409 54.9344 18.45 54.9344 18.0538 54.5371L15.7641 52.2474L16.5147 49.9934ZM6.90415 36.5877L11.7121 41.3956L10.5735 42.5341L5.76561 37.7262L6.90415 36.5877ZM25.2876 61.3694C24.298 62.357 22.9812 62.9032 21.5816 62.9032C20.182 62.9032 18.8652 62.357 17.8745 61.3674L3.70552 47.1994C2.71585 46.2098 2.17069 44.893 2.17069 43.4934C2.17069 42.0928 2.71585 40.776 3.70552 39.7863L4.28214 39.2097L9.09004 44.0176L9.0523 44.0553C7.82674 45.2819 7.82674 47.277 9.0523 48.5036L16.5703 56.0216C17.1647 56.615 17.9542 56.9432 18.795 56.9432C19.6358 56.9432 20.4252 56.6161 20.9809 56.0583L21.0595 55.9881L25.8894 60.818L25.2876 61.3694ZM27.4368 59.3985L22.6174 54.579L24.0023 53.3273L28.8134 58.1383L27.4368 59.3985Z" fill="#E61010"/>
+                                                <path d="M61.7799 0H47.1025C45.3684 0 43.9573 1.41113 43.9573 3.14516V11.5323C43.9573 13.2663 45.3684 14.6774 47.1025 14.6774H49.9027L48.8187 21.0002L58.9356 14.6774H61.7799C63.5139 14.6774 64.925 13.2663 64.925 11.5323V3.14516C64.925 1.41113 63.5139 0 61.7799 0ZM62.8283 11.5323C62.8283 12.1099 62.3575 12.5806 61.7799 12.5806H58.3338L51.6755 16.7417L52.3895 12.5806H47.1025C46.5248 12.5806 46.0541 12.1099 46.0541 11.5323V3.14516C46.0541 2.5675 46.5248 2.09677 47.1025 2.09677H61.7799C62.3575 2.09677 62.8283 2.5675 62.8283 3.14516V11.5323Z" fill="#E61010"/>
+                                                <path d="M60.7315 4.1936H48.1508V6.29038H60.7315V4.1936Z" fill="#E61010"/>
+                                                <path d="M56.5379 8.38708H48.1508V10.4839H56.5379V8.38708Z" fill="#E61010"/>
+                                                <path d="M60.7315 8.38708H58.6347V10.4839H60.7315V8.38708Z" fill="#E61010"/>
+                                                <path d="M32.425 3.14514C18.7268 3.14514 6.92722 12.6205 3.85964 25.8375L1.87295 22.5256L0.0749626 23.6044L3.76004 29.7448L9.90044 26.0597L8.82165 24.2618L5.98052 25.9664C8.95165 13.8754 19.8245 5.24192 32.425 5.24192C35.1791 5.24192 37.8966 5.65079 40.5018 6.45805L41.1224 4.45563C38.3159 3.58546 35.3899 3.14514 32.425 3.14514Z" fill="#E61010"/>
+                                                <path d="M64.4155 23.2134L58.2751 19.5283L54.5911 25.6698L56.3891 26.7486L58.2237 23.6904C59.1893 26.5158 59.6831 29.4712 59.6831 32.5C59.6831 38.7348 57.5234 44.8301 53.6035 49.6621L55.2317 50.9831C59.4546 45.7789 61.7799 39.2139 61.7799 32.5C61.7799 29.293 61.263 26.1615 60.2555 23.1631L63.3367 25.0114L64.4155 23.2134Z" fill="#E61010"/>
+                                                </svg>
+
+                                            <h4>Sizə zəng edək</h4>
+                                         </div>
+                                         <div class="first-icon-kredit">
+                                            <svg style="transform: translateX(22px)" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M62.9687 30.4688H49.7656V5.07812C49.7632 4.27079 49.4414 3.4972 48.8705 2.92632C48.2997 2.35544 47.5261 2.03366 46.7187 2.03125H18.2812C17.4739 2.03366 16.7003 2.35544 16.1294 2.92632C15.5586 3.4972 15.2368 4.27079 15.2344 5.07812V8.64297L2.42734 18.4945C2.26028 18.6242 2.13786 18.8027 2.07715 19.0053C2.01644 19.2079 2.02047 19.4243 2.08868 19.6245C2.15689 19.8246 2.28588 19.9985 2.45765 20.1219C2.62942 20.2452 2.83541 20.3118 3.04687 20.3125H5.07812V30.4688H4.06249C3.79313 30.4688 3.53481 30.5758 3.34434 30.7662C3.15387 30.9567 3.04687 31.215 3.04687 31.4844V35.5469C3.04687 35.8162 3.15387 36.0746 3.34434 36.265C3.53481 36.4555 3.79313 36.5625 4.06249 36.5625H15.2344V59.9219C15.2368 60.7292 15.5586 61.5028 16.1294 62.0737C16.7003 62.6446 17.4739 62.9663 18.2812 62.9688H46.7187C47.5261 62.9663 48.2997 62.6446 48.8705 62.0737C49.4414 61.5028 49.7632 60.7292 49.7656 59.9219V54.8438H58.9062C59.1756 54.8438 59.4339 54.7367 59.6244 54.5463C59.8149 54.3558 59.9219 54.0975 59.9219 53.8281V50.7812H62.9687C63.2381 50.7812 63.4964 50.6742 63.6869 50.4838C63.8774 50.2933 63.9844 50.035 63.9844 49.7656V31.4844C63.9844 31.215 63.8774 30.9567 63.6869 30.7662C63.4964 30.5758 63.2381 30.4688 62.9687 30.4688ZM42.3719 4.0625L42.057 5.32187C42.0026 5.54207 41.876 5.7377 41.6975 5.87759C41.5189 6.01748 41.2987 6.09357 41.0719 6.09375H23.9281C23.7013 6.09357 23.4811 6.01748 23.3025 5.87759C23.124 5.7377 22.9974 5.54207 22.943 5.32187L22.6281 4.0625H42.3719ZM16.25 10.4203L26.4672 18.2812H6.03281L16.25 10.4203ZM25.3906 20.3125V30.4688H23.3594V20.3125H25.3906ZM21.3281 20.3125V30.4688H19.2969V20.3125H21.3281ZM17.2656 20.3125V30.4688H15.2344V20.3125H17.2656ZM13.2031 20.3125V30.4688H11.1719V20.3125H13.2031ZM9.14062 20.3125V30.4688H7.10937V20.3125H9.14062ZM5.07812 34.5312V32.5H27.4219V34.5312H5.07812ZM47.7344 59.9219C47.7344 60.1912 47.6274 60.4496 47.4369 60.64C47.2464 60.8305 46.9881 60.9375 46.7187 60.9375H18.2812C18.0119 60.9375 17.7536 60.8305 17.5631 60.64C17.3726 60.4496 17.2656 60.1912 17.2656 59.9219V36.5625H28.4375C28.7069 36.5625 28.9652 36.4555 29.1556 36.265C29.3461 36.0746 29.4531 35.8162 29.4531 35.5469V31.4844C29.4531 31.215 29.3461 30.9567 29.1556 30.7662C28.9652 30.5758 28.7069 30.4688 28.4375 30.4688H27.4219V20.3125H29.4531C29.6646 20.3118 29.8706 20.2452 30.0423 20.1219C30.2141 19.9985 30.3431 19.8246 30.4113 19.6245C30.4795 19.4243 30.4836 19.2079 30.4228 19.0053C30.3621 18.8027 30.2397 18.6242 30.0727 18.4945L17.2656 8.64297V5.07812C17.2656 4.80876 17.3726 4.55044 17.5631 4.35997C17.7536 4.1695 18.0119 4.0625 18.2812 4.0625H20.5359L20.9726 5.81953C21.1379 6.47822 21.5185 7.06282 22.0539 7.48051C22.5894 7.8982 23.249 8.12504 23.9281 8.125H41.0719C41.751 8.12504 42.4106 7.8982 42.9461 7.48051C43.4815 7.06282 43.8621 6.47822 44.0273 5.81953L44.4641 4.0625H46.7187C46.9881 4.0625 47.2464 4.1695 47.4369 4.35997C47.6274 4.55044 47.7344 4.80876 47.7344 5.07812V30.4688H34.5312C34.2619 30.4688 34.0036 30.5758 33.8131 30.7662C33.6226 30.9567 33.5156 31.215 33.5156 31.4844V34.5312H30.4687C30.1994 34.5312 29.9411 34.6383 29.7506 34.8287C29.5601 35.0192 29.4531 35.2775 29.4531 35.5469V53.8281C29.4531 54.0975 29.5601 54.3558 29.7506 54.5463C29.9411 54.7367 30.1994 54.8438 30.4687 54.8438H47.7344V59.9219ZM57.8906 52.8125H31.4844V42.6562H57.8906V52.8125ZM57.8906 40.625H31.4844V36.5625H57.8906V40.625ZM61.9531 48.75H59.9219V35.5469C59.9219 35.2775 59.8149 35.0192 59.6244 34.8287C59.4339 34.6383 59.1756 34.5312 58.9062 34.5312H35.5469V32.5H61.9531V48.75Z" fill="#E61010"/>
+                                                <path d="M40.625 44.6876C39.873 44.6902 39.149 44.9726 38.5938 45.4797C38.157 45.0827 37.6143 44.8211 37.0316 44.7268C36.449 44.6324 35.8514 44.7093 35.3117 44.9481C34.7719 45.1869 34.3131 45.5773 33.991 46.072C33.669 46.5666 33.4975 47.1442 33.4975 47.7344C33.4975 48.3247 33.669 48.9022 33.991 49.3969C34.3131 49.8915 34.7719 50.282 35.3117 50.5208C35.8514 50.7596 36.449 50.8365 37.0316 50.7421C37.6143 50.6477 38.157 50.3861 38.5938 49.9891C38.9606 50.3225 39.4032 50.5614 39.8832 50.685C40.3632 50.8086 40.8661 50.8132 41.3484 50.6985C41.8306 50.5837 42.2775 50.3531 42.6504 50.0265C43.0233 49.7 43.3109 49.2874 43.4882 48.8245C43.6656 48.3616 43.7273 47.8625 43.6681 47.3703C43.6089 46.8782 43.4305 46.408 43.1484 46.0004C42.8663 45.5928 42.489 45.2602 42.0493 45.0314C41.6096 44.8027 41.1207 44.6846 40.625 44.6876ZM36.5625 48.7501C36.3616 48.7501 36.1653 48.6905 35.9983 48.5789C35.8312 48.4673 35.7011 48.3087 35.6242 48.1231C35.5473 47.9375 35.5272 47.7333 35.5664 47.5363C35.6056 47.3393 35.7023 47.1583 35.8443 47.0163C35.9864 46.8742 36.1674 46.7775 36.3644 46.7383C36.5614 46.6991 36.7656 46.7192 36.9512 46.7961C37.1367 46.873 37.2954 47.0032 37.407 47.1702C37.5186 47.3372 37.5781 47.5336 37.5781 47.7344C37.5781 48.0038 37.4711 48.2621 37.2807 48.4526C37.0902 48.643 36.8319 48.7501 36.5625 48.7501ZM40.625 48.7501C40.4241 48.7501 40.2278 48.6905 40.0608 48.5789C39.8937 48.4673 39.7636 48.3087 39.6867 48.1231C39.6098 47.9375 39.5897 47.7333 39.6289 47.5363C39.6681 47.3393 39.7648 47.1583 39.9068 47.0163C40.0489 46.8742 40.2299 46.7775 40.4269 46.7383C40.6239 46.6991 40.8281 46.7192 41.0137 46.7961C41.1992 46.873 41.3579 47.0032 41.4695 47.1702C41.5811 47.3372 41.6406 47.5336 41.6406 47.7344C41.6406 48.0038 41.5336 48.2621 41.3432 48.4526C41.1527 48.643 40.8944 48.7501 40.625 48.7501Z" fill="#E61010"/>
+                                                <path d="M45.7031 44.6875H55.8594V46.7188H45.7031V44.6875Z" fill="#E61010"/>
+                                                <path d="M45.7031 48.75H51.7969V50.7812H45.7031V48.75Z" fill="#E61010"/>
+                                                <path d="M53.8281 48.75H55.8594V50.7812H53.8281V48.75Z" fill="#E61010"/>
+                                                <path d="M43.6719 18.2813V27.4219H41.6406V19.2969H37.5781L39.2031 20.5156L37.9844 22.1406L33.9219 19.0938C33.7957 18.9991 33.6934 18.8765 33.6228 18.7355C33.5523 18.5944 33.5156 18.4389 33.5156 18.2813C33.5156 18.1236 33.5523 17.9681 33.6228 17.827C33.6934 17.686 33.7957 17.5634 33.9219 17.4688L37.9844 14.4219L39.2031 16.0469L37.5781 17.2656H42.6562C42.9256 17.2656 43.1839 17.3726 43.3744 17.5631C43.5649 17.7536 43.6719 18.0119 43.6719 18.2813Z" fill="#E61010"/>
+                                                <path d="M27.4219 47.7344C27.4208 47.8919 27.3836 48.047 27.3132 48.1878C27.2427 48.3287 27.141 48.4515 27.0156 48.5469L22.9531 51.5938L21.7344 49.9688L23.3594 48.75H20.3125C20.0431 48.75 19.7848 48.643 19.5943 48.4525C19.4039 48.2621 19.2969 48.0037 19.2969 47.7344V38.5938H21.3281V46.7188H23.3594L21.7344 45.5L22.9531 43.875L27.0156 46.9219C27.141 47.0172 27.2427 47.1401 27.3132 47.2809C27.3836 47.4218 27.4208 47.5769 27.4219 47.7344Z" fill="#E61010"/>
+                                                </svg>
+
+                                            <h4>Kredit sifariş edin</h4>
+                                        </div>
+                                     </div>
+                                    <div class="detail" style="text-align: center">
+
+                                        Qabaqcadan cəmi 5800 azn ödəməklə avtomobili əldə edə bilərsiniz (3illik kasko sığorta və DYP xərcləri daxil). <br> <br>
+
+                                        -KREDİT TƏK ŞƏXSİYYƏT VƏSİQƏSİ İLƏ -İLKİN ÖDƏNİŞ 20% -36 AYA QƏDƏR. -KREDİT MANAT İLƏ RƏSMİLƏŞDİRİLİR. <br> -Sürətli rəsmiləşdirmə <br>
+
+                                        Model 2017.Avtomobil çox ideal vəziyyətdədir. Avtomobilə nömrə alınıb sığorta olunub. BU AVTOMOBİLİ ÇOX SƏRFƏLİ <br>  KREDİT VƏ LİZİNQ ŞƏRTLƏRİ İLƏ ƏLDƏ EDƏ BİLƏRSİZ.
+                                    </div>
+                                 </div>
+                            </div>
             </div>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="info" role="tabpanel">
-                    <div class="product_info_content">
-                        <div class="row">
-
-                            <div class="col-lg-4"><li class="custom-detail"> <span>Yüngül lehimli disklər</span> <i class="fas fa-check"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"><span> ABS</span> <i class="fas fa-check"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"> <span>Oturacaqların isidilməsi</span> <i class="fas fa-minus"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"> <span>Yağış sensoru</span> <i class="fas fa-check"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"> <span>Mərkəzi qapanma</span> <i class="fas fa-check"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"> <span>Yan pərdələr</span> <i class="fas fa-minus"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"> <span>Oturacaqların ventilyasiyası</span> <i class="fas fa-minus"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"><span> Park radarı </span><i class="fas fa-minus"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"> <span>Kondisioner </span><i class="fas fa-check"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"> <span>Arxa görüntü kamerası</span> <i class="fas fa-check"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"><span>Lyuk</span> <i class="fas fa-minus"></i></li></div>
-                            <div class="col-lg-4"> <li class="custom-detail"> <span>Dəri salon</span> <i class="fas fa-minus"></i></li></div>
 
 
-
-
-                        </div>
-                        </div>
-                </div>
-                <div class="tab-pane fade" id="sheet" role="tabpanel">
-            {{--         <div class="product_d_table">
-                        <form action="#">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td class="first_child">Compositions</td>
-                                        <td>Polyester</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="first_child">Styles</td>
-                                        <td>Girly</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="first_child">Properties</td>
-                                        <td>Short Dress</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </form>
-                    </div> --}}
-                    <div class="product_info_content">
-                        <p>Qabaqcadan cəmi 5800 azn ödəməklə avtomobili əldə edə bilərsiniz (3illik kasko sığorta və DYP xərcləri daxil).</p>
-                   <p>-KREDİT TƏK ŞƏXSİYYƏT VƏSİQƏSİ İLƏ
-                    -İLKİN ÖDƏNİŞ 20%
-                    -36 AYA QƏDƏR.
-                    -KREDİT MANAT İLƏ RƏSMİLƏŞDİRİLİR.
-                    -Sürətli rəsmiləşdirmə</p>
-                    <p>Model 2017.Avtomobil çox ideal vəziyyətdədir. Avtomobilə nömrə alınıb sığorta olunub. BU AVTOMOBİLİ ÇOX SƏRFƏLİ KREDİT VƏ LİZİNQ ŞƏRTLƏRİ İLƏ ƏLDƏ EDƏ BİLƏRSİZ.</p>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="reviews" role="tabpanel">
-                    <div class="reviews_wrapper">
-                        <h2>1 review for Donec eu furniture</h2>
-                        <div class="reviews_comment_box">
-                            <div class="comment_thmb">
-                                <img src="{{asset('/front/autima/')}}/assets/img/blog/comment2.jpg" alt="">
-                            </div>
-                            <div class="comment_text">
-                                <div class="reviews_meta">
-
-                                    <p><strong>admin </strong>- September 12, 2018</p>
-                                    <span>roadthemes</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="comment_title">
-                            <h2>Add a review </h2>
-                            <p>Your email address will not be published. Required fields are marked </p>
-                        </div>
-                        <div class="product_ratting mb-10">
-                            <h3>.......</h3>
-
-                        </div>
-                        <div class="product_review_form">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label for="review_comment">Your review </label>
-                                        <textarea name="comment" id="review_comment"></textarea>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <label for="author">Name</label>
-                                        <input id="author" type="text">
-
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <label for="email">Email </label>
-                                        <input id="email" type="text">
-                                    </div>
-                                </div>
-                                <button type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-</div>
+
+
+
+
+    <section class="product_area mb-50 ">
+
+        <style>
+            .custom-flex>.custom_card{
+                padding: 0;
+                overflow:hidden;
+                position: relative;
+            }
+            .custom-flex>.cuistom-card>img{
+                overflow: hidden;
+            }
+            .card-body>h4{
+                position: absolute;
+                bottom: 34%;
+                color: white;
+                background-color: #DC1616;
+                right: 0;
+                padding: 5px;
+
+            }
+            .card-body>span.label{
+
+                text-align: center;
+                width: 120px;
+                z-index: 0;
+                position: absolute;
+                top: 5px;
+                left: -28px;
+                background-color: rgba(139, 139, 139, 0.932);
+                color: white;
+                padding: 5px;
+                border-radius: 2px;
+                display: inline-block;
+                transform: rotate(-40deg);
+            }
+        </style>
+        <div class="container">
+            <div class="prod-car-tite mt-3 mb-3" style="width: 100%;background: #F4F4F4; padding:10px 0 5px;text-align:center; color:rgba(108, 108, 108, 1)">
+                <h4 style="letter-spacing: 0.01em;">Digər uyğun avtomobillər</h4>
+            </div>
+            <div class="row custom-flex">
+
+
+            <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
+                <img src="{{asset('/front/autima/')}}/assets/img/auto-car/Chevrolet Yeni (6).jpg" class="card-img-top" alt="..." style="width: 100%">
+                <div class="card-body">
+
+                    <a href="{{route('carDetail')}}"> <h4> <span>Chevrolet</span>  <span>Cruze</span></h4> </a>
+                  <p class="card-text">1.4 L/ 2016 il/ 180 000 km <br>
+                    <span class="lab" style="color: rgba(196, 196, 196, 1); font-size:13.2px;display:inline-block; width:169px">Kreditdədir. <br> "100 Nöqtə Yoxlanışı"ndan keçib.</span></p>
+                  <h4 class="">17 700 AZN ver, Apar</h4>
+                </div>
+            </div>
+
+
+                  <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
+                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                      <p class="card-text">avtomobil haqqında məlumat</p>
+                      <h4 class="">200 azn</h4>
+                    </div>
+                  </div>
+                  <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
+                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                      <p class="card-text">avtomobil haqqında məlumat</p>
+                      <h4 class="">200 azn</h4>
+                    </div>
+                  </div>
+                  <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
+                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg"" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                      <p class="card-text">avtomobil haqqında məlumat</p>
+                      <h4 class="">200 azn</h4>
+                    </div>
+                  </div>
+
+                  <div class="card custom_card" style="width: 260px; margin: 10px; height:313px;">
+                    <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                      <p class="card-text">avtomobil haqqında məlumat</p>
+                      <h4 class="">200 azn</h4>
+                    </div>
+                </div>
+
+
+                      <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
+                        <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                          <p class="card-text">avtomobil haqqında məlumat</p>
+                          <h4 class="">200 azn</h4>
+                        </div>
+                      </div>
+                      <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
+                        <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                          <p class="card-text">avtomobil haqqında məlumat</p>
+                          <h4 class="">200 azn</h4>
+                        </div>
+                      </div>
+                      <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
+                        <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg"" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                          <p class="card-text">avtomobil haqqında məlumat</p>
+                          <h4 class="">200 azn</h4>
+                        </div>
+                      </div>
+                      <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
+                        <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                          <p class="card-text">avtomobil haqqında məlumat</p>
+                          <h4 class="">200 azn</h4>
+                        </div>
+                    </div>
+
+
+                          <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
+                            <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                                <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                              <p class="card-text">avtomobil haqqında məlumat</p>
+                              <h4 class="">200 azn</h4>
+                            </div>
+                          </div>
+                          <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
+                            <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                                <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                              <p class="card-text">avtomobil haqqında məlumat</p>
+                              <h4 class="">200 azn</h4>
+                            </div>
+                          </div>
+                          <div class="card custom_card" style="width: 260px;; margin: 10px; height:313px;">
+                            <img src="{{asset('/front/autima/')}}/assets/img/featured/featured.jpg"" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                                <a href="{{route('carDetail')}}"> <h4> <span>Bmw</span> | <span>550</span></h4> </a>
+                              <p class="card-text">avtomobil haqqında məlumat</p>
+                              <h4 class="">200 azn</h4>
+                            </div>
+                          </div>
+
+
+
 
 
             </div>
+            <hr>
         </div>
-    </div>
+
+    </section>
+    <!--product area end-->
 {{--     <!--product details end-->
 <button id="click">create toastr</button> --}}
-@include("front.widget.product_car")
+{{-- @include("front.widget.product_car") --}}
+
+
+
+
+
 
 @include("front.widget.footer-alanda-satanda")
 
 
+@section('script')
+<script src="{{asset('/front/autima/')}}/assets/js/carousel_with_thumbs.js"></script>
+<script>
+
+    function openCity(evt, cityName) {
+
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("line");
+
+
+
+      for (i = 0; i < tablinks.length; i++) {
+
+        tablinks[i].className = tablinks[i].className.replace("aktive-line", "");
+
+         }
+
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += "aktive-line";
 
 
 
 
-    @section('script')
-
-
-
-<script src="{{asset('/front/autima/')}}/assets/js/slinky.menu.js"></script>
-<script src="{{asset('/front/autima/')}}/assets/js/owl.carousel.min.js"></script>
-<script src="{{asset('/front/autima/')}}/assets/js/vendor/jquery-3.4.1.min.js"></script>
-<!--popper min js-->
-<script src="{{asset('/front/autima/')}}/assets/js/popper.js"></script>
-<!--bootstrap min js-->
-<script src="{{asset('/front/autima/')}}/assets/js/bootstrap.min.js"></script>
-<script src="{{asset('/front/autima/')}}/assets/js/jquery.ui.js"></script>
-<!--jquery elevatezoom min js-->
-<script src="{{asset('/front/autima/')}}/assets/js/jquery.elevatezoom.js"></script>
-<!--isotope packaged min js-->
-<script src="{{asset('/front/autima/')}}/assets/js/isotope.pkgd.min.js"></script>
-<script src="{{asset('/front/autima/')}}/assets/js/slick.min.js"></script>
-<!--magnific popup min js-->
-<script src="{{asset('/front/autima/')}}/assets/js/jquery.magnific-popup.min.js"></script>
-<!--jquery countdown min js-->
-<script src="{{asset('/front/autima/')}}/assets/js/jquery.countdown.js"></script>
-<!--jquery ui min js-->
-
-<!--slinky menu js-->
-
-<!-- Plugins JS -->
-<script src="{{asset('/front/autima/')}}/assets/js/plugins.js"></script>
-
-<!-- Main JS -->
-<script src="{{asset('/front/autima/')}}/assets/js/main.js"></script>
+    }
+    </script>
 @endsection
-
 
 
 @endsection

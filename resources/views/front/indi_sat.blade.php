@@ -442,7 +442,7 @@ a{
                                 <div class="product_info_content" style="height: 500px">
                               <div class="row">
                                   <div class="col-lg-6">
-                                    <form action="">
+ <form action="">
                                         <style>
                                             p.form-control{
                                                 display: flex;
@@ -463,13 +463,13 @@ a{
 
                                         </style>
                                         <p class="form-control"><span></span><span class="deger">Orijinal  Rəngli  Dəyişdirilib</span></p>
-<p class="form-control">
+       <p class="form-control">
     <span>Sağ arxa qanad</span>
     <span> <input class="form-check-input" type="radio" value="" name="saq-arka-camurluk"  id="saq-arka-camurluk">
         <input class="form-check-input" type="radio" value="" name="saq-arka-camurluk" id="saq-arka-camurluk">
         <input class="form-check-input" type="radio" value="" name="saq-arka-camurluk" id="saq-arka-camurluk"></span>
-</p>
-     <p class="form-control"><span>Arxa kapot</span>
+       </p>
+       <p class="form-control"><span>Arxa kapot</span>
       <span>
         <input class="form-check-input" type="radio" value="" name="arka-kaput"  id="saq-arka-camurluk">
         <input class="form-check-input" type="radio" value="" name="arka-kaputk" id="saq-arka-camurluk">
@@ -519,7 +519,7 @@ a{
                                                 <span>     <input class="form-check-input" type="radio" value="" name="saq-arka-camurluk"  id="saq-arka-camurluk">
                                       <input class="form-check-input" type="radio" value="" name="saq-arka-camurluk" id="saq-arka-camurluk">
                                                  <input class="form-check-input" type="radio" value="" name="saq-arka-camurluk" id="saq-arka-camurluk"></span></p>
-                                    </form>
+ </form>
                                   </div>
                                   <div class="col-lg-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="92.295mm" height="100.01mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"

@@ -10,15 +10,16 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="widgets_container contact_us">
-                        <div class="footer_logo mb-20">
+                        <div class="footer_logo mb-3">
                             <a href="#"><img src="{{asset('/front/autima/')}}/assets/img/auto-logo/Logo_Pegasus2.png" alt=""></a>
                         </div>
-                        <div class="footer_menu">
+                        <div class="footer_menu " style="    margin-top: 1.5rem!important;">
                             <ul>
                                 <li><a href="about.html">Avtomobil Al</a></li>
                                 <li><a href="#">Avtomobil Sat</a></li>
                                 <li><a href="privacy-policy.html">Ətraflı Axtarış</a></li>
                                 <li><a href="coming-soon.html">Ən Çox Soruşulan Suallar</a></li>
+                                <li><a href="#" >Haqqımızda</a></li>
 
                             </ul>
                         </div>
@@ -26,10 +27,15 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="widgets_container widget_menu" style="padding-left: 20px ; margin-top:18px; ">
+                    <div class="widgets_container widget_menu" style="padding-left: 20px ; margin-top: 60px; font-size: 18px " >
                         <div class="footer_menu">
+                            <style>
+                                .footer_menu>ul>li>a{
+                                    font-size: 18px;
+                                }
+                            </style>
                             <ul>
-                                <li><a href="#" >Haqqımızda</a></li>
+
                                 <li><a href="#">TezSat!</a></li>
                                 <li><a href="wishlist.html">100 Nöqtə Yoxlanışı</a></li>
                                 <li><a href="#">Kredit Şərtlərimiz</a></li>
@@ -44,7 +50,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-6">
              <div class="flex" style="display: flex;
-                    justify-content:flex-start; margin-bottom: 30px">
+                    justify-content:flex-end; margin-bottom: 30px">
                        <div class="custom-mobile-icon">
                            <style>
                                .custom-mobile-icon{
@@ -68,19 +74,20 @@
                             <img src="{{asset('/front/autima/')}}/assets/img/footer-icon/wp.png">  </div>
                           </div>
                           <div class="custom-mobile-icon">
-                            <div class="custom-icon">
+                            <div class="custom-icon" >
                                 <img src="{{asset('/front/autima/')}}/assets/img/footer-icon/fb.png">
                             </div>
                            </div>
             </div>
                     <div class="widgets_container widget_menu">
-                        <div class="footer_contact">
+                        <div class="footer_contact" style="text-align: right; padding-right:5px;">
 
-                            <p style="margin:0; padding:0"><span style="color: white">Ünvanlar</span> Baş ofis: Dəmirçi Plaza 17-ci Mərtəbə
-                            <p style="margin: 0; padding:0">Satış mərkəzi: Ağa Centre 1-ci Mərtəbə</p></p>
-                            <p><span style="color: white"> Bizə Zəng Edin</span> <a  href="tel:+994 70 319 04 04">+994 70 319 04 04  </a>
+                            <p style="margin:0; padding:0; "><span style="color: white" >Ünvanlar</span> Baş ofis: Dəmirçi Plaza 17-ci Mərtəbə
+                            <p style="margin: 0; padding:0 ;font-size:15px" >Satış mərkəzi: Ağa Centre 1-ci Mərtəbə</p></p>
+                            <p><span style="color: white"> Bizə Zəng Edin</span>
+                                 <a style="font-size: 15px"  href="tel:+994 70 319 04 04">+994 70 319 04 04  </a> <br>
 
-                         &nbsp;   <a  href="tel:+994 70 718 88 82">+994 70 718 88 82</a>
+                         &nbsp;   <a  style="font-size: 15px" href="tel:+994 70 718 88 82">+994 70 718 88 82</a>
                             </p>
                         </div>
 
@@ -102,7 +109,7 @@
         </div>
     </div>
 </footer>
-<script src="./path/to/dropzone.js"></script>
+
 <!--jquery min js-->
 <script src="{{asset('/front/autima/')}}/assets/js/vendor/jquery-3.4.1.min.js"></script>
 <!--popper min js-->

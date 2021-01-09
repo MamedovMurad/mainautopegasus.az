@@ -19,7 +19,7 @@
                         <li class="tablinks @if ( Request::segment(1)=="xidmetlerimiz-barter" ) active-link @endif"" onclick="openCity(event, 'barter','BARTER')">BARTER</li>
 
                         <li class="tablinks @if ( Request::segment(1)=="xidmetlerimiz-test-drive" ) active-link @endif"" onclick="openCity(event, 'sinaq','SINAQ YÜRÜŞÜ')">SINAQ YÜRÜŞÜ</li>
-                        <li class="tablinks @if ( Request::segment(1)=="xidmetlerimiz-sifaris-et" ) active-link @endif"" onclick="openCity(event, 'sifaris','Sifariş ver')">SİFARİŞ VER</li>
+                        <li class="tablinks @if ( Request::segment(1)=="xidmetlerimiz-sifaris-et" ) active-link @endif"" onclick="openCity(event, 'sifaris','SİFARİŞ VER')">SİFARİŞ VER</li>
                     </ul>
                 </div>
             </div>
@@ -27,10 +27,10 @@
                 <div class="tab-component" >
                     <div id="yuz_noqte" @if ( Request::segment(1)=="xidmetlerimiz" ) style="display: block" @endif       class="tabcontent"  >
                         <div class="o100-noqte-title">
-                            <p>100 Nöqtə Yoxlanışı</p>
+                            <p class="mt-4">100 Nöqtə Yoxlanışı</p>
                         </div>
-                        <div class="content-100-noqte mt-20">
-                            <p>
+                        <div class="content-100-noqte mt-2">
+                            <p style="text-align: justify">
                                 Avtomobil almaq ciddi işdir, amma çətin deyil. Təmiz və ürəyinizcə olan avtomobil almaq üçün günlərinizi ayırıb tanış usta axtararaq avtomobilinizi yoxlatmağınıza artıq ehtiyac yoxdur. Biz sizin əvəzinizə avtomobilin 100 nöqtə yoxlanışını həyata keçiririk.
                                 <br> <br>
 
@@ -85,7 +85,7 @@
                         <p class="mt-1">KREDİT</p>
                     </div>
                     <div class="content-100-noqte mt-20">
-                        <p>
+                        <p style="text-align: justify">
                             Partnyorumuz City Finance BOKT-un cəlbedici kredit və ödəniş şərtləri Auto Pegesusun dəqiq xidmətilə sizlərə təqdim edilir. Siz Auto Pegasusun satış mərkəzinə yaxınlaşaraq qısa zaman ərzində kredit əldə edə bilərsiniz. <br> <br>
 
                             Peşəkar satış və kredit mütəxəssislərimiz bəyəndiyiniz avtomobili ən qısa yol və qısa müddət ərzində əldə etmənizi təmin edəcəklər. <br> <br>
@@ -104,20 +104,20 @@
                     <div class="content-100-noqte mt-20">
                        <div class="row">
                            <div class="col-lg-8">
-                               <p>Auto Pegasusun avtomobil qiymətləndirmə aləti çox özəl alqoritm və süni zəkanın yardımı ilə nəticələnən bir prosesdir. Sizin avtomobilinizin bazar dəyərinin hesablanması və ilkin təklifin verilməsilə nəticələnən bu xidmət, məhz rahatlığınız üçün hazırlanmışdır.</p>
+                               <p style="text-align: justify">Auto Pegasusun avtomobil qiymətləndirmə aləti çox özəl alqoritm və süni zəkanın yardımı ilə nəticələnən bir prosesdir. Sizin avtomobilinizin bazar dəyərinin hesablanması və ilkin təklifin verilməsilə nəticələnən bu xidmət, məhz rahatlığınız üçün hazırlanmışdır.</p>
                            </div>
                            <div class="col-lg-4"><img src="{{asset('/front/autima/')}}/assets/img/service/image 1.png"></div>
                        </div>
-                       <p> <br>
-                        Online qiymət təklifimizdən sonra servisimizə yaxınlaşırsınız, avtomobilinizin vəziyyəti mütəxəssislərimiz tərəfindən yoxlanılır, qiymətdən xoşunuz gəlmirsə, avtomobilinizi satmaq məcburiyyətində deyilsiniz. <br> <br>
+                       <p style="text-align: justify ;">
+                           &nbsp; Online qiymət təklifimizdən sonra servisimizə yaxınlaşırsınız, avtomobilinizin vəziyyəti mütəxəssislərimiz tərəfindən yoxlanılır, qiymətdən xoşunuz gəlmirsə, avtomobilinizi satmaq məcburiyyətində deyilsiniz. <br> <br>
 
-                        Qiymət təklifi avtomobiliniz haqqında verdiyiniz məlumatlara əsaslanır. Təklif almaq üçün avtomobiliniz haqqında tələb olunan məlumatları bizə verməyiniz kifayət edir. Əgər servisdə yoxlanış zamanı qeyd etdiyinizdən daha fərqli bir nüans aşkarlanarsa, qiymət təklifi qüvvədən düşür və ya dəyişir. <br> <br>
+                           &nbsp; Qiymət təklifi avtomobiliniz haqqında verdiyiniz məlumatlara əsaslanır. Təklif almaq üçün avtomobiliniz haqqında tələb olunan məlumatları bizə verməyiniz kifayət edir. Əgər servisdə yoxlanış zamanı qeyd etdiyinizdən daha fərqli bir nüans aşkarlanarsa, qiymət təklifi qüvvədən düşür və ya dəyişir. <br> <br>
 
-                        Qiymət təklifimiz bir (1) iş günü müddətində etibarlıdır. Əgər qiymət təklifinizi yenidən almaq istəsəniz, avtomobiliniz haqqında məlumatları yenidən yerləşdirməlisiniz. Lakin nəzərə almalısınız ki, eyni qiymət təklifini almağınızı vəd etmirik, bazarın dəyişən qiymət tendensiyasına uyğun hər dəfə qiymətlərimiz yenidən hesablanır. <br>
+                           &nbsp;  Qiymət təklifimiz bir (1) iş günü müddətində etibarlıdır. Əgər qiymət təklifinizi yenidən almaq istəsəniz, avtomobiliniz haqqında məlumatları yenidən yerləşdirməlisiniz. Lakin nəzərə almalısınız ki, eyni qiymət təklifini almağınızı vəd etmirik, bazarın dəyişən qiymət tendensiyasına uyğun hər dəfə qiymətlərimiz yenidən hesablanır. <br>
 
-                        Əgər sizə verdiyimiz qiyməti bəyəndinizsə, TƏKLİF AL düyməsinə klik etməyiniz kifayət edir. Beləcə peşəkar ekspertlərimiz dərhal sizinlə əlaqə saxlayacaq və sizə uyğun görüş tariximizi dəqiqləşdirəcəklər. Məlumatlar sizə zəng, elektron poçt və SMS formatında göndərilə bilər. Avtomobiliniz sizin yanınızda peşəkar ustalarımız tərəfindən yoxlanılır, yoxlanış nəticələrinin sizin verdiyiniz məlumatlara uyğunluğu təhlil edilir. Əgər təklif xoşunuza gəlməsə, alqı-satqıdan imtina edə bilərsiniz. <br> <br>
+                      <br>     &nbsp; Əgər sizə verdiyimiz qiyməti bəyəndinizsə, TƏKLİF AL düyməsinə klik etməyiniz kifayət edir. Beləcə peşəkar ekspertlərimiz dərhal sizinlə əlaqə saxlayacaq və sizə uyğun görüş tariximizi dəqiqləşdirəcəklər. Məlumatlar sizə zəng, elektron poçt və SMS formatında göndərilə bilər. Avtomobiliniz sizin yanınızda peşəkar ustalarımız tərəfindən yoxlanılır, yoxlanış nəticələrinin sizin verdiyiniz məlumatlara uyğunluğu təhlil edilir. Əgər təklif xoşunuza gəlməsə, alqı-satqıdan imtina edə bilərsiniz. <br> <br>
 
-                        Qeyd etmək istəyirik ki, həftədə yalnız bir dəfə qiymət təklifi ala bilərsiniz.
+                           &nbsp; Qeyd etmək istəyirik ki, həftədə yalnız bir dəfə qiymət təklifi ala bilərsiniz.
                        </p>
                     </div>
 
@@ -128,20 +128,20 @@
                         <p>BARTER</p>
                     </div>
                     <div class="content-100-noqte mt-20">
-                        <p>
+                        <p style=" margin-bottom: 2.5rem;">
                             Barter xidmətimizdəki şansları diqqətinizə çatdırmaq istəyirik.
                         </p>
                         <div class="row">
                             <div class="col-lg-6 " style="padding-left:88px">
                                 <img src="{{asset('/front/autima/')}}/assets/img/service/image 2.png">
-                                <p>Köhnəni ver,  Yenisini apar</p>
+                                <p style="margin: 14px 0 0 50px">Köhnəni ver,  Yenisini apar</p>
                             </div>
                             <div class="col-lg-6">
-                                <img src="{{asset('/front/autima/')}}/assets/img/service/image 3.png">
-                                <p>Köhnə avtomobil ilkin ödəniş kimi</p>
+                                <img style="margin-left: 34px" src="{{asset('/front/autima/')}}/assets/img/service/image 3.png">
+                                <p style="margin:10px 0 0  21px">Köhnə avtomobil ilkin ödəniş kimi</p>
                             </div>
                         </div>
-                        <div class="row mt-5">
+                        <div class="row " style="margin-top: 30px">
                             <div class="col-lg-4">
                                 <svg class="barter-photo" width="55" height="53" viewBox="0 0 55 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.0024 0C18.6929 0 12.0901 3.01796 7.36604 7.87348L1.79053 35.5026C5.58463 45.1645 14.9945 52.005 26.0024 52.005C40.3632 52.005 52.0049 40.3633 52.0049 26.0026C52.0049 11.6418 40.3632 0 26.0024 0Z" fill="#2A428C"/>
@@ -175,7 +175,7 @@
                                     <path d="M4.67028 11.4697C4.61403 11.7974 4.958 12.0473 5.25231 11.8925L5.66898 11.6735C5.78583 11.612 5.92539 11.612 6.04224 11.6735L6.45891 11.8925C6.75322 12.0472 7.09719 11.7973 7.04094 11.4697L6.96134 11.0058C6.93905 10.8757 6.98214 10.7429 7.07671 10.6508L7.41378 10.3222C7.65183 10.0902 7.52044 9.68583 7.19154 9.63807L6.72573 9.57036C6.59508 9.55136 6.48216 9.46932 6.42368 9.35099L6.27945 9.05859C5.73839 9.68785 5.22683 10.3432 4.74712 11.0228L4.67028 11.4697Z" fill="#E9EFFF"/>
                                     <path d="M12.4768 9.63795L12.011 9.57024C11.8803 9.55124 11.7674 9.4692 11.7089 9.35086L11.5006 8.92867C11.3535 8.63055 10.9283 8.63055 10.7812 8.92867L10.5729 9.35086C10.5145 9.4692 10.4015 9.55124 10.2709 9.57024L9.80505 9.63795C9.47604 9.68571 9.34465 10.0901 9.58281 10.3221L9.91989 10.6507C10.0144 10.7428 10.0575 10.8755 10.0353 11.0057L9.95565 11.4696C9.89951 11.7973 10.2434 12.0471 10.5377 11.8924L10.9543 11.6733C11.0712 11.612 11.2108 11.612 11.3276 11.6733L11.7443 11.8924C12.0386 12.047 12.3825 11.7972 12.3263 11.4696L12.2467 11.0057C12.2244 10.8755 12.2675 10.7428 12.3621 10.6507L12.6992 10.3221C12.9372 10.0901 12.8058 9.68571 12.4768 9.63795Z" fill="#E9EFFF"/>
                                     </svg>
-                                <p>Köhnə avtomobilinizi verin,
+                                <p style="text-align: center">Köhnə avtomobilinizi verin,
                                     Amerikadan sifariş edin</p>
                             </div>
                             <div class="col-lg-4">
@@ -196,7 +196,7 @@
                                     <path d="M18.8231 11.7393L17.4746 13.8753L16.5995 11.5056L14.1514 10.883L16.1347 9.31858L15.9702 6.79785L18.0709 8.2006L20.4175 7.26532L19.7325 9.69671L21.3471 11.6393L18.8231 11.7393Z" fill="#FFBA48"/>
                                     </svg>
 
-                                <p>Köhnə avtomobilinizi verin,
+                                <p style="text-align: center">Köhnə avtomobilinizi verin,
                                     Avropadan sifariş edin</p>
                             </div>
                             <div class="col-lg-4">
@@ -229,42 +229,44 @@
                                     </svg>
 
 
-                                <p>Köhnə avtomobilinizi verin,
+                                <p style="text-align: center">Köhnə avtomobilinizi verin,
                                     Koredan sifariş edin</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="test_drive mt-5">
+                    <div class="test_drive mt-1">
                         <hr>
                         <form action="">
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <p class="test-label">Ad</p>
-                                            <input class="form-control" type="text" name="" id="">
+                                            <p class="test-label" style="padding:0; margin:5px" >Ad</p>
+                                            <input class="form-control" type="text" name="" id="" placeholder="Məmməd">
                                         </div>
                                         <div class="col-lg-6">
-                                            <p class="test-label">Soyad</p>
-                                            <input class="form-control" type="text" name="" id="">
+                                            <p class="test-label" style="padding:0; margin:5px" >Soyad</p>
+                                            <input placeholder="Məmmədov" class="form-control" type="text" name="" id="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-5">
-                                    <p class="test-label">Əlaqə nömrəsi</p>
+                                      <p class="test-label" style="padding:0; margin:5px 5px 5px 35px">Əlaqə nömrəsi</p>
                                    <div class="row">
                                        <div class="col-lg-6">
-                                        <select class="form-select" type="text" name="" id="">
-                                            <option value="">+994   50</option>
-                                            <option value="">+994   51</option>
-                                            <option value="">+994   55</option>
-                                            <option value="">+994   70</option>
-                                            <option value="">+994   77</option>
-                                        </select>
+                                           <p class="form-control" style=" margin-left:34px; display: inline-block; width:100px; padding:6px 7px 0 8px ">+994
+                                            <select  style="border:none;display: inline-block" type="text" name="" id="">
+                                            <option value="">   50</option>
+                                            <option value="">   51</option>
+                                            <option value="">   55</option>
+                                            <option value="">   70</option>
+                                            <option value="">   77</option>
+                                        </select  >    </p>
+
                                        </div>
                                        <div class="col-lg-6">
-                                        <input class="form-control" type="text" name="" id="">
+                                        <input class="form-control" type="text" name="" id="" placeholder="000 00 00">
                                        </div>
                                    </div>
                                 </div>
@@ -272,7 +274,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-lg-6">
-                                    <p class="test-label">Marka</p>
+                                    <p class="test-label" style="padding:0; margin:5px">Marka</p>
                                     <select class="form-select" type="text" name="" id="">
                                         <option value="">Seçin</option>
                                         <option value="">Honda</option>
@@ -283,7 +285,7 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-6">
-                                    <p class="test-label">Model</p>
+                                    <p class="test-label" style="padding:0; margin:5px">Model</p>
                                     <select class="form-select" type="text" name="" id="">
                                         <option value="">A4</option>
                                         <option value="">A5</option>
@@ -293,11 +295,11 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-6 mt-3">
-                                    <p class="test-label">Yürüş</p>
+                                    <p class="test-label" style="padding:0; margin:5px">Yürüş</p>
                                     <input type="text" class="form-control" name="" id="">
                                 </div>
-                                <div class="col-lg-6">
-                                    <p class="test-label mt-3">İstehsal ili</p>
+                                <div class="col-lg-6 mt-3">
+                                    <p class="test-label " style="padding:0; margin:5px">İstehsal ili</p>
                                     <select class="form-select" type="text" name="" id="">
                                         <option value="">1998</option>
                                         <option value="">1999</option>
@@ -316,7 +318,7 @@
                         <p>Sınaq Yürüşü</p>
                     </div>
                     <div class="content-100-noqte mt-20">
-                        <p>
+                        <p style="text-align: justify; margin-bottom:86px">
                             Sizcə hansı avtomobil sizin üçün daha uyğun olar?  Bəlkə "test" edək? <br> <br>
 
                             Sizə uyğun olan avtomobili seçmək üçün sınaq yürüşü xidmətində də yararlana bilərsiniz. Pegasusun  xidmətlər dünyasında addımlayaraq sınaq yürüşü edə biləcəyiniz bütün avtomobillərlə tanış ola bilərsiniz. <br> <br>
@@ -337,29 +339,30 @@
                                 <div class="col-lg-7">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <p class="test-label">Ad</p>
-                                            <input class="form-control" type="text" name="" id="">
+                                            <p class="test-label" style="padding:0; margin:5px">Ad</p>
+                                            <input class="form-control" type="text" name="" id="" placeholder="Məmməd">
                                         </div>
                                         <div class="col-lg-6">
-                                            <p class="test-label">Soyad</p>
-                                            <input class="form-control" type="text" name="" id="">
+                                            <p class="test-label" style="padding:0; margin:5px">Soyad</p>
+                                            <input class="form-control" type="text" name="" id="" placeholder="Məmmədov">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-5">
-                                    <p class="test-label">Əlaqə nömrəsi</p>
+                                    <p class="test-label" style="padding:0; margin:5px 5px 5px 35px">Əlaqə nömrəsi</p>
                                    <div class="row">
                                        <div class="col-lg-6">
-                                        <select class="form-select" type="text" name="" id="">
-                                            <option value="">+994   50</option>
-                                            <option value="">+994   51</option>
-                                            <option value="">+994   55</option>
-                                            <option value="">+994   70</option>
-                                            <option value="">+994   77</option>
-                                        </select>
+                                        <p class="form-control" style=" margin-left:34px; display: inline-block; width:100px; padding:6px 7px 0 8px ">+994
+                                            <select  style="border:none;display: inline-block" type="text" name="" id="">
+                                            <option value="" style="border-color:white">   50</option>
+                                            <option value="" style="border-color:white">   51</option>
+                                            <option value="" style="border-color:white">   55</option>
+                                            <option value="" style="border-color:white">   70</option>
+                                            <option value="" style="border-color:white">   77</option>
+                                        </select  >    </p>
                                        </div>
                                        <div class="col-lg-6">
-                                        <input class="form-control" type="text" name="" id="">
+                                        <input class="form-control" type="text" name="" id="" placeholder="000 00 00">
                                        </div>
                                    </div>
                                 </div>
@@ -367,7 +370,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-lg-4">
-                                    <p class="test-label">Marka</p>
+                                    <p class="test-label" style="padding:0; margin:5px">Marka</p>
                                     <select class="form-select" type="text" name="" id="">
                                         <option value="">Honda</option>
                                         <option value="">Hundai</option>
@@ -377,7 +380,7 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-4">
-                                    <p class="test-label">Model</p>
+                                    <p class="test-label" style="padding:0; margin:5px">Model</p>
                                     <select class="form-select" type="text" name="" id="">
                                         <option value="">A4</option>
                                         <option value="">A5</option>
@@ -387,33 +390,150 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-4">
-                                    <p class="test-label">Tarix</p>
+                                    <p class="test-label" style="padding:0; margin:5px">Tarix</p>
                                     <input type="date" class="form-control" name="" id="">
                                 </div>
                             </div>
-                            <div class="btn btn-block mt-5" style="background: #c00;color:white">Göndər</div>
+                            <div class="btn btn-block " style="background: #c00;color:white; margin-top:58px">Göndər</div>
                         </form>
                     </div>
                </div>
 
                  <div id="sifaris" @if ( Request::segment(1)=="xidmetlerimiz-sifaris-et" ) style="display: block" @endif       class="tabcontent"  >
-                    <div class="o100-noqte-title">
-                        <p>Sifariş ver</p>
+                    <div class="o100-noqte-title mt-2">
+                        <p>Sifariş Ver</p>
                     </div>
-                    <div class="content-100-noqte mt-20">
-                        <p>
-                            Ölkədaxili, Amerika, Asiya və Avropadan istədiyiniz avtomobili sizin üçün tapırıq. Peşəkar ekspertlərimiz tərəfindən yoxlanışdan keçir. Üstəlik siz nağd və kreditlə avtomobili əldə edə biləcəksiniz. <br> <br>
+                    <div class="content-100-noqte mt-2">
+                        <p style="text-align: justify">
+                            Ölkədaxili, Amerika, Asiya və Avropadan istədiyiniz avtomobili sizin üçün tapırıq. Peşəkar ekspertlərimiz tərəfindən yoxlanışdan keçir. Üstəlik siz nağd və kreditlə avtomobili əldə edə biləcəksiniz. </p>
 
-                            Könlünüzdən keçən avtomobili əldə etməyiniz üçün lazım olan bütün şəraiti yaradırıq. Sizə bircə sevdiyiniz avtomobili seçmək və ürəyiniz istədiyi kimi sürmək qalır. <br> <br>
+                         <p>  Könlünüzdən keçən avtomobili əldə etməyiniz üçün lazım olan bütün şəraiti yaradırıq. Sizə bircə sevdiyiniz avtomobili seçmək və ürəyiniz istədiyi kimi sürmək qalır.
+                        </p>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <p class="test-label" style="padding:0; margin:5px">Ad</p>
+                                            <input  class="form-control" type="text" name="" id="" placeholder="Məmməd">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="test-label" style="padding: 0; margin:5px">Soyad</p>
+                                            <input class="form-control" type="text" name="" id="" placeholder="Məmmədov">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <p class="test-label" style="padding:0; margin:5px 5px 5px 35px">Əlaqə nömrəsi</p>
+                                   <div class="row">
+                                       <div class="col-lg-6">
+                                        <p class="form-control" style=" margin-left:34px; display: inline-block; width:100px; padding:6px 7px 0 8px ">+994
+                                            <select  style="border:none;display: inline-block" type="text" name="" id="" >
+                                            <option value="">   50</option>
+                                            <option value="">   51</option>
+                                            <option value="">   55</option>
+                                            <option value="">   70</option>
+                                            <option value="">   77</option>
+                                        </select  >    </p>
+                                       </div>
+                                       <div class="col-lg-6">
+                                        <input class="form-control" type="text" name="" id="" placeholder="000 00 00">
+                                       </div>
+                                   </div>
+                                </div>
 
-                            Ad, Soyad
-                            Əlaqə Nömrəsi
+                            </div>
 
-                            Sizə zəng edərək görüş təyin edəcəyik, beləcə sifarişin detallarını müzakirə edə biləcəyik. Sizin istəklərini tam öyrənib qarşılamaqdan məmnun olarıq. Qarısında da düymə.
+                            <div class="btn btn-block mt-3" style="background: #c00;color:white">Göndər</div>
+                        </form>
+                        <p  style="font-size: 16px; padding:10px 0  20px 0 ; margin-top:19px">
+                            <span style=" display:inline-block; transform:translate(32px,-16px)">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.4067 28.2893C29.0368 28.0739 26.785 26.6794 25.5802 24.1581C28.3941 21.527 29.9945 17.8669 29.9945 14.121C29.9945 6.36842 23.2346 0.00244141 14.9972 0.00244141C6.7599 0.00244141 0 6.36842 0 14.121C0 21.8735 6.7599 28.2395 14.9972 28.2395C16.103 28.2395 17.2908 28.1358 18.9295 27.7915C23.2366 30.0802 27.1025 30.0159 28.5734 29.9927C29.2282 29.9845 29.7036 30.1028 29.9482 29.4263C30.1138 28.9725 29.8689 28.4484 29.4067 28.2893ZM16.7548 21.2095C16.7548 22.1801 15.9679 22.967 14.9972 22.967C14.0266 22.967 13.2397 22.1801 13.2397 21.2095V14.121C13.2397 13.1503 14.0266 12.3634 14.9972 12.3634C15.9679 12.3634 16.7548 13.1503 16.7548 14.121V21.2095ZM14.9972 9.66865C14.0266 9.66865 13.2397 8.88168 13.2397 7.91113C13.2397 6.94047 14.0266 6.15361 14.9972 6.15361C15.9679 6.15361 16.7548 6.94047 16.7548 7.91113C16.7548 8.88174 15.9679 9.66865 14.9972 9.66865Z" fill="#CD0000"/>
+                            </svg>
+                            </span>
+                            <span style="display: inline-block; margin-left:50px"> Sizə zəng edərək görüş təyin edəcəyik, beləcə sifarişin detallarını müzakirə edə biləcəyik. <br>  Sizin istəklərini tam öyrənib qarşılamaqdan məmnun olarıq.</span>
+                                </p>
+                        <hr>
+                        <p style="font-size: 16px; margin-bottom:16px">
+                            Avtomobil alqı-satqısı və sifariş prosesi istək və ehtiyaclarınızı müəyyənləşdirməklə başlayan, satış və satışdan sonrakı xidmətlər ilə davam edən əziyyətsiz bir təcrübədir. "Müştəri məmnuniyyəti" prinsipi ilə hazırlanmış bütün proseslərin hər mərhələsində sizi bir şirkət əməkdaşı qarşılayacaq və "alverçi" narahatçılığından xilas olacaqsınız; Auto Pegasus "gözlədiyinizdən də artıq" xidmət prinsipini özünə məqsəd tutmuşdur.
 
-                            Suallar hissəsi bura qoyulur:
-                            http://new.autopegasus.az/sifarisver - buradakı sual-cavab hissəsi aşağı düşür.</p>
 
+                        </p>
+
+                        <div id="accordion" class="card__accordion">
+                            <div class=" card_dipult col-lg-12 mb-2" >
+                                <div class="card-header card_accor" id="headingOne">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                     <strong>Hansı ölkədən avtomobil sifariş verə bilərəm?</strong>
+
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Həm ölkədaxili, həm də ölkəxarici, əsasən Amerika, Avropa,
+                                             Yaponiya, Koreya və digər Asiya ölkələrindən arzuladığınız avtomobili sifariş verə bilərsiniz.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="  card_dipult col-lg-12 mb-2">
+                                <div class="card-header card_accor" id="headingTwo">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 <strong>    Bəs pulum çatmasa?</strong>
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Siz buna görə narahat olmayın. Siz arzuladığınız avtomobili sifariş verib onun dəyərinin bir
+                                             hissəsini ödəməklə yerdə qalan hissəni 36 aya qədər sərfəli kredit şərtlərilə əldə edə bilərsiniz.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="  card_dipult col-lg-12 mb-2">
+                                <div class="card-header card_accor" id="headingThree">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <strong>   Bəs maşını kim yoxlayacaq?</strong>
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Avtomobil ölkəyə daxil olduqdan sonra peşəkar ekspert komandamız tərəfindən bütün lazımi işlər görülür,
+                                            avtomobildə "100 Nöqtə" proseduru həyata keçirilir. Əgər avtomobil gəldikdən sonra təmir ehtiyacı yaranarsa,
+                                             müqaviləli servislərdə təmir olunur, yoxlanılır və sizə ən təmiz formada təqdim olunur. Siz servisə getmirsiniz,
+                                              siz usta ilə danışmırsınız, siz əlavə ödəniş ödəmirsiniz,
+                                             siz yorulmursunuz. Bütün prosedur şirkətimizin təcrübəli və dinamik heyəti tərəfindən həyata keçirilir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" card_dipult col-lg-12 mb-2">
+                                <div class="card-header card_accor" id="headingfour">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                                  <strong>   "100 Nöqtə" yoxlanışı nədir?</strong>
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <div id="collapseeight" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>"100 Nöqtə" yoxlanışı avtomobilin dəyərinə təsir edə biləcək; kuzov və boya vəziyyətinin, mühərrik və mexaniki hissələrin Auto
+                                             Pegasus servis heyəti tərəfindən dəqiq yoxlanıldığı özəl bir prosesdir. Beləcə avtomobilin əvvəlki və mövcud vəziyyəti analiz
+                                              edilir, hesabat hazırlanır və müştərilərə təqdim edilir. Yoxlamadan keçibsə,
+                                             deməli yaxşı maşındır, ürək rahatlığı ilə alıb sürə bilərsiniz. Necə deyərlər, 100 yoxlayıb, 1 alırıq.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>

@@ -40,6 +40,9 @@
 @font-face {font-family: "Mark Pro"; src: url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.eot"); src: url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.woff") format("woff"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.svg#Mark Pro") format("svg"); }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,400,400i,600,600i,700,700i,800,800i");
+/* plugin */
+
+
 * {
   font-family:Mark Pro ;
     box-sizing: border-box;
@@ -344,7 +347,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .product_d_right>ul>li{
-    padding: 7px 5px;
+    padding: 7px 32px;
     border: solid  1px #C4C4C4;
     border-top: 0px;
     border-right: 0px;
@@ -352,15 +355,27 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     display: flex;
     justify-content: space-between;
 }
-.product_d_right>ul>li>strong{
+
+.product_d_right>ul>li>span{
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+}
+.product_d_right>ul>li>span:first-child{
+    font-weight: normal;
+    font-size: 14px;
     color: rgb(99, 99, 99);
 }
-.product_d_right>ul>li>span{
-    font-weight: bold;
+.detail-single{
+    padding: 22px 132px;
 }
-.col-lg-4>li.custom-detail{
-    display: flex;
-    justify-content: space-between;
+ .col-lg-4>li.custom-detail{
+    padding: 7px;
+  list-style-type: none;
+}
+.col-lg-4>li.custom-detail>span{
+
+    margin-left: 7px;
 }
 .col-lg-4>li.custom-detail>i.fa-check{
     color: green;
@@ -1435,7 +1450,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .main_menu nav > ul {
-  margin-left: 51.5%;
+  margin-left: 50.5%;
 }
 .main_menu nav > ul > li {
 
@@ -4750,7 +4765,7 @@ top: 5px;
   justify-content: center;
 margin-top: 5px;
 
-  width: 25% !important;
+  width: 24.4% !important;
   float: left;
 
 }
@@ -5613,7 +5628,9 @@ margin-top: 5px;
     padding-left: 60px;
 
 }
-
+.alanda>.line{
+    transition: all 1s;
+}
 .alanda>div{
     width: 35%;
     border-bottom: 2px solid  rgba(170, 170, 170, 1) ;
@@ -5667,6 +5684,28 @@ text-align: center;
     margin-bottom: 30px;
    margin-left: 19%;
 }
+.alanda-component{
+    position: relative;
+}
+.alanda-component::before{
+    z-index: 10;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 31px;
+    right: 0;
+    width: 0px;
+    height: 55px;
+
+
+    border: 0.5px solid #C4C4C4;
+
+}
+.alanda-comp-end::before{
+    height: 0;
+    width: 0;
+    display: none;
+}
 .alanda-component>p{
     font-weight: 700;
 font-size: 15px;
@@ -5689,6 +5728,7 @@ text-align: center;
     color: rgba(255, 255, 255, 0.623);
 }
 .car-name>.price-label{
+    font-weight: bold;
     letter-spacing: 1px;
     font-size: 25px;
     right: 0;
@@ -5766,7 +5806,7 @@ right: 40px;
 
 
 .tab-link-title>span:first-child{
-    margin-right: 10px;
+    margin: 0 10px;
     display: inline-block;
     margin-top: 23px;
     font-style: normal;
@@ -5783,27 +5823,32 @@ color: #090B4D;
     width: 35px
 }
 .tab-links>.tab{
+    height: 297px;
+    cursor: pointer;
     padding-top: 15px;
     width: 95%;
 }
 li.active-link{
     font-weight: bold;
+    position: relative;
 }
 .tab>li.active-link::after{
+    position: absolute;
+    right: 0;
     content: "";
-margin-left: 5px;
+    top: 20px;
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     background: #CD0000;
 }
 .tab-links>.tab>li{
-    font-size: 18px;
+    font-size: 15px;
     border: 1px  solid rgba(196, 196, 196, 1);
     border-right: none;
     border-left: none;
-    padding: 10px;
+    padding: 15px 10px;
    color: rgba(108, 108, 108, 1);
    border-bottom: none;
 }
@@ -5837,36 +5882,42 @@ color: #6C6C6C;
 .content-100-noqte{
     font-style: normal;
 font-weight: normal;
-font-size: 18px;
+font-size: 16px;
 line-height: 27px;
 /* or 150% */
 
 color: #6C6C6C;
 }
-
+.last-photo{
+    background-image: url('../img/auto-car/left-car.png');
+}
 .test-label{
+    color: #6C6C6C;
 font-weight: bold;
 font-size: 18px;
 }
 svg.barter-photo{
-    margin-left: 57px;
+    margin:0 0 15px 87px;
 }
 /* service end */
 /* indisat */
+
 .tab-link-indisat{
-margin-top: 70px;
+margin-top: 45px;
 
 }
 .indisat-component{
-    padding: 30px;
+    padding: 20px 30px;
 }
 .tab-link-indisat>li{
 
+    font-size: 18px;
     position: relative;
     color: #FFFFFF;
-    width: 80%;
-    margin-top: 19px;
-padding: 10px 0 10px 15px;
+    width: 257px;
+    height: 53px;
+    margin-top: 33px;
+padding: 14px 10px 10px 23px;
 background-color: rgba(196, 196, 196, 1);
 }
 .tab-link-indisat>li.active-indiSat{
@@ -5874,7 +5925,7 @@ cursor: pointer;
     background-color:rgba(9, 11, 77, 1);
 }
 
-.tab-link-indisat>li.active-indiSat::after{
+.tab-link-indisat>li.after-link::after{
 content: "";
 display: inline-block;
 position: absolute;
@@ -5901,10 +5952,18 @@ right: -27px;
     font-weight: bold;
 }
 .indisat-component{
-    margin-bottom: 20px;
-    height: 100%;
+
+
     border: 1px solid
     rgba(196, 196, 196, 1);
+}
+.tezhizatlar{
+    margin-top: 22px;
+
+}
+.tezhizatlar>span{
+    margin-left: 10px;
+    font-size: 18px;
 }
 
 .ui-slider-horizontal .ui-slider-range {
@@ -5921,7 +5980,189 @@ right: -27px;
   margin: 0 auto;
   margin-bottom: 22px;
 }
+/* cars detail */
+.detail-link>ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.detail-link>ul>li{
+    padding-bottom: 7px;
+    font-weight: bold;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
 
+letter-spacing: 0.01em;
+
+color: #6C6C6C;
+}
+.kredit-icon-kredit{
+    padding: 0 130px;
+    display: flex;
+    justify-content: space-around;
+}
+.kredit-icon-kredit>.first-icon-kredit>h4{
+
+    margin: 30px 0;
+    color: #EF0505;
+}
+#haqqinda{
+    padding-top: 40px;
+}
+#detail{
+    padding-top: 40px;
+}
+#veziyyet{
+    padding: 40px 27px;
+}
+#Kredit{
+    padding-top: 40px;
+}
+.detail-all{
+    padding: 20px;
+    border: 1px solid #C4C4C4;
+}
+.panel-detail{
+    padding: 30px;
+    background: #F4F4F4;
+}
+.panel-detail>div>.panel-title{
+    color: #EF0505;
+    text-align: center;
+}
+.panel-detail>div>.panel-title::after{
+
+content: "";
+display: inline-block;
+width: 45.5%;
+height: 1px;
+background-color:#6C6C6C;
+margin-left: 10px;
+
+}
+.panel-detail>div>.panel-veziyyet::after{
+    margin-left:20px;
+}
+.panel-detail>div>.panel-title::before{
+
+    content: "";
+    display: inline-block;
+    width: 43%;
+    height: 1px;
+    background-color: #6C6C6C;
+    margin-right: 10px;
+
+    }
+    .panel-detail>div>.panel-veziyyet::before{
+        margin-left:21px;
+    }
+
+    .sol-on-qanad>.titles>span{
+        font-size: 13px;
+        margin: 0 5px;
+
+
+    }
+    .sol-on-qanad>.values>span>.checkmark-custom>i{
+        color: red;
+        font-size: 17px;
+    }
+
+    .checkmark-custom-c{
+        display: none;
+        position: absolute;
+        top: -10px;
+        left:0px;
+
+    }
+    .sol-on-qanad>.values>span>.checkmark-custom{
+        position: absolute;
+        top: -10px;
+        left:0px;
+        display: none;
+
+
+
+
+
+    }
+    form>div>div>.sol-on-qanad>.values>span{
+        position: relative;
+       text-align: center;
+        display: inline-block;
+        padding: 5px;
+        width: 15px;
+        height: 15px;
+        align-items: center;
+        border: 1px solid #C4C4C4;
+
+    }
+    .sol-on-qanad>.values>span>input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+
+    }
+    .tezhizatlar>.check-border-custom{
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #C4C4C4;
+    }
+    .check-custom{
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+    }
+
+    .sol-on-qanad>.values>span>input:checked + .checkmark-custom{
+        display: inline-block;
+    }
+    .check-custom:checked + .checkmark-custom-c{
+        display: inline-block;
+    }
+
+    .sol-on-qanad>.text{
+
+        font-weight: bold;
+font-size: 18px;
+line-height: 17px;
+
+
+
+color: #848484;
+    }
+    .sol-on-qanad>.change-text{
+
+        color:#DC1616 ;
+    }
+
+    .sol-on-qanad>.values>.check-i>i{
+        font-size: 20px;
+    }
+    .sol-on-qanad>.values>.check-i{
+        padding: 0;
+        max-height: 18px;
+        display: inline-block;
+       max-width: 15px;
+
+        color: red;
+        border: 1px solid black;
+    }
+    .sol-on-qanad>.values>span{
+        margin-right: 40px;
+    }
+    .sol-on-qanad{
+
+
+        display: flex;
+        justify-content: space-between;
+    }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   background: #fff;
   border: 0;
@@ -7375,7 +7616,7 @@ right: -27px;
 }
 
 .product_right_sidebar {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 @media only screen and (max-width: 767px) {
   .product_right_sidebar .product-details-tab {
@@ -10710,3 +10951,14 @@ right: -27px;
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+.zoomWindowContainer{
+    display: none;
+}
